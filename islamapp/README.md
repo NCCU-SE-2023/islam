@@ -10,6 +10,7 @@ pip3 install -r requirements.txt
 ## ISLAM database
 
 connect to a MySQL DB (eg. localhost:3306) and create a new schema called islam
+connect to a Mongo DB (eg. localhost:27017) and create a new database called islam
 
 ### Alembic
 set environment variable for DB connection
@@ -32,6 +33,8 @@ alembic upgrade head
 .env example
 ```
 DATABASE_URL=mysql+pymysql://{username}:{password}@{db_fqdn}:3306/islam
+MONGO_HOST=127.0.0.1
+MONGO_PORT=27017
 ```
 
 .flaskenv example

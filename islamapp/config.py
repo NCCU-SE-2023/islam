@@ -8,7 +8,7 @@ class Config:
     # MongoDB
     MONGODB_SETTINGS: dict = {
         'db': 'islam',
-        'host': 'localhost',
-        'port': 27017
+        'host': os.getenv("MONGO_HOST") or "127.0.0.1",
+        'port': int(os.getenv("MONGO_PORT")) or 27017,
     }
     BASE_DIR = os.path.abspath(os.path.dirname(__file__))
