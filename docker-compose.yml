@@ -1,0 +1,11 @@
+version: "3"
+services:
+  databse:
+    build: ./database
+    environment:
+      MYSQL_PASSWORD: islam
+      MYSQL_ROOT_PASSWORD: islam
+    volumes:
+      - ./db:/var/lib/mysql
+    ports:
+      - 33061:3306
