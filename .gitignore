@@ -1,0 +1,4 @@
+*.*env
+.ISLAMENV
+__pycache__
+db
