@@ -95,3 +95,12 @@ def new_task(request):
             error_code=INTERNAL_SERVER_ERROR,
             message=f"ISLAM Exception: {str(exception)}",
         )
+    
+
+def _get_new_tasks():
+    """
+    Returns:
+        [Task]
+    """
+    tasks = Task.objects(status=TaskStatus.NEW.value)
+    return [task.to_json() for task in tasks]
