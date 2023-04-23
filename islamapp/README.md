@@ -47,5 +47,33 @@ FLASK_DEBUG=True
 
 ## Start flask
 ```
-python3 -m flask run
+
+```
+
+
+## celery
+
+### start
+```
+ celery -A make_celery worker --loglevel INFO
+```
+
+## in case pip install -r requirements.txt fails
+pip install flask celery flask_sqlalchemy flask_mongoengine pydantic
+
+
+## quick setup db
+
+```
+docker compose up
+```
+
+.env(use docker mysql/redis/mongo)
+```
+FLASK_ENV=development
+FLASK_APP=main.py
+FLASK_DEBUG=True
+DATABASE_URL="mysql://user:password@localhost:3306/database"
+MONGO_HOST=127.0.0.1
+MONGO_PORT=27017
 ```

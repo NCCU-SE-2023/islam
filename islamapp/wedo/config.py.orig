@@ -1,9 +1,0 @@
-BROKER_URL = 'redis://10.8.238.2:6379/0' # Broker配置，使用Redis作爲消息中間件
-CELERY_RESULT_BACKEND = 'redis://10.8.238.2:6379/0' # BACKEND配置，這裏使用redis
-CELERY_RESULT_SERIALIZER = 'json' # 結果序列化方案
-CELERY_TASK_RESULT_EXPIRES = 60 * 60 * 24 # 任務過期時間
-CELERY_TIMEZONE='Asia/Shanghai'   # 時區配置
-CELERY_IMPORTS = (     # 指定導入的任務模塊,可以指定多個
-    'wedo.tasks',
-    'wedo.period_task'
-)
