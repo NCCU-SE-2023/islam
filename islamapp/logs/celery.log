@@ -1,0 +1,20 @@
+[2023-04-24 21:40:07,611: INFO/MainProcess] Connected to redis://localhost:6379//
+[2023-04-24 21:40:07,618: INFO/MainProcess] mingle: searching for neighbors
+[2023-04-24 21:40:08,635: INFO/MainProcess] mingle: all alone
+[2023-04-24 21:40:08,674: INFO/MainProcess] celery@WN-MBA.local ready.
+[2023-04-24 21:41:12,959: INFO/MainProcess] Connected to redis://localhost:6379//
+[2023-04-24 21:41:12,970: INFO/MainProcess] mingle: searching for neighbors
+[2023-04-24 21:41:13,989: INFO/MainProcess] mingle: all alone
+[2023-04-24 21:41:14,044: INFO/MainProcess] celery@WN-MBA.local ready.
+[2023-04-24 21:42:39,136: INFO/MainProcess] Events of group {task} enabled by remote.
+[2023-04-24 21:43:54,542: INFO/MainProcess] Task tasks.add[3da7a439-22b3-481a-b33d-51e5c93d988c] received
+[2023-04-24 21:43:54,581: INFO/ForkPoolWorker-7] tasks.add[3da7a439-22b3-481a-b33d-51e5c93d988c]: Adding 1 + 2
+[2023-04-24 21:43:54,590: INFO/ForkPoolWorker-7] Task tasks.add[3da7a439-22b3-481a-b33d-51e5c93d988c] succeeded in 0.023813125008018687s: 3
+[2023-04-24 21:44:00,363: INFO/MainProcess] Task tasks.add[68e4f18a-756f-48d5-a73f-ea24e0c2690f] received
+[2023-04-24 21:44:00,376: INFO/ForkPoolWorker-7] tasks.add[68e4f18a-756f-48d5-a73f-ea24e0c2690f]: Adding 1 + 2
+[2023-04-24 21:44:00,382: INFO/ForkPoolWorker-7] Task tasks.add[68e4f18a-756f-48d5-a73f-ea24e0c2690f] succeeded in 0.012034166022203863s: 3
+[2023-04-24 21:44:23,556: INFO/MainProcess] Connected to redis://localhost:6379//
+[2023-04-24 21:44:23,561: INFO/MainProcess] mingle: searching for neighbors
+[2023-04-24 21:44:24,582: INFO/MainProcess] mingle: all alone
+[2023-04-24 21:44:24,613: INFO/MainProcess] celery@WN-MBA.local ready.
+[2023-04-24 21:44:29,137: INFO/MainProcess] Events of group {task} enabled by remote.

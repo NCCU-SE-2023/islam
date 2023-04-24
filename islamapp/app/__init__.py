@@ -2,6 +2,7 @@ from flask import Flask
 from celery import Celery, Task
 from api.test import test_route
 from api.user import user_route
+from api.celery import celery_route
 # from api.task import task_route
 from database import db, mongo
 
@@ -22,6 +23,7 @@ def create_app(config):
     app.config.from_object(config)
     app.register_blueprint(test_route)
     app.register_blueprint(user_route)
+    app.register_blueprint(celery_route)
     # app.register_blueprint(task_route)
     db.init_app(app)
     mongo.init_app(app)

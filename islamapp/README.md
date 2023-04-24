@@ -77,3 +77,14 @@ DATABASE_URL="mysql://user:password@localhost:3306/database"
 MONGO_HOST=127.0.0.1
 MONGO_PORT=27017
 ```
+
+
+## celery
+```bash
+celery -A make_celery worker --loglevel=info --logfile=logs/celery.log 
+```
+
+## flower
+```bash
+celery -A make_celery flower --port=5555 --broker=redis://localhost:6379
+```
