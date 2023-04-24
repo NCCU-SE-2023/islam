@@ -1,4 +1,5 @@
 import json
+import time
 from flask import Blueprint, Response, request
 from service import user_service
 
@@ -7,7 +8,6 @@ from celery.result import AsyncResult
 from celery.utils.log import get_task_logger
 
 logger = get_task_logger(__name__)
-
 
 @shared_task(
     ignore_result=False,
@@ -22,6 +22,11 @@ logger = get_task_logger(__name__)
 def add_together(self,a: int, b: int) -> int:
     self.update_state(state='PROGRESS',meta={'current': 2, 'total': 4})
     logger.info("Adding {0} + {1}".format(a, b))
+    # sleep 30 seconds
+    time.sleep(30)
+    # run a while that loop 200000 times
+    for i in range(2000000000000000000):
+        print(i)
     return a + b
 
 '''
