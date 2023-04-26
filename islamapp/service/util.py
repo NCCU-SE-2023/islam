@@ -6,6 +6,7 @@ import string
 INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR"
 USER_NOT_FOUND = "USER_NOT_FOUND"
 DUPLICATE_REGISTRATION = "DUPLICATE_REGISTRATION"
+MALEFORMED_REQUEST = "MALEFORMED_REQUEST"
 
 def _gen_error_response(status_code=None, error_code=None, message=None):
     return Response(

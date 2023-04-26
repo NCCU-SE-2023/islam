@@ -1,4 +1,27 @@
 from mongoengine import fields, Document
+from enum import Enum
+import time
+from hashlib import md5
+import random
+
+class TaskStatus(Enum):
+    NEW = "NEW"
+    RUNNING = "RUNNING"
+    FINISHED = "FINISHED"
+    ERROR = "ERROR"
+
+class TaskType(Enum):
+    BASIC = "BASIC"
+    FOLLOWERS = "FOLLOWERS"
+    FOLLOWING = "FOLLOWING"
+    LIKES = "LIKES"
+    COMMENTS = "COMMENTS"
+    TAG_ME = "TAG_ME"
+    I_TAG = "I_TAG"  
+    TEST = "TEST" # For Task API testing
+
+class TaskException(Exception):
+    pass
 
 class Task(Document):
     # constant field
@@ -23,3 +46,38 @@ class Task(Document):
             except:
                 pass
         return returnDict
+    
+    @staticmethod
+    def create_task(user_id, type, task_detail={}):
+        if type not in [type.value for type in TaskType]:
+            raise TaskException(f"Invalid task type {type}")
+        
+        create_at = time.time()
+        task_id = md5(str(create_at).join(user_id).join(str(random.random())).encode()).hexdigest()
+        create_at = int(create_at)
+        update_at = create_at
+        status = TaskStatus.NEW.value
+        
+        task = Task(task_id=task_id, type=type, create_user=user_id, task_detail=task_detail, create_at=create_at, update_at=update_at, status=status)
+        task.save()
+        return task
+    
+    
+    def set_status(self, status):
+        if status not in [status.value for status in TaskStatus]:
+            raise TaskException(f"Invalid task status {status}")
+        self.status = status
+        self.update_at = time.time()
+
+    @staticmethod
+    def get_by_status(status, userId=None):
+        if status not in TaskStatus.value:
+            raise TaskException(f"Invalid task status {status}")
+        if userId is not None:
+            return Task.objects(status=status, create_user=userId)
+        else:
+            return Task.objects(status=status)
+    
+    @staticmethod
+    def get_by_create_user(userId):
+        return Task.objects(create_user=userId)
