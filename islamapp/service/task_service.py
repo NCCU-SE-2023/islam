@@ -113,7 +113,7 @@ def update_task(request):
         body:
         {
             "status": "RUNNING",
-            "error_msg": "123456",
+            "error_msg": {},
             "retry" : "True"
         }
     Returns:
@@ -133,12 +133,12 @@ def update_task(request):
         task_id = request.headers.get("task_id")
         task = Task.objects(task_id=task_id)
         status = request.body.get("status")
-        errmsg = request.body.get("error_msg")
+        error_msg = request.body.get("error_msg")
         retry = request.body.get("retry")
         if status is not None:
             task.set_status(status)
-        if errmsg is not None:
-            task.set_errmsg(errmsg)
+        if error_msg is not None:
+            task.set_errmsg(error_msg)
         if retry is not None and retry == "True":
             task.retry_task()
 

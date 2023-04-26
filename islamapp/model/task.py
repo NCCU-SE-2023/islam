@@ -69,7 +69,7 @@ class Task(Document):
         self.status = status
         self.update_at =int(time.time())
 
-    def set_errmsg(self,msg="error"):
+    def set_error_msg(self,msg={}):
         self.error_msg = msg
         self.update_at = int(time.time())
 
