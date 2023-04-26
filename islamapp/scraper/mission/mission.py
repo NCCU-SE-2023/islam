@@ -10,13 +10,6 @@ from scraper.util import log_while_exception
 @log_while_exception()
 def scrape_followers_and_following(driver, task:Task):
     try:
-        browser = webdriver.Chrome()
-        url = 'https://www.instagram.com/'
-
-        browser.get(url)
-
-        browser.maximize_window()
-        WebDriverWait(browser, 30).until(EC.presence_of_element_located((By.NAME, 'username')))
         
         # login
         username_input = browser.find_element('name', 'username')
