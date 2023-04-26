@@ -67,7 +67,19 @@ class Task(Document):
         if status not in [status.value for status in TaskStatus]:
             raise TaskException(f"Invalid task status {status}")
         self.status = status
-        self.update_at = time.time()
+        self.update_at =int(time.time())
+
+    def set_errmsg(self,msg="error"):
+        self.error_msg = msg
+        self.update_at = int(time.time())
+
+    def retry_task(self):
+        if(self.priority>=5):
+            self.status=TaskStatus.ERROR.value
+            raise TaskException(f"retry time exceeded")
+        self.retry_times+=1
+        self.priority+=1
+        self.set_status("NEW")
 
     @staticmethod
     def get_by_status(status, userId=None):
