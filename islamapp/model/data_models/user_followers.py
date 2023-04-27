@@ -3,7 +3,7 @@ from mongoengine import fields, Document
 class UserFollowers(Document):
     
     user_followers_id= fields.IntField(primary_key=True,required=True)
-    scraped_ig_id= fields.IntField(required=True)
+    scraped_ig_id= fields.StringField(required=True)
     create_at = fields.DateTimeField(required=True)
     followers_count = fields.IntField(required=True)
     followers_list = fields.ListField(required=True)
