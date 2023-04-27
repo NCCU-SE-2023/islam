@@ -2,8 +2,8 @@ from mongoengine import fields, Document
 
 class UserFollowers(Document):
     
-    scraped_user_id= fields.IntField(primary_key=True,required=True)
-    scraped_user = fields.StringField(required=True)
+    user_followers_id= fields.IntField(primary_key=True,required=True)
+    scraped_ig_id= fields.IntField(required=True)
     create_at = fields.DateTimeField(required=True)
     followers_count = fields.IntField(required=True)
     followers_list = fields.ListField(required=True)
@@ -13,7 +13,7 @@ class UserFollowers(Document):
     scrape_user_list = fields.ListField(required=True)
     scraped_times = fields.IntField(required=True)
     scraped_task_list = fields.ListField(required=True)
-    update_at = fields.DateTimeField(required=True)
+
 
     def to_json(self):
         returnDict = {}
