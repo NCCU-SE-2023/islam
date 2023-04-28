@@ -5,15 +5,26 @@
 # A mission should able to start no matter what page the webdriver is on.
 
 from model.task import Task
+from scraper.mission.actions import *
 from scraper.util import log_while_exception
 
 @log_while_exception()
 def scrape_followers_and_following(driver, task:Task):
     try:
         # login
+        action_login(driver, account, password)
+        store_click(driver)
+        notification_click(driver)
+        
         # go to profile page
+        go_profile(driver)
+        
         # scrape followers
+        follower_list=scrape_follower(driver)
+        
         # scrape following
+        following_list=scrape_following(driver)
+        
         # return data
         # ...
         pass
