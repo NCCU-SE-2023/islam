@@ -82,6 +82,7 @@ def scrape_follower(driver):
             By.TAG_NAME, 'a')
         
         follower_names = [name.text for name in links if name.text != '']
+        return follower_names
         
     except:
         
@@ -107,6 +108,7 @@ def scrape_following(driver):
             By.TAG_NAME, 'a')
         
         following_names = [name.text for name in links if name.text != '']
+        return following_names
         
         
     except:
