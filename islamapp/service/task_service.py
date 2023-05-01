@@ -31,17 +31,11 @@ def new_task(request):
             }
         }
     Returns:
-        headers:
-        {
-            "task_id": "dummy-user-id"
-        }
         body:
         {
-            “task_info”: {
-                “task_id”: “task-id-123”,
-                “task_status”: “NEW”,
-                …
-            }
+            “task_id”: “task-id-123”,
+            “task_status”: “NEW”,
+            …
         }
     """
     try:
@@ -86,7 +80,8 @@ def get_task(request):
         body:
         {
             "tasks":[
-                
+                {task},
+                ...
             ]
         }
     """
@@ -127,10 +122,6 @@ def update_task(request):
             "retry" : "True"
         }
     Returns:
-        headers:
-        {
-            "task_id": "dummy-task-id"
-        }
         body:
         {
             "task_id": "",
