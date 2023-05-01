@@ -132,7 +132,7 @@ def update_task(request):
     """
     try:
         task_id = request.headers.get("task_id")
-        task = get_task(task_id)
+        task = Task.get_by_id(task_id)
         status = request.json.get("status")
         error_msg = request.json.get("error_msg")
         retry = request.json.get("retry")

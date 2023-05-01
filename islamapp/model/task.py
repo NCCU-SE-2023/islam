@@ -69,16 +69,18 @@ class Task(Document):
         task.save()
         return task
     
-    
+
     def set_status(self, status):
         if status not in [status.value for status in TaskStatus]:
             raise InvalidInputError(f"Invalid task status {status}")
         self.status = status
         self.update_at =int(time.time())
+        self.save()
 
     def set_error_msg(self,msg={}):
         self.error_msg = msg
         self.update_at = int(time.time())
+        self.save()
 
     def retry_task(self):
         if(self.priority>=5):
@@ -87,6 +89,7 @@ class Task(Document):
         self.retry_times+=1
         self.priority+=1
         self.set_status("NEW")
+        self.save
 
     @staticmethod
     def get_by_status(status, userId=None):
@@ -105,8 +108,8 @@ class Task(Document):
         return user
     
     @staticmethod
-    def get_task(taskId):
-        task = Task.objects(task_id=taskId)
+    def get_by_id(taskId):
+        task = Task.objects(task_id=taskId).first()
         if task == None:
             raise TaskNotFoundError(f"Task {taskId} not found")
         return task
