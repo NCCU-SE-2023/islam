@@ -23,6 +23,13 @@ class TaskType(Enum):
 class TaskException(Exception):
     pass
 
+class InvalidInputError(Exception):
+    pass
+class UserNotFoundError(Exception):
+    pass
+class TaskNotFoundError(Exception):
+    pass
+
 class Task(Document):
     # constant field
     task_id = fields.StringField(primary_key=True, required=True)
@@ -50,7 +57,7 @@ class Task(Document):
     @staticmethod
     def create_task(user_id, type, task_detail={}):
         if type not in [type.value for type in TaskType]:
-            raise TaskException(f"Invalid task type {type}")
+            raise InvalidInputError(f"Invalid task type {type}")
         
         create_at = time.time()
         task_id = md5(str(create_at).join(user_id).join(str(random.random())).encode()).hexdigest()
@@ -65,7 +72,7 @@ class Task(Document):
     
     def set_status(self, status):
         if status not in [status.value for status in TaskStatus]:
-            raise TaskException(f"Invalid task status {status}")
+            raise InvalidInputError(f"Invalid task status {status}")
         self.status = status
         self.update_at =int(time.time())
 
@@ -84,7 +91,7 @@ class Task(Document):
     @staticmethod
     def get_by_status(status, userId=None):
         if status not in TaskStatus.value:
-            raise TaskException(f"Invalid task status {status}")
+            raise InvalidInputError(f"Invalid task status {status}")
         if userId is not None:
             return Task.objects(status=status, create_user=userId)
         else:
@@ -92,4 +99,14 @@ class Task(Document):
     
     @staticmethod
     def get_by_create_user(userId):
-        return Task.objects(create_user=userId)
+        user = Task.objects(create_user=userId)
+        if user == None:
+            raise UserNotFoundError(f"User {userId} not found")
+        return user
+    
+    @staticmethod
+    def get_task(taskId):
+        task = Task.objects(task_id=taskId)
+        if task == None:
+            raise TaskNotFoundError(f"Task {taskId} not found")
+        return task

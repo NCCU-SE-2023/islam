@@ -2,11 +2,14 @@ from model.task import Task
 from service.util import (
     _gen_error_response,
     INTERNAL_SERVER_ERROR,
-    MALEFORMED_REQUEST,
+    USER_NOT_FOUND,
+    TASK_NOT_FOUND,
+    INVALID_INPUT_ERROR,
+    RETRY_ERROR,
 )
 import time
 from flask import jsonify
-from model.task import Task, TaskException
+from model.task import Task, TaskException ,InvalidInputError,UserNotFoundError,TaskNotFoundError
 
 
 
@@ -55,10 +58,10 @@ def new_task(request):
 
         return jsonify(task.to_json()), 201
 
-    except TaskException as exception:
+    except InvalidInputError as exception:
         return _gen_error_response(
-            status_code=500,
-            error_code=INTERNAL_SERVER_ERROR,
+            status_code=400,
+            error_code=INVALID_INPUT_ERROR,
             message=f"ISLAM Exception: {str(exception)}",
         )
     except Exception as exception:
@@ -96,6 +99,13 @@ def get_task(request):
         }
 
         return jsonify(response), 200
+    except UserNotFoundError as exception:
+        return _gen_error_response(
+            status_code=404,
+            error_code=USER_NOT_FOUND,
+            message=f"ISLAM Exception: {str(exception)}",
+        )
+    
     except Exception as exception:
         return _gen_error_response(
             status_code=500,
@@ -131,23 +141,40 @@ def update_task(request):
     """
     try:
         task_id = request.headers.get("task_id")
-        task = Task.objects(task_id=task_id)
-        status = request.body.get("status")
-        error_msg = request.body.get("error_msg")
-        retry = request.body.get("retry")
+        task = get_task(task_id)
+        status = request.json.get("status")
+        error_msg = request.json.get("error_msg")
+        retry = request.json.get("retry")
         if status is not None:
             task.set_status(status)
         if error_msg is not None:
-            task.set_errmsg(error_msg)
+            task.set_error_msg(error_msg)
         if retry is not None and retry == "True":
             task.retry_task()
 
         return jsonify(task.to_json()), 201
     
+    except TaskNotFoundError as exception:
+        return _gen_error_response(
+            status_code=404,
+            error_code=TASK_NOT_FOUND,
+            message=f"ISLAM Exception: {str(exception)}",
+        )
+    except InvalidInputError as exception:
+        return _gen_error_response(
+            status_code=400,
+            error_code=INVALID_INPUT_ERROR,
+            message=f"ISLAM Exception: {str(exception)}",
+        )
     except TaskException as exception:
+        return _gen_error_response(
+            status_code=403,
+            error_code=RETRY_ERROR,
+            message=f"ISLAM Exception: {str(exception)}",
+        )
+    except Exception as exception:
         return _gen_error_response(
             status_code=500,
             error_code=INTERNAL_SERVER_ERROR,
             message=f"ISLAM Exception: {str(exception)}",
         )
-    
