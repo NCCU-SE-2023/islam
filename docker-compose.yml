@@ -2,6 +2,7 @@ version: "3"
 services:
   databse:
     build: ./database
+    restart: always
     environment:
       MYSQL_PASSWORD: islam
       MYSQL_ROOT_PASSWORD: islam
@@ -9,3 +10,13 @@ services:
       - ./db:/var/lib/mysql
     ports:
       - 33061:3306
+  mongo-databse:
+    build: ./mongo-database
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: islam
+      MONGO_INITDB_ROOT_PASSWORD: islam
+    volumes:
+      - ./mdb:/etc/mongo
+    ports:
+      - 27017:27017
