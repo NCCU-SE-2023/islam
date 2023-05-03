@@ -35,6 +35,9 @@ alembic upgrade head
 DATABASE_URL=mysql+pymysql://{username}:{password}@{db_fqdn}:3306/islam
 MONGO_HOST=127.0.0.1
 MONGO_PORT=27017
+MONGODB=islam
+SELENIUM_GRID_HUB_ENDPOINT=http://localhost:4444/wd/hub
+SELENIUM_GRID_GRAPHQL_END_POINT=http://localhost:4444/graphql
 ```
 
 .flaskenv example
