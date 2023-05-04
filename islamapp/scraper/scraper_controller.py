@@ -86,24 +86,20 @@ class MissionRunner(Process):
             # 0. preparing
             connect(db="islam", host=MONGO_HOST, port=int(MONGO_PORT))
             self.mission = map_task_type_to_mission(self.task.type)
-            self.logger.info(f"[START] task_id:{self.task.task_id} mission:{self.mission.__name__} pid:{self.pid}")
-            self.logger.info(f"[DRIVER] task_id:{self.task.task_id} mission:{self.mission.__name__} pid:{self.pid}")
+            self.logger.info(f"[START!] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
+            self.logger.info(f"[DRIVER] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
             driver = Driver(SELENIUM_GRID_HUB_ENDPOINT)
             # 1. update task to running
             self.task.set_status(TaskStatus.RUNNING.value)
             # 2. run mission
             result = self.mission(driver.driver, self.task)
 
-            if result == "ERROR": # change to mission_error class with error message
-                self.logger.error(f"[ERROR] task_id:{self.task.task_id} mission:{self.mission.__name__} pid:{self.pid}")
-                self.task.set_status(TaskStatus.ERROR.value)
-                # update error msg
-            else:
-                self.task.set_status(TaskStatus.SUCCESS.value)
-                # save result to task
-                self.logger.info(f"[SUCCESS] task_id:{self.task.task_id} mission:{self.mission.__name__} pid:{self.pid}")
+            # save result to task
+            self.task.set_status(TaskStatus.FINISHED.value)
+            self.logger.info(f"[SUCCESS] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
+            
         except Exception as exception:
-            self.logger.error(f"[ERROR] task_id:{self.task.task_id} pid:{self.pid}")
+            self.logger.error(f"[ERROR!] task_id:{self.task.task_id} pid:{self.pid}")
             self.logger.error(str(exception))
             self.task.set_status(TaskStatus.ERROR.value)
         finally:

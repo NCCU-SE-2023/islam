@@ -60,7 +60,6 @@ def scrape_posts(driver, task:Task):
     except Exception as exception:
         raise Exception(exception)
 
-@log_while_exception()
 def scrape_test( driver, task:Task):
     try:
         driver.get("https://google.com")
