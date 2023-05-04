@@ -8,9 +8,12 @@ from model.task import Task
 from scraper.mission.actions import *
 from scraper.mission.checks import *
 from scraper.util import log_while_exception
+import time
 
 @log_while_exception()
 def scrape_followers_and_following(driver, task:Task):
+    account = task.task_detail['account']
+    password = task.task_detail['password']
     try:
         # login
         action_login(driver, account, password)
