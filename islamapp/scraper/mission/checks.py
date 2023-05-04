@@ -74,6 +74,7 @@ def check_reels_page(driver):
 
 def check_login_page(driver):
     verify_element_list = [
-        :TODO:
+        {'type':By.CSS_SELECTOR, 'value':'i[style="background-image: url("https://static.cdninstagram.com/rsrc.php/v3/yK/r/ATdtiLb2BQ9.png"); background-position: 0px 0px; background-size: 176px 181px; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"]'}, 
+        {'type':By.CSS_SELECTOR, 'value': 'div[class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1xmf6yo x1e56ztr x540dpk x1m39q7l x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]'}
     ]
     return _check_elements(driver, verify_element_list)
