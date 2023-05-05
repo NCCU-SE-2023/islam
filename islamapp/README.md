@@ -52,3 +52,12 @@ FLASK_DEBUG=True
 ```
 python3 -m flask run
 ```
+
+## Start Scraper Controller
+```
+python3 run_scraper_controller.py
+
+# To track scraper controller
+tail -f logs/mission.log
+tail -f logs/status.log
+```
