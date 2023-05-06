@@ -1,0 +1,2258 @@
+2023-05-04 21:27:42,263 INFO: Initializing scraper controller ...
+2023-05-04 21:27:42,268 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:27:42,650 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:27:42,652 INFO: NODE COUNTS: 1
+2023-05-04 21:27:42,652 INFO: Connect to MongoDB 127.0.0.1 27017
+2023-05-04 21:27:42,670 INFO: Starting scheduler...
+2023-05-04 21:27:42,714 INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-05-04 21:27:42,714 INFO: Added job "ScraperCotroller.routine_job" to job store "default"
+2023-05-04 21:27:42,714 INFO: Scheduler started
+2023-05-04 21:27:42,714 DEBUG: Looking for jobs to run
+2023-05-04 21:27:42,714 DEBUG: Next wakeup is due at 2023-05-04 21:27:47.714022+08:00 (in 4.999187 seconds)
+2023-05-04 21:27:47,719 DEBUG: Looking for jobs to run
+2023-05-04 21:27:47,720 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:27:47 CST)" (scheduled at 2023-05-04 21:27:47.714022+08:00)
+2023-05-04 21:27:47,721 DEBUG: Next wakeup is due at 2023-05-04 21:27:52.714022+08:00 (in 4.994326 seconds)
+2023-05-04 21:27:47,725 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:27:48,131 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:27:48,136 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:27:48,764 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:27:48,766 INFO: NODE COUNTS: 1
+2023-05-04 21:27:48,766 INFO: RUNNING MISSIONS:0
+2023-05-04 21:27:48,766 INFO: NODE STATUS :
+2023-05-04 21:27:48,766 INFO: ============NODE 0============
+2023-05-04 21:27:48,766 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:27:48,766 INFO:   session_count: 0/1
+2023-05-04 21:27:48,766 INFO:   status: UP
+2023-05-04 21:27:48,771 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:27:48,771 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:27:52 CST)" executed successfully
+2023-05-04 21:27:52,721 DEBUG: Looking for jobs to run
+2023-05-04 21:27:52,722 DEBUG: Next wakeup is due at 2023-05-04 21:27:57.714022+08:00 (in 4.992282 seconds)
+2023-05-04 21:27:52,722 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:27:57 CST)" (scheduled at 2023-05-04 21:27:52.714022+08:00)
+2023-05-04 21:27:52,727 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:27:53,133 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:27:53,138 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:27:53,532 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:27:53,534 INFO: NODE COUNTS: 1
+2023-05-04 21:27:53,534 INFO: RUNNING MISSIONS:0
+2023-05-04 21:27:53,534 INFO: NODE STATUS :
+2023-05-04 21:27:53,534 INFO: ============NODE 0============
+2023-05-04 21:27:53,534 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:27:53,535 INFO:   session_count: 0/1
+2023-05-04 21:27:53,535 INFO:   status: UP
+2023-05-04 21:27:53,537 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:27:53,537 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:27:57 CST)" executed successfully
+2023-05-04 21:27:57,718 DEBUG: Looking for jobs to run
+2023-05-04 21:27:57,719 DEBUG: Next wakeup is due at 2023-05-04 21:28:02.714022+08:00 (in 4.994795 seconds)
+2023-05-04 21:27:57,720 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:02 CST)" (scheduled at 2023-05-04 21:27:57.714022+08:00)
+2023-05-04 21:27:57,725 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:27:58,131 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:27:58,135 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:27:58,531 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:27:58,532 INFO: NODE COUNTS: 1
+2023-05-04 21:27:58,532 INFO: RUNNING MISSIONS:0
+2023-05-04 21:27:58,532 INFO: NODE STATUS :
+2023-05-04 21:27:58,532 INFO: ============NODE 0============
+2023-05-04 21:27:58,533 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:27:58,533 INFO:   session_count: 0/1
+2023-05-04 21:27:58,533 INFO:   status: UP
+2023-05-04 21:27:58,535 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:27:58,535 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:02 CST)" executed successfully
+2023-05-04 21:28:02,720 DEBUG: Looking for jobs to run
+2023-05-04 21:28:02,721 DEBUG: Next wakeup is due at 2023-05-04 21:28:07.714022+08:00 (in 4.993303 seconds)
+2023-05-04 21:28:02,721 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:07 CST)" (scheduled at 2023-05-04 21:28:02.714022+08:00)
+2023-05-04 21:28:02,727 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:03,130 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:03,136 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:03,617 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:03,618 INFO: NODE COUNTS: 1
+2023-05-04 21:28:03,618 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:03,618 INFO: NODE STATUS :
+2023-05-04 21:28:03,619 INFO: ============NODE 0============
+2023-05-04 21:28:03,619 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:03,619 INFO:   session_count: 0/1
+2023-05-04 21:28:03,619 INFO:   status: UP
+2023-05-04 21:28:03,621 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:03,622 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:07 CST)" executed successfully
+2023-05-04 21:28:07,718 DEBUG: Looking for jobs to run
+2023-05-04 21:28:07,719 DEBUG: Next wakeup is due at 2023-05-04 21:28:12.714022+08:00 (in 4.994711 seconds)
+2023-05-04 21:28:07,720 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:12 CST)" (scheduled at 2023-05-04 21:28:07.714022+08:00)
+2023-05-04 21:28:07,724 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:08,118 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:08,125 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:08,538 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:08,539 INFO: NODE COUNTS: 1
+2023-05-04 21:28:08,539 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:08,539 INFO: NODE STATUS :
+2023-05-04 21:28:08,540 INFO: ============NODE 0============
+2023-05-04 21:28:08,540 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:08,540 INFO:   session_count: 0/1
+2023-05-04 21:28:08,540 INFO:   status: UP
+2023-05-04 21:28:08,542 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:08,542 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:12 CST)" executed successfully
+2023-05-04 21:28:12,717 DEBUG: Looking for jobs to run
+2023-05-04 21:28:12,718 DEBUG: Next wakeup is due at 2023-05-04 21:28:17.714022+08:00 (in 4.995992 seconds)
+2023-05-04 21:28:12,718 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:17 CST)" (scheduled at 2023-05-04 21:28:12.714022+08:00)
+2023-05-04 21:28:12,724 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:13,316 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:13,323 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:13,731 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:13,733 INFO: NODE COUNTS: 1
+2023-05-04 21:28:13,733 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:13,733 INFO: NODE STATUS :
+2023-05-04 21:28:13,733 INFO: ============NODE 0============
+2023-05-04 21:28:13,734 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:13,734 INFO:   session_count: 0/1
+2023-05-04 21:28:13,734 INFO:   status: UP
+2023-05-04 21:28:13,736 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:13,737 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:17 CST)" executed successfully
+2023-05-04 21:28:17,717 DEBUG: Looking for jobs to run
+2023-05-04 21:28:17,718 DEBUG: Next wakeup is due at 2023-05-04 21:28:22.714022+08:00 (in 4.995466 seconds)
+2023-05-04 21:28:17,719 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:22 CST)" (scheduled at 2023-05-04 21:28:17.714022+08:00)
+2023-05-04 21:28:17,723 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:18,130 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:18,136 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:18,613 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:18,615 INFO: NODE COUNTS: 1
+2023-05-04 21:28:18,615 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:18,615 INFO: NODE STATUS :
+2023-05-04 21:28:18,615 INFO: ============NODE 0============
+2023-05-04 21:28:18,615 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:18,615 INFO:   session_count: 0/1
+2023-05-04 21:28:18,616 INFO:   status: UP
+2023-05-04 21:28:18,621 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:18,621 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:22 CST)" executed successfully
+2023-05-04 21:28:22,722 DEBUG: Looking for jobs to run
+2023-05-04 21:28:22,723 DEBUG: Next wakeup is due at 2023-05-04 21:28:27.714022+08:00 (in 4.991011 seconds)
+2023-05-04 21:28:22,723 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:27 CST)" (scheduled at 2023-05-04 21:28:22.714022+08:00)
+2023-05-04 21:28:22,729 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:23,133 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:23,138 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:23,541 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:23,543 INFO: NODE COUNTS: 1
+2023-05-04 21:28:23,544 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:23,544 INFO: NODE STATUS :
+2023-05-04 21:28:23,544 INFO: ============NODE 0============
+2023-05-04 21:28:23,545 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:23,545 INFO:   session_count: 0/1
+2023-05-04 21:28:23,545 INFO:   status: UP
+2023-05-04 21:28:23,548 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:23,549 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:27 CST)" executed successfully
+2023-05-04 21:28:27,723 DEBUG: Looking for jobs to run
+2023-05-04 21:28:27,725 DEBUG: Next wakeup is due at 2023-05-04 21:28:32.714022+08:00 (in 4.989462 seconds)
+2023-05-04 21:28:27,725 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:32 CST)" (scheduled at 2023-05-04 21:28:27.714022+08:00)
+2023-05-04 21:28:27,730 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:28,136 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:28,143 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:28,579 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:28,580 INFO: NODE COUNTS: 1
+2023-05-04 21:28:28,581 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:28,581 INFO: NODE STATUS :
+2023-05-04 21:28:28,582 INFO: ============NODE 0============
+2023-05-04 21:28:28,582 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:28,583 INFO:   session_count: 0/1
+2023-05-04 21:28:28,583 INFO:   status: UP
+2023-05-04 21:28:28,585 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:28,585 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:32 CST)" executed successfully
+2023-05-04 21:28:32,720 DEBUG: Looking for jobs to run
+2023-05-04 21:28:32,721 DEBUG: Next wakeup is due at 2023-05-04 21:28:37.714022+08:00 (in 4.992646 seconds)
+2023-05-04 21:28:32,722 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:37 CST)" (scheduled at 2023-05-04 21:28:32.714022+08:00)
+2023-05-04 21:28:32,725 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:33,319 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:33,325 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:33,930 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:33,932 INFO: NODE COUNTS: 1
+2023-05-04 21:28:33,932 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:33,932 INFO: NODE STATUS :
+2023-05-04 21:28:33,932 INFO: ============NODE 0============
+2023-05-04 21:28:33,933 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:33,933 INFO:   session_count: 0/1
+2023-05-04 21:28:33,933 INFO:   status: UP
+2023-05-04 21:28:33,936 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:33,936 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:37 CST)" executed successfully
+2023-05-04 21:28:37,721 DEBUG: Looking for jobs to run
+2023-05-04 21:28:37,722 DEBUG: Next wakeup is due at 2023-05-04 21:28:42.714022+08:00 (in 4.991888 seconds)
+2023-05-04 21:28:37,722 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:42 CST)" (scheduled at 2023-05-04 21:28:37.714022+08:00)
+2023-05-04 21:28:37,727 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:38,636 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:38,641 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:39,142 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:39,144 INFO: NODE COUNTS: 1
+2023-05-04 21:28:39,144 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:39,144 INFO: NODE STATUS :
+2023-05-04 21:28:39,144 INFO: ============NODE 0============
+2023-05-04 21:28:39,144 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:39,144 INFO:   session_count: 0/1
+2023-05-04 21:28:39,145 INFO:   status: UP
+2023-05-04 21:28:39,147 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:39,148 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:42 CST)" executed successfully
+2023-05-04 21:28:42,720 DEBUG: Looking for jobs to run
+2023-05-04 21:28:42,720 DEBUG: Next wakeup is due at 2023-05-04 21:28:47.714022+08:00 (in 4.993449 seconds)
+2023-05-04 21:28:42,721 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:47 CST)" (scheduled at 2023-05-04 21:28:42.714022+08:00)
+2023-05-04 21:28:42,723 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:43,185 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:43,190 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:43,979 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:43,980 INFO: NODE COUNTS: 1
+2023-05-04 21:28:43,980 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:43,980 INFO: NODE STATUS :
+2023-05-04 21:28:43,980 INFO: ============NODE 0============
+2023-05-04 21:28:43,980 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:43,980 INFO:   session_count: 0/1
+2023-05-04 21:28:43,980 INFO:   status: UP
+2023-05-04 21:28:43,981 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:43,981 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:47 CST)" executed successfully
+2023-05-04 21:28:47,719 DEBUG: Looking for jobs to run
+2023-05-04 21:28:47,720 DEBUG: Next wakeup is due at 2023-05-04 21:28:52.714022+08:00 (in 4.994189 seconds)
+2023-05-04 21:28:47,720 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:52 CST)" (scheduled at 2023-05-04 21:28:47.714022+08:00)
+2023-05-04 21:28:47,726 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:48,100 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:48,103 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:48,589 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:48,591 INFO: NODE COUNTS: 1
+2023-05-04 21:28:48,591 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:48,591 INFO: NODE STATUS :
+2023-05-04 21:28:48,592 INFO: ============NODE 0============
+2023-05-04 21:28:48,592 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:48,592 INFO:   session_count: 0/1
+2023-05-04 21:28:48,592 INFO:   status: UP
+2023-05-04 21:28:48,595 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:48,596 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:52 CST)" executed successfully
+2023-05-04 21:28:52,717 DEBUG: Looking for jobs to run
+2023-05-04 21:28:52,718 DEBUG: Next wakeup is due at 2023-05-04 21:28:57.714022+08:00 (in 4.996343 seconds)
+2023-05-04 21:28:52,718 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:57 CST)" (scheduled at 2023-05-04 21:28:52.714022+08:00)
+2023-05-04 21:28:52,722 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:53,151 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:53,157 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:53,784 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:53,786 INFO: NODE COUNTS: 1
+2023-05-04 21:28:53,786 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:53,786 INFO: NODE STATUS :
+2023-05-04 21:28:53,786 INFO: ============NODE 0============
+2023-05-04 21:28:53,786 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:53,787 INFO:   session_count: 0/1
+2023-05-04 21:28:53,787 INFO:   status: UP
+2023-05-04 21:28:53,790 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:53,790 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:28:57 CST)" executed successfully
+2023-05-04 21:28:57,720 DEBUG: Looking for jobs to run
+2023-05-04 21:28:57,722 DEBUG: Next wakeup is due at 2023-05-04 21:29:02.714022+08:00 (in 4.992419 seconds)
+2023-05-04 21:28:57,722 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:02 CST)" (scheduled at 2023-05-04 21:28:57.714022+08:00)
+2023-05-04 21:28:57,726 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:58,141 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:28:58,146 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:28:58,549 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:28:58,551 INFO: NODE COUNTS: 1
+2023-05-04 21:28:58,551 INFO: RUNNING MISSIONS:0
+2023-05-04 21:28:58,551 INFO: NODE STATUS :
+2023-05-04 21:28:58,551 INFO: ============NODE 0============
+2023-05-04 21:28:58,551 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:28:58,551 INFO:   session_count: 0/1
+2023-05-04 21:28:58,551 INFO:   status: UP
+2023-05-04 21:28:58,554 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:28:58,554 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:02 CST)" executed successfully
+2023-05-04 21:29:04,488 INFO: Initializing scraper controller ...
+2023-05-04 21:29:04,488 INFO: Connect to MongoDB 127.0.0.1 27017
+2023-05-04 21:29:04,494 INFO: Starting scheduler...
+2023-05-04 21:29:04,517 INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-05-04 21:29:04,517 INFO: Added job "ScraperCotroller.routine_job" to job store "default"
+2023-05-04 21:29:04,517 INFO: Scheduler started
+2023-05-04 21:29:04,517 DEBUG: Looking for jobs to run
+2023-05-04 21:29:04,517 DEBUG: Next wakeup is due at 2023-05-04 21:29:09.517502+08:00 (in 4.999521 seconds)
+2023-05-04 21:29:09,522 DEBUG: Looking for jobs to run
+2023-05-04 21:29:09,524 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:09 CST)" (scheduled at 2023-05-04 21:29:09.517502+08:00)
+2023-05-04 21:29:09,525 DEBUG: Next wakeup is due at 2023-05-04 21:29:14.517502+08:00 (in 4.993989 seconds)
+2023-05-04 21:29:09,540 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:09,952 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:29:09,958 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:10,490 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:29:10,492 INFO: NODE COUNTS: 1
+2023-05-04 21:29:10,492 INFO: RUNNING MISSIONS:0
+2023-05-04 21:29:10,493 INFO: NODE STATUS :
+2023-05-04 21:29:10,493 INFO: ============NODE 0============
+2023-05-04 21:29:10,493 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:29:10,493 INFO:   session_count: 0/1
+2023-05-04 21:29:10,493 INFO:   status: UP
+2023-05-04 21:29:10,498 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:29:10,499 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:14 CST)" executed successfully
+2023-05-04 21:29:14,525 DEBUG: Looking for jobs to run
+2023-05-04 21:29:14,526 DEBUG: Next wakeup is due at 2023-05-04 21:29:19.517502+08:00 (in 4.991411 seconds)
+2023-05-04 21:29:14,526 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:19 CST)" (scheduled at 2023-05-04 21:29:14.517502+08:00)
+2023-05-04 21:29:14,529 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:15,022 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:29:15,027 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:15,549 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:29:15,551 INFO: NODE COUNTS: 1
+2023-05-04 21:29:15,551 INFO: RUNNING MISSIONS:0
+2023-05-04 21:29:15,551 INFO: NODE STATUS :
+2023-05-04 21:29:15,551 INFO: ============NODE 0============
+2023-05-04 21:29:15,551 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:29:15,551 INFO:   session_count: 0/1
+2023-05-04 21:29:15,552 INFO:   status: UP
+2023-05-04 21:29:15,555 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:29:15,555 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:19 CST)" executed successfully
+2023-05-04 21:29:19,521 DEBUG: Looking for jobs to run
+2023-05-04 21:29:19,523 DEBUG: Next wakeup is due at 2023-05-04 21:29:24.517502+08:00 (in 4.995046 seconds)
+2023-05-04 21:29:19,523 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:24 CST)" (scheduled at 2023-05-04 21:29:19.517502+08:00)
+2023-05-04 21:29:19,527 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:20,016 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:29:20,022 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:20,423 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:29:20,425 INFO: NODE COUNTS: 1
+2023-05-04 21:29:20,425 INFO: RUNNING MISSIONS:0
+2023-05-04 21:29:20,426 INFO: NODE STATUS :
+2023-05-04 21:29:20,426 INFO: ============NODE 0============
+2023-05-04 21:29:20,426 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:29:20,426 INFO:   session_count: 0/1
+2023-05-04 21:29:20,426 INFO:   status: UP
+2023-05-04 21:29:20,429 INFO: QUEUING TASK COUNTS: 1
+2023-05-04 21:29:20,444 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:24 CST)" executed successfully
+2023-05-04 21:29:20,736 INFO: [START] task_id:829d9311578aab72fe793fffcb6ba723 mission:caller pid:48605
+2023-05-04 21:29:20,736 INFO: [DRIVER] task_id:829d9311578aab72fe793fffcb6ba723 mission:caller pid:48605
+2023-05-04 21:29:20,736 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:29:20,736 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:21,962 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:29:21,963 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "1d2af3338af711dc4291ee45fad47c21",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.8baoW4"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:37493"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002f1d2af3338af711dc4291ee45fad47c21\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:29:21,964 DEBUG: Finished Request
+2023-05-04 21:29:21,969 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/1d2af3338af711dc4291ee45fad47c21/url {"url": "https://google.com"}
+2023-05-04 21:29:24,009 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/1d2af3338af711dc4291ee45fad47c21/url HTTP/1.1" 200 14
+2023-05-04 21:29:24,010 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:29:24,010 DEBUG: Finished Request
+2023-05-04 21:29:24,011 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/1d2af3338af711dc4291ee45fad47c21/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:29:24,519 DEBUG: Looking for jobs to run
+2023-05-04 21:29:24,521 DEBUG: Next wakeup is due at 2023-05-04 21:29:29.517502+08:00 (in 4.997132 seconds)
+2023-05-04 21:29:24,521 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:29 CST)" (scheduled at 2023-05-04 21:29:24.517502+08:00)
+2023-05-04 21:29:24,526 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:25,055 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:29:25,061 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:25,648 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:29:25,650 INFO: NODE COUNTS: 1
+2023-05-04 21:29:25,653 INFO: RUNNING MISSIONS:0
+2023-05-04 21:29:25,653 INFO: NODE STATUS :
+2023-05-04 21:29:25,653 INFO: ============NODE 0============
+2023-05-04 21:29:25,653 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:29:25,653 INFO:   session_count: 1/1
+2023-05-04 21:29:25,653 INFO:   status: UP
+2023-05-04 21:29:25,656 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:29:25,656 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:29 CST)" executed successfully
+2023-05-04 21:29:28,621 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/1d2af3338af711dc4291ee45fad47c21/url HTTP/1.1" 200 14
+2023-05-04 21:29:28,622 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:29:28,622 DEBUG: Finished Request
+2023-05-04 21:29:28,623 ERROR: [ERROR] task_id:829d9311578aab72fe793fffcb6ba723 pid:48605
+2023-05-04 21:29:28,623 ERROR: SUCCESS
+2023-05-04 21:29:28,632 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/1d2af3338af711dc4291ee45fad47c21 {}
+2023-05-04 21:29:28,943 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/1d2af3338af711dc4291ee45fad47c21 HTTP/1.1" 200 14
+2023-05-04 21:29:28,944 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:29:28,945 DEBUG: Finished Request
+2023-05-04 21:29:29,519 DEBUG: Looking for jobs to run
+2023-05-04 21:29:29,519 DEBUG: Next wakeup is due at 2023-05-04 21:29:34.517502+08:00 (in 4.997977 seconds)
+2023-05-04 21:29:29,520 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:34 CST)" (scheduled at 2023-05-04 21:29:29.517502+08:00)
+2023-05-04 21:29:29,523 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:30,158 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:29:30,164 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:30,768 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:29:30,770 INFO: NODE COUNTS: 1
+2023-05-04 21:29:30,771 INFO: RUNNING MISSIONS:0
+2023-05-04 21:29:30,771 INFO: NODE STATUS :
+2023-05-04 21:29:30,771 INFO: ============NODE 0============
+2023-05-04 21:29:30,772 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:29:30,772 INFO:   session_count: 0/1
+2023-05-04 21:29:30,772 INFO:   status: UP
+2023-05-04 21:29:30,775 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:29:30,775 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:34 CST)" executed successfully
+2023-05-04 21:29:34,518 DEBUG: Looking for jobs to run
+2023-05-04 21:29:34,519 DEBUG: Next wakeup is due at 2023-05-04 21:29:39.517502+08:00 (in 4.998118 seconds)
+2023-05-04 21:29:34,520 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:39 CST)" (scheduled at 2023-05-04 21:29:34.517502+08:00)
+2023-05-04 21:29:34,524 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:35,073 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:29:35,080 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:35,685 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:29:35,687 INFO: NODE COUNTS: 1
+2023-05-04 21:29:35,687 INFO: RUNNING MISSIONS:0
+2023-05-04 21:29:35,687 INFO: NODE STATUS :
+2023-05-04 21:29:35,688 INFO: ============NODE 0============
+2023-05-04 21:29:35,688 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:29:35,688 INFO:   session_count: 0/1
+2023-05-04 21:29:35,688 INFO:   status: UP
+2023-05-04 21:29:35,691 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:29:35,692 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:39 CST)" executed successfully
+2023-05-04 21:29:39,519 DEBUG: Looking for jobs to run
+2023-05-04 21:29:39,521 DEBUG: Next wakeup is due at 2023-05-04 21:29:44.517502+08:00 (in 4.996718 seconds)
+2023-05-04 21:29:39,521 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:44 CST)" (scheduled at 2023-05-04 21:29:39.517502+08:00)
+2023-05-04 21:29:39,526 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:39,943 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:29:39,949 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:29:40,383 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:29:40,385 INFO: NODE COUNTS: 1
+2023-05-04 21:29:40,385 INFO: RUNNING MISSIONS:0
+2023-05-04 21:29:40,385 INFO: NODE STATUS :
+2023-05-04 21:29:40,386 INFO: ============NODE 0============
+2023-05-04 21:29:40,386 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:29:40,386 INFO:   session_count: 0/1
+2023-05-04 21:29:40,386 INFO:   status: UP
+2023-05-04 21:29:40,389 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:29:40,390 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:29:44 CST)" executed successfully
+2023-05-04 21:37:33,357 INFO: Initializing scraper controller ...
+2023-05-04 21:37:33,357 INFO: Connect to MongoDB 127.0.0.1 27017
+2023-05-04 21:37:33,363 INFO: Starting scheduler...
+2023-05-04 21:37:33,386 INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-05-04 21:37:33,386 INFO: Added job "ScraperCotroller.routine_job" to job store "default"
+2023-05-04 21:37:33,386 INFO: Scheduler started
+2023-05-04 21:37:33,386 DEBUG: Looking for jobs to run
+2023-05-04 21:37:33,386 DEBUG: Next wakeup is due at 2023-05-04 21:37:38.386418+08:00 (in 4.999509 seconds)
+2023-05-04 21:37:38,391 DEBUG: Looking for jobs to run
+2023-05-04 21:37:38,392 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:37:38 CST)" (scheduled at 2023-05-04 21:37:38.386418+08:00)
+2023-05-04 21:37:38,393 DEBUG: Next wakeup is due at 2023-05-04 21:37:43.386418+08:00 (in 4.994398 seconds)
+2023-05-04 21:37:38,407 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:39,016 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:37:39,022 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:39,421 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:37:39,422 INFO: NODE COUNTS: 1
+2023-05-04 21:37:39,422 INFO: RUNNING MISSIONS:0
+2023-05-04 21:37:39,423 INFO: NODE STATUS :
+2023-05-04 21:37:39,423 INFO: ============NODE 0============
+2023-05-04 21:37:39,423 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:37:39,423 INFO:   session_count: 0/1
+2023-05-04 21:37:39,423 INFO:   status: UP
+2023-05-04 21:37:39,429 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:37:39,429 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:37:43 CST)" executed successfully
+2023-05-04 21:37:43,390 DEBUG: Looking for jobs to run
+2023-05-04 21:37:43,391 DEBUG: Next wakeup is due at 2023-05-04 21:37:48.386418+08:00 (in 4.995801 seconds)
+2023-05-04 21:37:43,391 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:37:48 CST)" (scheduled at 2023-05-04 21:37:43.386418+08:00)
+2023-05-04 21:37:43,395 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:43,860 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:37:43,864 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:44,260 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:37:44,261 INFO: NODE COUNTS: 1
+2023-05-04 21:37:44,261 INFO: RUNNING MISSIONS:0
+2023-05-04 21:37:44,261 INFO: NODE STATUS :
+2023-05-04 21:37:44,261 INFO: ============NODE 0============
+2023-05-04 21:37:44,261 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:37:44,261 INFO:   session_count: 0/1
+2023-05-04 21:37:44,261 INFO:   status: UP
+2023-05-04 21:37:44,263 INFO: QUEUING TASK COUNTS: 1
+2023-05-04 21:37:44,276 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:37:48 CST)" executed successfully
+2023-05-04 21:37:44,569 INFO: [START!] task_id:7f27f18c5e274fdea6f2c6ac064f67ae mission:TEST pid:49036
+2023-05-04 21:37:44,569 INFO: [DRIVER] task_id:7f27f18c5e274fdea6f2c6ac064f67ae mission:TEST pid:49036
+2023-05-04 21:37:44,569 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:37:44,570 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:45,869 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:37:45,871 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "c2ec90be90f81d2dadc8a201d5a99093",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.pvfnCS"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:46067"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002fc2ec90be90f81d2dadc8a201d5a99093\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:37:45,871 DEBUG: Finished Request
+2023-05-04 21:37:45,879 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/c2ec90be90f81d2dadc8a201d5a99093/url {"url": "https://google.com"}
+2023-05-04 21:37:47,919 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/c2ec90be90f81d2dadc8a201d5a99093/url HTTP/1.1" 200 14
+2023-05-04 21:37:47,921 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:37:47,921 DEBUG: Finished Request
+2023-05-04 21:37:47,921 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/c2ec90be90f81d2dadc8a201d5a99093/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:37:48,392 DEBUG: Looking for jobs to run
+2023-05-04 21:37:48,394 DEBUG: Next wakeup is due at 2023-05-04 21:37:53.386418+08:00 (in 4.993294 seconds)
+2023-05-04 21:37:48,394 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:37:53 CST)" (scheduled at 2023-05-04 21:37:48.386418+08:00)
+2023-05-04 21:37:48,400 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:48,825 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:37:48,831 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:49,221 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:37:49,223 INFO: NODE COUNTS: 1
+2023-05-04 21:37:49,223 INFO: RUNNING MISSIONS:0
+2023-05-04 21:37:49,223 INFO: NODE STATUS :
+2023-05-04 21:37:49,223 INFO: ============NODE 0============
+2023-05-04 21:37:49,224 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:37:49,224 INFO:   session_count: 1/1
+2023-05-04 21:37:49,224 INFO:   status: UP
+2023-05-04 21:37:49,227 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:37:49,227 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:37:53 CST)" executed successfully
+2023-05-04 21:37:52,836 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/c2ec90be90f81d2dadc8a201d5a99093/url HTTP/1.1" 200 14
+2023-05-04 21:37:52,837 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:37:52,838 DEBUG: Finished Request
+2023-05-04 21:37:52,838 ERROR: [ERROR!] task_id:7f27f18c5e274fdea6f2c6ac064f67ae pid:49036
+2023-05-04 21:37:52,838 ERROR: SUCCESS
+2023-05-04 21:37:52,841 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/c2ec90be90f81d2dadc8a201d5a99093 {}
+2023-05-04 21:37:53,141 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/c2ec90be90f81d2dadc8a201d5a99093 HTTP/1.1" 200 14
+2023-05-04 21:37:53,142 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:37:53,142 DEBUG: Finished Request
+2023-05-04 21:37:53,389 DEBUG: Looking for jobs to run
+2023-05-04 21:37:53,390 DEBUG: Next wakeup is due at 2023-05-04 21:37:58.386418+08:00 (in 4.996669 seconds)
+2023-05-04 21:37:53,390 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:37:58 CST)" (scheduled at 2023-05-04 21:37:53.386418+08:00)
+2023-05-04 21:37:53,395 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:53,982 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:37:53,984 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:54,383 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:37:54,385 INFO: NODE COUNTS: 1
+2023-05-04 21:37:54,385 INFO: RUNNING MISSIONS:0
+2023-05-04 21:37:54,385 INFO: NODE STATUS :
+2023-05-04 21:37:54,385 INFO: ============NODE 0============
+2023-05-04 21:37:54,386 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:37:54,386 INFO:   session_count: 0/1
+2023-05-04 21:37:54,386 INFO:   status: UP
+2023-05-04 21:37:54,389 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:37:54,389 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:37:58 CST)" executed successfully
+2023-05-04 21:37:58,392 DEBUG: Looking for jobs to run
+2023-05-04 21:37:58,393 DEBUG: Next wakeup is due at 2023-05-04 21:38:03.386418+08:00 (in 4.993514 seconds)
+2023-05-04 21:37:58,393 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:03 CST)" (scheduled at 2023-05-04 21:37:58.386418+08:00)
+2023-05-04 21:37:58,398 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:58,860 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:37:58,863 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:37:59,310 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:37:59,312 INFO: NODE COUNTS: 1
+2023-05-04 21:37:59,312 INFO: RUNNING MISSIONS:0
+2023-05-04 21:37:59,312 INFO: NODE STATUS :
+2023-05-04 21:37:59,312 INFO: ============NODE 0============
+2023-05-04 21:37:59,312 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:37:59,312 INFO:   session_count: 0/1
+2023-05-04 21:37:59,313 INFO:   status: UP
+2023-05-04 21:37:59,314 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:37:59,314 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:03 CST)" executed successfully
+2023-05-04 21:38:03,390 DEBUG: Looking for jobs to run
+2023-05-04 21:38:03,391 DEBUG: Next wakeup is due at 2023-05-04 21:38:08.386418+08:00 (in 4.995012 seconds)
+2023-05-04 21:38:03,392 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:08 CST)" (scheduled at 2023-05-04 21:38:03.386418+08:00)
+2023-05-04 21:38:03,396 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:03,991 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:03,997 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:04,382 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:04,384 INFO: NODE COUNTS: 1
+2023-05-04 21:38:04,384 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:04,384 INFO: NODE STATUS :
+2023-05-04 21:38:04,385 INFO: ============NODE 0============
+2023-05-04 21:38:04,385 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:04,385 INFO:   session_count: 0/1
+2023-05-04 21:38:04,385 INFO:   status: UP
+2023-05-04 21:38:04,388 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:04,388 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:08 CST)" executed successfully
+2023-05-04 21:38:08,389 DEBUG: Looking for jobs to run
+2023-05-04 21:38:08,390 DEBUG: Next wakeup is due at 2023-05-04 21:38:13.386418+08:00 (in 4.996702 seconds)
+2023-05-04 21:38:08,390 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:13 CST)" (scheduled at 2023-05-04 21:38:08.386418+08:00)
+2023-05-04 21:38:08,395 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:09,156 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:09,160 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:09,541 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:09,543 INFO: NODE COUNTS: 1
+2023-05-04 21:38:09,543 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:09,543 INFO: NODE STATUS :
+2023-05-04 21:38:09,544 INFO: ============NODE 0============
+2023-05-04 21:38:09,544 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:09,544 INFO:   session_count: 0/1
+2023-05-04 21:38:09,544 INFO:   status: UP
+2023-05-04 21:38:09,546 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:09,547 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:13 CST)" executed successfully
+2023-05-04 21:38:13,391 DEBUG: Looking for jobs to run
+2023-05-04 21:38:13,391 DEBUG: Next wakeup is due at 2023-05-04 21:38:18.386418+08:00 (in 4.995020 seconds)
+2023-05-04 21:38:13,391 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:18 CST)" (scheduled at 2023-05-04 21:38:13.386418+08:00)
+2023-05-04 21:38:13,394 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:13,959 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:13,962 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:14,439 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:14,441 INFO: NODE COUNTS: 1
+2023-05-04 21:38:14,441 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:14,441 INFO: NODE STATUS :
+2023-05-04 21:38:14,441 INFO: ============NODE 0============
+2023-05-04 21:38:14,441 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:14,441 INFO:   session_count: 0/1
+2023-05-04 21:38:14,442 INFO:   status: UP
+2023-05-04 21:38:14,444 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:14,444 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:18 CST)" executed successfully
+2023-05-04 21:38:18,391 DEBUG: Looking for jobs to run
+2023-05-04 21:38:18,393 DEBUG: Next wakeup is due at 2023-05-04 21:38:23.386418+08:00 (in 4.994078 seconds)
+2023-05-04 21:38:18,393 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:23 CST)" (scheduled at 2023-05-04 21:38:18.386418+08:00)
+2023-05-04 21:38:18,397 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:18,965 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:18,971 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:19,457 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:19,459 INFO: NODE COUNTS: 1
+2023-05-04 21:38:19,460 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:19,460 INFO: NODE STATUS :
+2023-05-04 21:38:19,460 INFO: ============NODE 0============
+2023-05-04 21:38:19,460 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:19,460 INFO:   session_count: 0/1
+2023-05-04 21:38:19,461 INFO:   status: UP
+2023-05-04 21:38:19,463 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:19,463 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:23 CST)" executed successfully
+2023-05-04 21:38:23,392 DEBUG: Looking for jobs to run
+2023-05-04 21:38:23,393 DEBUG: Next wakeup is due at 2023-05-04 21:38:28.386418+08:00 (in 4.993456 seconds)
+2023-05-04 21:38:23,393 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:28 CST)" (scheduled at 2023-05-04 21:38:23.386418+08:00)
+2023-05-04 21:38:23,396 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:23,965 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:23,970 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:25,528 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:25,532 INFO: NODE COUNTS: 1
+2023-05-04 21:38:25,532 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:25,532 INFO: NODE STATUS :
+2023-05-04 21:38:25,532 INFO: ============NODE 0============
+2023-05-04 21:38:25,538 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:25,538 INFO:   session_count: 0/1
+2023-05-04 21:38:25,538 INFO:   status: UP
+2023-05-04 21:38:25,539 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:25,539 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:28 CST)" executed successfully
+2023-05-04 21:38:28,387 DEBUG: Looking for jobs to run
+2023-05-04 21:38:28,388 DEBUG: Next wakeup is due at 2023-05-04 21:38:33.386418+08:00 (in 4.998618 seconds)
+2023-05-04 21:38:28,388 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:33 CST)" (scheduled at 2023-05-04 21:38:28.386418+08:00)
+2023-05-04 21:38:28,391 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:28,842 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:28,847 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:29,399 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:29,400 INFO: NODE COUNTS: 1
+2023-05-04 21:38:29,401 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:29,401 INFO: NODE STATUS :
+2023-05-04 21:38:29,401 INFO: ============NODE 0============
+2023-05-04 21:38:29,401 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:29,401 INFO:   session_count: 0/1
+2023-05-04 21:38:29,401 INFO:   status: UP
+2023-05-04 21:38:29,404 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:29,404 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:33 CST)" executed successfully
+2023-05-04 21:38:33,387 DEBUG: Looking for jobs to run
+2023-05-04 21:38:33,392 DEBUG: Next wakeup is due at 2023-05-04 21:38:38.386418+08:00 (in 4.994363 seconds)
+2023-05-04 21:38:33,392 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:38 CST)" (scheduled at 2023-05-04 21:38:33.386418+08:00)
+2023-05-04 21:38:33,395 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:33,831 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:33,836 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:34,226 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:34,227 INFO: NODE COUNTS: 1
+2023-05-04 21:38:34,227 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:34,228 INFO: NODE STATUS :
+2023-05-04 21:38:34,228 INFO: ============NODE 0============
+2023-05-04 21:38:34,228 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:34,228 INFO:   session_count: 0/1
+2023-05-04 21:38:34,228 INFO:   status: UP
+2023-05-04 21:38:34,231 INFO: QUEUING TASK COUNTS: 1
+2023-05-04 21:38:34,236 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:38 CST)" executed successfully
+2023-05-04 21:38:34,602 INFO: [START!] task_id:2f0b545e6371431806dc172e5dba92e8 mission:TEST pid:49045
+2023-05-04 21:38:34,602 INFO: [DRIVER] task_id:2f0b545e6371431806dc172e5dba92e8 mission:TEST pid:49045
+2023-05-04 21:38:34,603 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:38:34,603 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:36,085 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:38:36,086 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "db27511b3fd99b1288827194107962bc",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.88fLjW"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:44903"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002fdb27511b3fd99b1288827194107962bc\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:38:36,087 DEBUG: Finished Request
+2023-05-04 21:38:36,091 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/db27511b3fd99b1288827194107962bc/url {"url": "https://google.com"}
+2023-05-04 21:38:38,198 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/db27511b3fd99b1288827194107962bc/url HTTP/1.1" 200 14
+2023-05-04 21:38:38,199 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:38:38,200 DEBUG: Finished Request
+2023-05-04 21:38:38,200 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/db27511b3fd99b1288827194107962bc/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:38:38,389 DEBUG: Looking for jobs to run
+2023-05-04 21:38:38,390 DEBUG: Next wakeup is due at 2023-05-04 21:38:43.386418+08:00 (in 4.996477 seconds)
+2023-05-04 21:38:38,391 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:43 CST)" (scheduled at 2023-05-04 21:38:38.386418+08:00)
+2023-05-04 21:38:38,396 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:38,822 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:38,827 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:39,326 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:39,328 INFO: NODE COUNTS: 1
+2023-05-04 21:38:39,328 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:39,328 INFO: NODE STATUS :
+2023-05-04 21:38:39,328 INFO: ============NODE 0============
+2023-05-04 21:38:39,328 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:39,328 INFO:   session_count: 1/1
+2023-05-04 21:38:39,328 INFO:   status: UP
+2023-05-04 21:38:39,331 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:39,331 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:43 CST)" executed successfully
+2023-05-04 21:38:42,415 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/db27511b3fd99b1288827194107962bc/url HTTP/1.1" 200 14
+2023-05-04 21:38:42,416 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:38:42,416 DEBUG: Finished Request
+2023-05-04 21:38:42,417 ERROR: [ERROR!] task_id:2f0b545e6371431806dc172e5dba92e8 pid:49045
+2023-05-04 21:38:42,417 ERROR: SUCCESS
+2023-05-04 21:38:42,420 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/db27511b3fd99b1288827194107962bc {}
+2023-05-04 21:38:42,783 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/db27511b3fd99b1288827194107962bc HTTP/1.1" 200 14
+2023-05-04 21:38:42,784 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:38:42,785 DEBUG: Finished Request
+2023-05-04 21:38:43,393 DEBUG: Looking for jobs to run
+2023-05-04 21:38:43,394 DEBUG: Next wakeup is due at 2023-05-04 21:38:48.386418+08:00 (in 4.992905 seconds)
+2023-05-04 21:38:43,394 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:48 CST)" (scheduled at 2023-05-04 21:38:43.386418+08:00)
+2023-05-04 21:38:43,398 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:43,933 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:43,940 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:44,545 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:44,547 INFO: NODE COUNTS: 1
+2023-05-04 21:38:44,547 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:44,547 INFO: NODE STATUS :
+2023-05-04 21:38:44,547 INFO: ============NODE 0============
+2023-05-04 21:38:44,547 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:44,548 INFO:   session_count: 0/1
+2023-05-04 21:38:44,548 INFO:   status: UP
+2023-05-04 21:38:44,550 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:44,551 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:48 CST)" executed successfully
+2023-05-04 21:38:48,392 DEBUG: Looking for jobs to run
+2023-05-04 21:38:48,393 DEBUG: Next wakeup is due at 2023-05-04 21:38:53.386418+08:00 (in 4.993546 seconds)
+2023-05-04 21:38:48,393 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:53 CST)" (scheduled at 2023-05-04 21:38:48.386418+08:00)
+2023-05-04 21:38:48,398 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:48,835 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:48,840 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:49,264 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:49,265 INFO: NODE COUNTS: 1
+2023-05-04 21:38:49,265 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:49,265 INFO: NODE STATUS :
+2023-05-04 21:38:49,265 INFO: ============NODE 0============
+2023-05-04 21:38:49,265 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:49,265 INFO:   session_count: 0/1
+2023-05-04 21:38:49,266 INFO:   status: UP
+2023-05-04 21:38:49,270 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:49,271 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:53 CST)" executed successfully
+2023-05-04 21:38:53,388 DEBUG: Looking for jobs to run
+2023-05-04 21:38:53,389 DEBUG: Next wakeup is due at 2023-05-04 21:38:58.386418+08:00 (in 4.997025 seconds)
+2023-05-04 21:38:53,390 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:58 CST)" (scheduled at 2023-05-04 21:38:53.386418+08:00)
+2023-05-04 21:38:53,394 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:53,970 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:53,976 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:54,479 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:54,481 INFO: NODE COUNTS: 1
+2023-05-04 21:38:54,481 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:54,482 INFO: NODE STATUS :
+2023-05-04 21:38:54,482 INFO: ============NODE 0============
+2023-05-04 21:38:54,482 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:54,482 INFO:   session_count: 0/1
+2023-05-04 21:38:54,482 INFO:   status: UP
+2023-05-04 21:38:54,485 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:54,485 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:38:58 CST)" executed successfully
+2023-05-04 21:38:58,389 DEBUG: Looking for jobs to run
+2023-05-04 21:38:58,390 DEBUG: Next wakeup is due at 2023-05-04 21:39:03.386418+08:00 (in 4.996488 seconds)
+2023-05-04 21:38:58,390 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:03 CST)" (scheduled at 2023-05-04 21:38:58.386418+08:00)
+2023-05-04 21:38:58,394 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:58,826 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:38:58,830 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:38:59,222 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:38:59,223 INFO: NODE COUNTS: 1
+2023-05-04 21:38:59,223 INFO: RUNNING MISSIONS:0
+2023-05-04 21:38:59,223 INFO: NODE STATUS :
+2023-05-04 21:38:59,223 INFO: ============NODE 0============
+2023-05-04 21:38:59,224 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:38:59,224 INFO:   session_count: 0/1
+2023-05-04 21:38:59,224 INFO:   status: UP
+2023-05-04 21:38:59,227 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:38:59,227 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:03 CST)" executed successfully
+2023-05-04 21:39:03,392 DEBUG: Looking for jobs to run
+2023-05-04 21:39:03,392 DEBUG: Next wakeup is due at 2023-05-04 21:39:08.386418+08:00 (in 4.994034 seconds)
+2023-05-04 21:39:03,392 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:08 CST)" (scheduled at 2023-05-04 21:39:03.386418+08:00)
+2023-05-04 21:39:03,395 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:03,983 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:03,988 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:04,393 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:04,395 INFO: NODE COUNTS: 1
+2023-05-04 21:39:04,395 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:04,396 INFO: NODE STATUS :
+2023-05-04 21:39:04,396 INFO: ============NODE 0============
+2023-05-04 21:39:04,396 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:04,396 INFO:   session_count: 0/1
+2023-05-04 21:39:04,396 INFO:   status: UP
+2023-05-04 21:39:04,401 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:39:04,402 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:08 CST)" executed successfully
+2023-05-04 21:39:08,388 DEBUG: Looking for jobs to run
+2023-05-04 21:39:08,389 DEBUG: Next wakeup is due at 2023-05-04 21:39:13.386418+08:00 (in 4.997087 seconds)
+2023-05-04 21:39:08,389 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:13 CST)" (scheduled at 2023-05-04 21:39:08.386418+08:00)
+2023-05-04 21:39:08,393 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:08,915 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:08,922 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:09,308 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:09,310 INFO: NODE COUNTS: 1
+2023-05-04 21:39:09,310 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:09,311 INFO: NODE STATUS :
+2023-05-04 21:39:09,311 INFO: ============NODE 0============
+2023-05-04 21:39:09,311 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:09,311 INFO:   session_count: 0/1
+2023-05-04 21:39:09,311 INFO:   status: UP
+2023-05-04 21:39:09,314 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:39:09,314 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:13 CST)" executed successfully
+2023-05-04 21:39:13,391 DEBUG: Looking for jobs to run
+2023-05-04 21:39:13,392 DEBUG: Next wakeup is due at 2023-05-04 21:39:18.386418+08:00 (in 4.993992 seconds)
+2023-05-04 21:39:13,393 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:18 CST)" (scheduled at 2023-05-04 21:39:13.386418+08:00)
+2023-05-04 21:39:13,395 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:14,139 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:14,142 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:14,580 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:14,581 INFO: NODE COUNTS: 1
+2023-05-04 21:39:14,581 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:14,581 INFO: NODE STATUS :
+2023-05-04 21:39:14,581 INFO: ============NODE 0============
+2023-05-04 21:39:14,581 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:14,581 INFO:   session_count: 0/1
+2023-05-04 21:39:14,581 INFO:   status: UP
+2023-05-04 21:39:14,583 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:39:14,583 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:18 CST)" executed successfully
+2023-05-04 21:39:18,392 DEBUG: Looking for jobs to run
+2023-05-04 21:39:18,393 DEBUG: Next wakeup is due at 2023-05-04 21:39:23.386418+08:00 (in 4.993727 seconds)
+2023-05-04 21:39:18,393 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:23 CST)" (scheduled at 2023-05-04 21:39:18.386418+08:00)
+2023-05-04 21:39:18,399 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:19,040 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:19,046 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:19,501 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:19,502 INFO: NODE COUNTS: 1
+2023-05-04 21:39:19,502 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:19,503 INFO: NODE STATUS :
+2023-05-04 21:39:19,503 INFO: ============NODE 0============
+2023-05-04 21:39:19,503 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:19,503 INFO:   session_count: 0/1
+2023-05-04 21:39:19,503 INFO:   status: UP
+2023-05-04 21:39:19,505 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:39:19,506 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:23 CST)" executed successfully
+2023-05-04 21:39:23,392 DEBUG: Looking for jobs to run
+2023-05-04 21:39:23,395 DEBUG: Next wakeup is due at 2023-05-04 21:39:28.386418+08:00 (in 4.991707 seconds)
+2023-05-04 21:39:23,395 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:28 CST)" (scheduled at 2023-05-04 21:39:23.386418+08:00)
+2023-05-04 21:39:23,401 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:26,457 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:26,462 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:26,942 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:26,944 INFO: NODE COUNTS: 1
+2023-05-04 21:39:26,944 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:26,945 INFO: NODE STATUS :
+2023-05-04 21:39:26,945 INFO: ============NODE 0============
+2023-05-04 21:39:26,945 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:26,945 INFO:   session_count: 0/1
+2023-05-04 21:39:26,945 INFO:   status: UP
+2023-05-04 21:39:26,948 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:39:26,949 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:28 CST)" executed successfully
+2023-05-04 21:39:28,392 DEBUG: Looking for jobs to run
+2023-05-04 21:39:28,393 DEBUG: Next wakeup is due at 2023-05-04 21:39:33.386418+08:00 (in 4.993207 seconds)
+2023-05-04 21:39:28,394 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:33 CST)" (scheduled at 2023-05-04 21:39:28.386418+08:00)
+2023-05-04 21:39:28,399 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:28,782 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:28,789 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:29,223 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:29,224 INFO: NODE COUNTS: 1
+2023-05-04 21:39:29,225 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:29,225 INFO: NODE STATUS :
+2023-05-04 21:39:29,225 INFO: ============NODE 0============
+2023-05-04 21:39:29,225 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:29,225 INFO:   session_count: 0/1
+2023-05-04 21:39:29,226 INFO:   status: UP
+2023-05-04 21:39:29,228 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:39:29,228 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:33 CST)" executed successfully
+2023-05-04 21:39:33,390 DEBUG: Looking for jobs to run
+2023-05-04 21:39:33,391 DEBUG: Next wakeup is due at 2023-05-04 21:39:38.386418+08:00 (in 4.995150 seconds)
+2023-05-04 21:39:33,391 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:38 CST)" (scheduled at 2023-05-04 21:39:33.386418+08:00)
+2023-05-04 21:39:33,395 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:33,822 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:33,826 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:34,222 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:34,223 INFO: NODE COUNTS: 1
+2023-05-04 21:39:34,224 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:34,224 INFO: NODE STATUS :
+2023-05-04 21:39:34,224 INFO: ============NODE 0============
+2023-05-04 21:39:34,224 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:34,224 INFO:   session_count: 0/1
+2023-05-04 21:39:34,224 INFO:   status: UP
+2023-05-04 21:39:34,227 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:39:34,227 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:38 CST)" executed successfully
+2023-05-04 21:39:38,390 DEBUG: Looking for jobs to run
+2023-05-04 21:39:38,397 DEBUG: Next wakeup is due at 2023-05-04 21:39:43.386418+08:00 (in 4.994209 seconds)
+2023-05-04 21:39:38,398 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:43 CST)" (scheduled at 2023-05-04 21:39:38.386418+08:00)
+2023-05-04 21:39:38,401 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:38,922 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:38,927 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:39,392 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:39,394 INFO: NODE COUNTS: 1
+2023-05-04 21:39:39,394 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:39,395 INFO: NODE STATUS :
+2023-05-04 21:39:39,395 INFO: ============NODE 0============
+2023-05-04 21:39:39,395 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:39,395 INFO:   session_count: 0/1
+2023-05-04 21:39:39,395 INFO:   status: UP
+2023-05-04 21:39:39,398 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:39:39,399 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:43 CST)" executed successfully
+2023-05-04 21:39:40,782 INFO: Initializing scraper controller ...
+2023-05-04 21:39:40,782 INFO: Connect to MongoDB 127.0.0.1 27017
+2023-05-04 21:39:40,787 INFO: Starting scheduler...
+2023-05-04 21:39:40,810 INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-05-04 21:39:40,811 INFO: Added job "ScraperCotroller.routine_job" to job store "default"
+2023-05-04 21:39:40,811 INFO: Scheduler started
+2023-05-04 21:39:40,811 DEBUG: Looking for jobs to run
+2023-05-04 21:39:40,811 DEBUG: Next wakeup is due at 2023-05-04 21:39:45.810782+08:00 (in 4.999381 seconds)
+2023-05-04 21:39:45,815 DEBUG: Looking for jobs to run
+2023-05-04 21:39:45,816 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:45 CST)" (scheduled at 2023-05-04 21:39:45.810782+08:00)
+2023-05-04 21:39:45,817 DEBUG: Next wakeup is due at 2023-05-04 21:39:50.810782+08:00 (in 4.994647 seconds)
+2023-05-04 21:39:45,828 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:46,236 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:46,243 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:46,642 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:46,643 INFO: NODE COUNTS: 1
+2023-05-04 21:39:46,643 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:46,644 INFO: NODE STATUS :
+2023-05-04 21:39:46,644 INFO: ============NODE 0============
+2023-05-04 21:39:46,644 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:46,644 INFO:   session_count: 0/1
+2023-05-04 21:39:46,644 INFO:   status: UP
+2023-05-04 21:39:46,649 INFO: QUEUING TASK COUNTS: 1
+2023-05-04 21:39:46,660 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:50 CST)" executed successfully
+2023-05-04 21:39:46,932 INFO: [START!] task_id:77ac17496ecb17064f61c807ee9b14f8 mission:TEST pid:49103
+2023-05-04 21:39:46,932 INFO: [DRIVER] task_id:77ac17496ecb17064f61c807ee9b14f8 mission:TEST pid:49103
+2023-05-04 21:39:46,933 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:39:46,933 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:48,341 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:39:48,342 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "ca4effac94276cd5fe21eb0c515ae5b9",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.2k7OFk"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:36849"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002fca4effac94276cd5fe21eb0c515ae5b9\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:39:48,342 DEBUG: Finished Request
+2023-05-04 21:39:48,347 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/ca4effac94276cd5fe21eb0c515ae5b9/url {"url": "https://google.com"}
+2023-05-04 21:39:50,698 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/ca4effac94276cd5fe21eb0c515ae5b9/url HTTP/1.1" 200 14
+2023-05-04 21:39:50,700 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:39:50,700 DEBUG: Finished Request
+2023-05-04 21:39:50,700 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/ca4effac94276cd5fe21eb0c515ae5b9/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:39:50,814 DEBUG: Looking for jobs to run
+2023-05-04 21:39:50,815 DEBUG: Next wakeup is due at 2023-05-04 21:39:55.810782+08:00 (in 4.995934 seconds)
+2023-05-04 21:39:50,816 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:55 CST)" (scheduled at 2023-05-04 21:39:50.810782+08:00)
+2023-05-04 21:39:50,821 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:51,314 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:51,317 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:51,924 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:51,925 INFO: NODE COUNTS: 1
+2023-05-04 21:39:51,926 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:51,926 INFO: NODE STATUS :
+2023-05-04 21:39:51,926 INFO: ============NODE 0============
+2023-05-04 21:39:51,926 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:51,927 INFO:   session_count: 1/1
+2023-05-04 21:39:51,927 INFO:   status: UP
+2023-05-04 21:39:51,930 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:39:51,930 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:39:55 CST)" executed successfully
+2023-05-04 21:39:55,715 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/ca4effac94276cd5fe21eb0c515ae5b9/url HTTP/1.1" 200 14
+2023-05-04 21:39:55,716 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:39:55,717 DEBUG: Finished Request
+2023-05-04 21:39:55,717 ERROR: [ERROR!] task_id:77ac17496ecb17064f61c807ee9b14f8 pid:49103
+2023-05-04 21:39:55,717 ERROR: SUCCESS
+2023-05-04 21:39:55,720 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/ca4effac94276cd5fe21eb0c515ae5b9 {}
+2023-05-04 21:39:55,816 DEBUG: Looking for jobs to run
+2023-05-04 21:39:55,817 DEBUG: Next wakeup is due at 2023-05-04 21:40:00.810782+08:00 (in 4.993486 seconds)
+2023-05-04 21:39:55,818 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:00 CST)" (scheduled at 2023-05-04 21:39:55.810782+08:00)
+2023-05-04 21:39:55,822 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:56,061 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/ca4effac94276cd5fe21eb0c515ae5b9 HTTP/1.1" 200 14
+2023-05-04 21:39:56,062 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:39:56,062 DEBUG: Finished Request
+2023-05-04 21:39:56,261 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:39:56,267 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:39:56,741 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:39:56,742 INFO: NODE COUNTS: 1
+2023-05-04 21:39:56,743 INFO: RUNNING MISSIONS:0
+2023-05-04 21:39:56,743 INFO: NODE STATUS :
+2023-05-04 21:39:56,743 INFO: ============NODE 0============
+2023-05-04 21:39:56,743 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:39:56,743 INFO:   session_count: 0/1
+2023-05-04 21:39:56,743 INFO:   status: UP
+2023-05-04 21:39:56,746 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:39:56,746 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:00 CST)" executed successfully
+2023-05-04 21:40:00,816 DEBUG: Looking for jobs to run
+2023-05-04 21:40:00,817 DEBUG: Next wakeup is due at 2023-05-04 21:40:05.810782+08:00 (in 4.993624 seconds)
+2023-05-04 21:40:00,817 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:05 CST)" (scheduled at 2023-05-04 21:40:00.810782+08:00)
+2023-05-04 21:40:00,821 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:01,201 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:01,205 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:01,752 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:01,753 INFO: NODE COUNTS: 1
+2023-05-04 21:40:01,753 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:01,753 INFO: NODE STATUS :
+2023-05-04 21:40:01,753 INFO: ============NODE 0============
+2023-05-04 21:40:01,753 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:01,754 INFO:   session_count: 0/1
+2023-05-04 21:40:01,754 INFO:   status: UP
+2023-05-04 21:40:01,756 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:40:01,756 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:05 CST)" executed successfully
+2023-05-04 21:40:05,816 DEBUG: Looking for jobs to run
+2023-05-04 21:40:05,817 DEBUG: Next wakeup is due at 2023-05-04 21:40:10.810782+08:00 (in 4.993490 seconds)
+2023-05-04 21:40:05,818 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:10 CST)" (scheduled at 2023-05-04 21:40:05.810782+08:00)
+2023-05-04 21:40:05,823 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:06,228 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:06,234 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:06,874 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:06,876 INFO: NODE COUNTS: 1
+2023-05-04 21:40:06,877 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:06,877 INFO: NODE STATUS :
+2023-05-04 21:40:06,877 INFO: ============NODE 0============
+2023-05-04 21:40:06,877 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:06,877 INFO:   session_count: 0/1
+2023-05-04 21:40:06,877 INFO:   status: UP
+2023-05-04 21:40:06,880 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:40:06,881 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:10 CST)" executed successfully
+2023-05-04 21:40:10,813 DEBUG: Looking for jobs to run
+2023-05-04 21:40:10,815 DEBUG: Next wakeup is due at 2023-05-04 21:40:15.810782+08:00 (in 4.996861 seconds)
+2023-05-04 21:40:10,815 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:15 CST)" (scheduled at 2023-05-04 21:40:10.810782+08:00)
+2023-05-04 21:40:10,822 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:11,389 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:11,394 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:11,780 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:11,782 INFO: NODE COUNTS: 1
+2023-05-04 21:40:11,782 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:11,783 INFO: NODE STATUS :
+2023-05-04 21:40:11,783 INFO: ============NODE 0============
+2023-05-04 21:40:11,783 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:11,783 INFO:   session_count: 0/1
+2023-05-04 21:40:11,783 INFO:   status: UP
+2023-05-04 21:40:11,787 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:40:11,787 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:15 CST)" executed successfully
+2023-05-04 21:40:15,817 DEBUG: Looking for jobs to run
+2023-05-04 21:40:15,820 DEBUG: Next wakeup is due at 2023-05-04 21:40:20.810782+08:00 (in 4.991304 seconds)
+2023-05-04 21:40:15,820 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:20 CST)" (scheduled at 2023-05-04 21:40:15.810782+08:00)
+2023-05-04 21:40:15,826 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:16,223 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:16,227 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:16,620 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:16,623 INFO: NODE COUNTS: 1
+2023-05-04 21:40:16,623 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:16,623 INFO: NODE STATUS :
+2023-05-04 21:40:16,623 INFO: ============NODE 0============
+2023-05-04 21:40:16,624 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:16,624 INFO:   session_count: 0/1
+2023-05-04 21:40:16,624 INFO:   status: UP
+2023-05-04 21:40:16,627 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:40:16,627 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:20 CST)" executed successfully
+2023-05-04 21:40:20,816 DEBUG: Looking for jobs to run
+2023-05-04 21:40:20,816 DEBUG: Next wakeup is due at 2023-05-04 21:40:25.810782+08:00 (in 4.994246 seconds)
+2023-05-04 21:40:20,817 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:25 CST)" (scheduled at 2023-05-04 21:40:20.810782+08:00)
+2023-05-04 21:40:20,820 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:21,181 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:21,185 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:21,559 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:21,577 INFO: NODE COUNTS: 1
+2023-05-04 21:40:21,578 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:21,578 INFO: NODE STATUS :
+2023-05-04 21:40:21,578 INFO: ============NODE 0============
+2023-05-04 21:40:21,578 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:21,578 INFO:   session_count: 0/1
+2023-05-04 21:40:21,578 INFO:   status: UP
+2023-05-04 21:40:21,580 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:40:21,581 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:25 CST)" executed successfully
+2023-05-04 21:40:25,812 DEBUG: Looking for jobs to run
+2023-05-04 21:40:25,813 DEBUG: Next wakeup is due at 2023-05-04 21:40:30.810782+08:00 (in 4.997386 seconds)
+2023-05-04 21:40:25,813 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:30 CST)" (scheduled at 2023-05-04 21:40:25.810782+08:00)
+2023-05-04 21:40:25,816 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:26,222 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:26,226 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:26,609 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:26,609 INFO: NODE COUNTS: 1
+2023-05-04 21:40:26,610 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:26,610 INFO: NODE STATUS :
+2023-05-04 21:40:26,610 INFO: ============NODE 0============
+2023-05-04 21:40:26,610 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:26,610 INFO:   session_count: 0/1
+2023-05-04 21:40:26,610 INFO:   status: UP
+2023-05-04 21:40:26,612 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:40:26,612 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:30 CST)" executed successfully
+2023-05-04 21:40:30,813 DEBUG: Looking for jobs to run
+2023-05-04 21:40:30,813 DEBUG: Next wakeup is due at 2023-05-04 21:40:35.810782+08:00 (in 4.997252 seconds)
+2023-05-04 21:40:30,814 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:35 CST)" (scheduled at 2023-05-04 21:40:30.810782+08:00)
+2023-05-04 21:40:30,817 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:31,259 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:31,263 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:31,829 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:31,830 INFO: NODE COUNTS: 1
+2023-05-04 21:40:31,831 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:31,831 INFO: NODE STATUS :
+2023-05-04 21:40:31,831 INFO: ============NODE 0============
+2023-05-04 21:40:31,831 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:31,831 INFO:   session_count: 0/1
+2023-05-04 21:40:31,831 INFO:   status: UP
+2023-05-04 21:40:31,834 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:40:31,834 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:35 CST)" executed successfully
+2023-05-04 21:40:35,813 DEBUG: Looking for jobs to run
+2023-05-04 21:40:35,814 DEBUG: Next wakeup is due at 2023-05-04 21:40:40.810782+08:00 (in 4.996414 seconds)
+2023-05-04 21:40:35,815 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:40 CST)" (scheduled at 2023-05-04 21:40:35.810782+08:00)
+2023-05-04 21:40:35,820 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:36,468 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:36,475 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:36,860 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:36,861 INFO: NODE COUNTS: 1
+2023-05-04 21:40:36,862 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:36,862 INFO: NODE STATUS :
+2023-05-04 21:40:36,862 INFO: ============NODE 0============
+2023-05-04 21:40:36,862 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:36,862 INFO:   session_count: 0/1
+2023-05-04 21:40:36,862 INFO:   status: UP
+2023-05-04 21:40:36,865 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:40:36,866 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:40 CST)" executed successfully
+2023-05-04 21:40:40,817 DEBUG: Looking for jobs to run
+2023-05-04 21:40:40,818 DEBUG: Next wakeup is due at 2023-05-04 21:40:45.810782+08:00 (in 4.992689 seconds)
+2023-05-04 21:40:40,818 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:45 CST)" (scheduled at 2023-05-04 21:40:40.810782+08:00)
+2023-05-04 21:40:40,821 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:41,228 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:41,233 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:41,611 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:41,612 INFO: NODE COUNTS: 1
+2023-05-04 21:40:41,613 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:41,613 INFO: NODE STATUS :
+2023-05-04 21:40:41,613 INFO: ============NODE 0============
+2023-05-04 21:40:41,613 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:41,613 INFO:   session_count: 0/1
+2023-05-04 21:40:41,613 INFO:   status: UP
+2023-05-04 21:40:41,617 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:40:41,617 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:45 CST)" executed successfully
+2023-05-04 21:40:44,774 INFO: Initializing scraper controller ...
+2023-05-04 21:40:44,774 INFO: Connect to MongoDB 127.0.0.1 27017
+2023-05-04 21:40:44,781 INFO: Starting scheduler...
+2023-05-04 21:40:44,803 INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-05-04 21:40:44,804 INFO: Added job "ScraperCotroller.routine_job" to job store "default"
+2023-05-04 21:40:44,804 INFO: Scheduler started
+2023-05-04 21:40:44,804 DEBUG: Looking for jobs to run
+2023-05-04 21:40:44,804 DEBUG: Next wakeup is due at 2023-05-04 21:40:49.803769+08:00 (in 4.999523 seconds)
+2023-05-04 21:40:49,805 DEBUG: Looking for jobs to run
+2023-05-04 21:40:49,806 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:49 CST)" (scheduled at 2023-05-04 21:40:49.803769+08:00)
+2023-05-04 21:40:49,808 DEBUG: Next wakeup is due at 2023-05-04 21:40:54.803769+08:00 (in 4.998116 seconds)
+2023-05-04 21:40:49,820 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:50,225 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:50,226 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:50,627 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:50,629 INFO: NODE COUNTS: 1
+2023-05-04 21:40:50,629 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:50,629 INFO: NODE STATUS :
+2023-05-04 21:40:50,629 INFO: ============NODE 0============
+2023-05-04 21:40:50,629 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:50,629 INFO:   session_count: 0/1
+2023-05-04 21:40:50,629 INFO:   status: UP
+2023-05-04 21:40:50,634 INFO: QUEUING TASK COUNTS: 1
+2023-05-04 21:40:50,645 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:54 CST)" executed successfully
+2023-05-04 21:40:50,933 INFO: [START!] task_id:79002f9db616359e40ca9d19ef5e2a5b mission:TEST pid:49163
+2023-05-04 21:40:50,934 INFO: [DRIVER] task_id:79002f9db616359e40ca9d19ef5e2a5b mission:TEST pid:49163
+2023-05-04 21:40:50,934 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:40:50,935 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:52,545 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:40:52,546 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "d379ae02bc72ae20d8e0580bd5fbb853",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.xIeTct"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:40657"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002fd379ae02bc72ae20d8e0580bd5fbb853\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:40:52,547 DEBUG: Finished Request
+2023-05-04 21:40:52,552 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/d379ae02bc72ae20d8e0580bd5fbb853/url {"url": "https://google.com"}
+2023-05-04 21:40:54,608 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/d379ae02bc72ae20d8e0580bd5fbb853/url HTTP/1.1" 200 14
+2023-05-04 21:40:54,608 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:40:54,608 DEBUG: Finished Request
+2023-05-04 21:40:54,609 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/d379ae02bc72ae20d8e0580bd5fbb853/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:40:54,808 DEBUG: Looking for jobs to run
+2023-05-04 21:40:54,809 DEBUG: Next wakeup is due at 2023-05-04 21:40:59.803769+08:00 (in 4.994998 seconds)
+2023-05-04 21:40:54,809 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:59 CST)" (scheduled at 2023-05-04 21:40:54.803769+08:00)
+2023-05-04 21:40:54,814 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:55,222 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:40:55,228 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:40:55,625 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:40:55,627 INFO: NODE COUNTS: 1
+2023-05-04 21:40:55,627 INFO: RUNNING MISSIONS:0
+2023-05-04 21:40:55,627 INFO: NODE STATUS :
+2023-05-04 21:40:55,627 INFO: ============NODE 0============
+2023-05-04 21:40:55,628 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:40:55,628 INFO:   session_count: 1/1
+2023-05-04 21:40:55,628 INFO:   status: UP
+2023-05-04 21:40:55,631 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:40:55,631 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:40:59 CST)" executed successfully
+2023-05-04 21:40:59,158 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/d379ae02bc72ae20d8e0580bd5fbb853/url HTTP/1.1" 200 14
+2023-05-04 21:40:59,158 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:40:59,159 DEBUG: Finished Request
+2023-05-04 21:40:59,162 INFO: [SUCCESS] task_id:79002f9db616359e40ca9d19ef5e2a5b mission:TEST pid:49163
+2023-05-04 21:40:59,162 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/d379ae02bc72ae20d8e0580bd5fbb853 {}
+2023-05-04 21:40:59,509 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/d379ae02bc72ae20d8e0580bd5fbb853 HTTP/1.1" 200 14
+2023-05-04 21:40:59,510 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:40:59,511 DEBUG: Finished Request
+2023-05-04 21:40:59,806 DEBUG: Looking for jobs to run
+2023-05-04 21:40:59,807 DEBUG: Next wakeup is due at 2023-05-04 21:41:04.803769+08:00 (in 4.996578 seconds)
+2023-05-04 21:40:59,808 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:04 CST)" (scheduled at 2023-05-04 21:40:59.803769+08:00)
+2023-05-04 21:40:59,812 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:00,222 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:00,228 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:00,639 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:00,642 INFO: NODE COUNTS: 1
+2023-05-04 21:41:00,642 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:00,644 INFO: NODE STATUS :
+2023-05-04 21:41:00,644 INFO: ============NODE 0============
+2023-05-04 21:41:00,644 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:00,644 INFO:   session_count: 0/1
+2023-05-04 21:41:00,645 INFO:   status: UP
+2023-05-04 21:41:00,647 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:00,648 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:04 CST)" executed successfully
+2023-05-04 21:41:04,809 DEBUG: Looking for jobs to run
+2023-05-04 21:41:04,810 DEBUG: Next wakeup is due at 2023-05-04 21:41:09.803769+08:00 (in 4.993519 seconds)
+2023-05-04 21:41:04,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:09 CST)" (scheduled at 2023-05-04 21:41:04.803769+08:00)
+2023-05-04 21:41:04,813 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:05,220 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:05,226 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:05,934 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:05,936 INFO: NODE COUNTS: 1
+2023-05-04 21:41:05,936 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:05,936 INFO: NODE STATUS :
+2023-05-04 21:41:05,937 INFO: ============NODE 0============
+2023-05-04 21:41:05,937 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:05,937 INFO:   session_count: 0/1
+2023-05-04 21:41:05,937 INFO:   status: UP
+2023-05-04 21:41:05,940 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:05,941 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:09 CST)" executed successfully
+2023-05-04 21:41:09,808 DEBUG: Looking for jobs to run
+2023-05-04 21:41:09,809 DEBUG: Next wakeup is due at 2023-05-04 21:41:14.803769+08:00 (in 4.994636 seconds)
+2023-05-04 21:41:09,809 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:14 CST)" (scheduled at 2023-05-04 21:41:09.803769+08:00)
+2023-05-04 21:41:09,813 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:10,466 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:10,472 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:10,902 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:10,903 INFO: NODE COUNTS: 1
+2023-05-04 21:41:10,903 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:10,904 INFO: NODE STATUS :
+2023-05-04 21:41:10,904 INFO: ============NODE 0============
+2023-05-04 21:41:10,904 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:10,904 INFO:   session_count: 0/1
+2023-05-04 21:41:10,904 INFO:   status: UP
+2023-05-04 21:41:10,906 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:10,906 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:14 CST)" executed successfully
+2023-05-04 21:41:14,809 DEBUG: Looking for jobs to run
+2023-05-04 21:41:14,810 DEBUG: Next wakeup is due at 2023-05-04 21:41:19.803769+08:00 (in 4.993717 seconds)
+2023-05-04 21:41:14,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:19 CST)" (scheduled at 2023-05-04 21:41:14.803769+08:00)
+2023-05-04 21:41:14,815 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:15,300 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:15,305 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:15,700 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:15,702 INFO: NODE COUNTS: 1
+2023-05-04 21:41:15,702 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:15,702 INFO: NODE STATUS :
+2023-05-04 21:41:15,702 INFO: ============NODE 0============
+2023-05-04 21:41:15,702 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:15,702 INFO:   session_count: 0/1
+2023-05-04 21:41:15,702 INFO:   status: UP
+2023-05-04 21:41:15,705 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:15,705 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:19 CST)" executed successfully
+2023-05-04 21:41:19,806 DEBUG: Looking for jobs to run
+2023-05-04 21:41:19,807 DEBUG: Next wakeup is due at 2023-05-04 21:41:24.803769+08:00 (in 4.996413 seconds)
+2023-05-04 21:41:19,808 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:24 CST)" (scheduled at 2023-05-04 21:41:19.803769+08:00)
+2023-05-04 21:41:19,812 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:20,300 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:20,304 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:20,921 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:20,923 INFO: NODE COUNTS: 1
+2023-05-04 21:41:20,923 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:20,923 INFO: NODE STATUS :
+2023-05-04 21:41:20,923 INFO: ============NODE 0============
+2023-05-04 21:41:20,923 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:20,923 INFO:   session_count: 0/1
+2023-05-04 21:41:20,923 INFO:   status: UP
+2023-05-04 21:41:20,926 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:20,926 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:24 CST)" executed successfully
+2023-05-04 21:41:24,805 DEBUG: Looking for jobs to run
+2023-05-04 21:41:24,806 DEBUG: Next wakeup is due at 2023-05-04 21:41:29.803769+08:00 (in 4.997725 seconds)
+2023-05-04 21:41:24,806 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:29 CST)" (scheduled at 2023-05-04 21:41:24.803769+08:00)
+2023-05-04 21:41:24,811 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:25,197 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:25,203 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:25,621 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:25,623 INFO: NODE COUNTS: 1
+2023-05-04 21:41:25,624 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:25,624 INFO: NODE STATUS :
+2023-05-04 21:41:25,624 INFO: ============NODE 0============
+2023-05-04 21:41:25,624 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:25,625 INFO:   session_count: 0/1
+2023-05-04 21:41:25,625 INFO:   status: UP
+2023-05-04 21:41:25,628 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:25,628 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:29 CST)" executed successfully
+2023-05-04 21:41:29,805 DEBUG: Looking for jobs to run
+2023-05-04 21:41:29,806 DEBUG: Next wakeup is due at 2023-05-04 21:41:34.803769+08:00 (in 4.998143 seconds)
+2023-05-04 21:41:29,806 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:34 CST)" (scheduled at 2023-05-04 21:41:29.803769+08:00)
+2023-05-04 21:41:29,811 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:30,311 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:30,316 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:30,856 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:30,858 INFO: NODE COUNTS: 1
+2023-05-04 21:41:30,858 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:30,858 INFO: NODE STATUS :
+2023-05-04 21:41:30,858 INFO: ============NODE 0============
+2023-05-04 21:41:30,858 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:30,858 INFO:   session_count: 0/1
+2023-05-04 21:41:30,858 INFO:   status: UP
+2023-05-04 21:41:30,860 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:30,860 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:34 CST)" executed successfully
+2023-05-04 21:41:34,805 DEBUG: Looking for jobs to run
+2023-05-04 21:41:34,806 DEBUG: Next wakeup is due at 2023-05-04 21:41:39.803769+08:00 (in 4.998209 seconds)
+2023-05-04 21:41:34,806 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:39 CST)" (scheduled at 2023-05-04 21:41:34.803769+08:00)
+2023-05-04 21:41:34,810 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:35,527 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:35,531 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:36,070 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:36,072 INFO: NODE COUNTS: 1
+2023-05-04 21:41:36,072 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:36,072 INFO: NODE STATUS :
+2023-05-04 21:41:36,072 INFO: ============NODE 0============
+2023-05-04 21:41:36,072 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:36,073 INFO:   session_count: 0/1
+2023-05-04 21:41:36,073 INFO:   status: UP
+2023-05-04 21:41:36,076 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:36,076 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:39 CST)" executed successfully
+2023-05-04 21:41:39,809 DEBUG: Looking for jobs to run
+2023-05-04 21:41:39,809 DEBUG: Next wakeup is due at 2023-05-04 21:41:44.803769+08:00 (in 4.994235 seconds)
+2023-05-04 21:41:39,809 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:44 CST)" (scheduled at 2023-05-04 21:41:39.803769+08:00)
+2023-05-04 21:41:39,812 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:40,220 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:40,224 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:40,622 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:40,623 INFO: NODE COUNTS: 1
+2023-05-04 21:41:40,624 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:40,624 INFO: NODE STATUS :
+2023-05-04 21:41:40,624 INFO: ============NODE 0============
+2023-05-04 21:41:40,624 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:40,624 INFO:   session_count: 0/1
+2023-05-04 21:41:40,624 INFO:   status: UP
+2023-05-04 21:41:40,628 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:40,628 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:44 CST)" executed successfully
+2023-05-04 21:41:44,809 DEBUG: Looking for jobs to run
+2023-05-04 21:41:44,810 DEBUG: Next wakeup is due at 2023-05-04 21:41:49.803769+08:00 (in 4.993929 seconds)
+2023-05-04 21:41:44,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:49 CST)" (scheduled at 2023-05-04 21:41:44.803769+08:00)
+2023-05-04 21:41:44,814 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:45,263 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:45,269 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:45,660 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:45,662 INFO: NODE COUNTS: 1
+2023-05-04 21:41:45,662 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:45,662 INFO: NODE STATUS :
+2023-05-04 21:41:45,662 INFO: ============NODE 0============
+2023-05-04 21:41:45,663 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:45,663 INFO:   session_count: 0/1
+2023-05-04 21:41:45,663 INFO:   status: UP
+2023-05-04 21:41:45,665 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:45,665 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:49 CST)" executed successfully
+2023-05-04 21:41:49,807 DEBUG: Looking for jobs to run
+2023-05-04 21:41:49,808 DEBUG: Next wakeup is due at 2023-05-04 21:41:54.803769+08:00 (in 4.995837 seconds)
+2023-05-04 21:41:49,808 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:54 CST)" (scheduled at 2023-05-04 21:41:49.803769+08:00)
+2023-05-04 21:41:49,813 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:50,219 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:50,225 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:50,622 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:50,623 INFO: NODE COUNTS: 1
+2023-05-04 21:41:50,624 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:50,624 INFO: NODE STATUS :
+2023-05-04 21:41:50,624 INFO: ============NODE 0============
+2023-05-04 21:41:50,624 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:50,624 INFO:   session_count: 0/1
+2023-05-04 21:41:50,624 INFO:   status: UP
+2023-05-04 21:41:50,627 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:50,627 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:54 CST)" executed successfully
+2023-05-04 21:41:54,808 DEBUG: Looking for jobs to run
+2023-05-04 21:41:54,809 DEBUG: Next wakeup is due at 2023-05-04 21:41:59.803769+08:00 (in 4.994815 seconds)
+2023-05-04 21:41:54,809 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:59 CST)" (scheduled at 2023-05-04 21:41:54.803769+08:00)
+2023-05-04 21:41:54,812 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:55,261 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:41:55,266 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:41:55,659 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:41:55,661 INFO: NODE COUNTS: 1
+2023-05-04 21:41:55,661 INFO: RUNNING MISSIONS:0
+2023-05-04 21:41:55,661 INFO: NODE STATUS :
+2023-05-04 21:41:55,661 INFO: ============NODE 0============
+2023-05-04 21:41:55,662 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:41:55,662 INFO:   session_count: 0/1
+2023-05-04 21:41:55,662 INFO:   status: UP
+2023-05-04 21:41:55,664 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:41:55,664 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:41:59 CST)" executed successfully
+2023-05-04 21:41:59,809 DEBUG: Looking for jobs to run
+2023-05-04 21:41:59,810 DEBUG: Next wakeup is due at 2023-05-04 21:42:04.803769+08:00 (in 4.993538 seconds)
+2023-05-04 21:41:59,811 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:04 CST)" (scheduled at 2023-05-04 21:41:59.803769+08:00)
+2023-05-04 21:41:59,815 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:00,238 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:00,243 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:00,701 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:00,703 INFO: NODE COUNTS: 1
+2023-05-04 21:42:00,704 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:00,704 INFO: NODE STATUS :
+2023-05-04 21:42:00,704 INFO: ============NODE 0============
+2023-05-04 21:42:00,704 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:00,704 INFO:   session_count: 0/1
+2023-05-04 21:42:00,705 INFO:   status: UP
+2023-05-04 21:42:00,707 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:00,707 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:04 CST)" executed successfully
+2023-05-04 21:42:04,808 DEBUG: Looking for jobs to run
+2023-05-04 21:42:04,809 DEBUG: Next wakeup is due at 2023-05-04 21:42:09.803769+08:00 (in 4.994298 seconds)
+2023-05-04 21:42:04,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:09 CST)" (scheduled at 2023-05-04 21:42:04.803769+08:00)
+2023-05-04 21:42:04,814 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:05,351 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:05,355 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:05,782 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:05,784 INFO: NODE COUNTS: 1
+2023-05-04 21:42:05,784 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:05,784 INFO: NODE STATUS :
+2023-05-04 21:42:05,784 INFO: ============NODE 0============
+2023-05-04 21:42:05,784 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:05,784 INFO:   session_count: 0/1
+2023-05-04 21:42:05,784 INFO:   status: UP
+2023-05-04 21:42:05,787 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:05,787 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:09 CST)" executed successfully
+2023-05-04 21:42:09,808 DEBUG: Looking for jobs to run
+2023-05-04 21:42:09,809 DEBUG: Next wakeup is due at 2023-05-04 21:42:14.803769+08:00 (in 4.994909 seconds)
+2023-05-04 21:42:09,809 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:14 CST)" (scheduled at 2023-05-04 21:42:09.803769+08:00)
+2023-05-04 21:42:09,812 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:10,350 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:10,354 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:10,743 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:10,745 INFO: NODE COUNTS: 1
+2023-05-04 21:42:10,745 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:10,745 INFO: NODE STATUS :
+2023-05-04 21:42:10,745 INFO: ============NODE 0============
+2023-05-04 21:42:10,745 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:10,745 INFO:   session_count: 0/1
+2023-05-04 21:42:10,745 INFO:   status: UP
+2023-05-04 21:42:10,747 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:10,748 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:14 CST)" executed successfully
+2023-05-04 21:42:14,807 DEBUG: Looking for jobs to run
+2023-05-04 21:42:14,809 DEBUG: Next wakeup is due at 2023-05-04 21:42:19.803769+08:00 (in 4.994374 seconds)
+2023-05-04 21:42:14,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:19 CST)" (scheduled at 2023-05-04 21:42:14.803769+08:00)
+2023-05-04 21:42:14,815 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:15,256 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:15,261 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:15,702 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:15,703 INFO: NODE COUNTS: 1
+2023-05-04 21:42:15,704 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:15,704 INFO: NODE STATUS :
+2023-05-04 21:42:15,704 INFO: ============NODE 0============
+2023-05-04 21:42:15,704 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:15,704 INFO:   session_count: 0/1
+2023-05-04 21:42:15,705 INFO:   status: UP
+2023-05-04 21:42:15,707 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:15,708 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:19 CST)" executed successfully
+2023-05-04 21:42:19,809 DEBUG: Looking for jobs to run
+2023-05-04 21:42:19,810 DEBUG: Next wakeup is due at 2023-05-04 21:42:24.803769+08:00 (in 4.993492 seconds)
+2023-05-04 21:42:19,811 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:24 CST)" (scheduled at 2023-05-04 21:42:19.803769+08:00)
+2023-05-04 21:42:19,816 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:20,269 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:20,275 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:20,700 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:20,702 INFO: NODE COUNTS: 1
+2023-05-04 21:42:20,702 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:20,703 INFO: NODE STATUS :
+2023-05-04 21:42:20,703 INFO: ============NODE 0============
+2023-05-04 21:42:20,703 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:20,703 INFO:   session_count: 0/1
+2023-05-04 21:42:20,703 INFO:   status: UP
+2023-05-04 21:42:20,706 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:20,707 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:24 CST)" executed successfully
+2023-05-04 21:42:24,808 DEBUG: Looking for jobs to run
+2023-05-04 21:42:24,810 DEBUG: Next wakeup is due at 2023-05-04 21:42:29.803769+08:00 (in 4.993909 seconds)
+2023-05-04 21:42:24,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:29 CST)" (scheduled at 2023-05-04 21:42:24.803769+08:00)
+2023-05-04 21:42:24,816 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:25,220 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:25,226 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:25,632 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:25,634 INFO: NODE COUNTS: 1
+2023-05-04 21:42:25,634 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:25,634 INFO: NODE STATUS :
+2023-05-04 21:42:25,634 INFO: ============NODE 0============
+2023-05-04 21:42:25,634 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:25,635 INFO:   session_count: 0/1
+2023-05-04 21:42:25,635 INFO:   status: UP
+2023-05-04 21:42:25,638 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:25,638 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:29 CST)" executed successfully
+2023-05-04 21:42:29,805 DEBUG: Looking for jobs to run
+2023-05-04 21:42:29,807 DEBUG: Next wakeup is due at 2023-05-04 21:42:34.803769+08:00 (in 4.997227 seconds)
+2023-05-04 21:42:29,807 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:34 CST)" (scheduled at 2023-05-04 21:42:29.803769+08:00)
+2023-05-04 21:42:29,811 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:30,219 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:30,225 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:30,619 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:30,621 INFO: NODE COUNTS: 1
+2023-05-04 21:42:30,622 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:30,622 INFO: NODE STATUS :
+2023-05-04 21:42:30,622 INFO: ============NODE 0============
+2023-05-04 21:42:30,622 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:30,623 INFO:   session_count: 0/1
+2023-05-04 21:42:30,623 INFO:   status: UP
+2023-05-04 21:42:30,626 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:30,626 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:34 CST)" executed successfully
+2023-05-04 21:42:34,808 DEBUG: Looking for jobs to run
+2023-05-04 21:42:34,810 DEBUG: Next wakeup is due at 2023-05-04 21:42:39.803769+08:00 (in 4.994564 seconds)
+2023-05-04 21:42:34,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:39 CST)" (scheduled at 2023-05-04 21:42:34.803769+08:00)
+2023-05-04 21:42:34,816 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:35,275 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:35,280 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:35,764 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:35,765 INFO: NODE COUNTS: 1
+2023-05-04 21:42:35,765 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:35,765 INFO: NODE STATUS :
+2023-05-04 21:42:35,766 INFO: ============NODE 0============
+2023-05-04 21:42:35,766 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:35,766 INFO:   session_count: 0/1
+2023-05-04 21:42:35,766 INFO:   status: UP
+2023-05-04 21:42:35,769 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:35,769 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:39 CST)" executed successfully
+2023-05-04 21:42:39,810 DEBUG: Looking for jobs to run
+2023-05-04 21:42:39,812 DEBUG: Next wakeup is due at 2023-05-04 21:42:44.803769+08:00 (in 4.991773 seconds)
+2023-05-04 21:42:39,812 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:44 CST)" (scheduled at 2023-05-04 21:42:39.803769+08:00)
+2023-05-04 21:42:39,818 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:40,265 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:40,268 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:40,698 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:40,699 INFO: NODE COUNTS: 1
+2023-05-04 21:42:40,700 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:40,700 INFO: NODE STATUS :
+2023-05-04 21:42:40,700 INFO: ============NODE 0============
+2023-05-04 21:42:40,701 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:40,701 INFO:   session_count: 0/1
+2023-05-04 21:42:40,701 INFO:   status: UP
+2023-05-04 21:42:40,703 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:40,704 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:44 CST)" executed successfully
+2023-05-04 21:42:44,809 DEBUG: Looking for jobs to run
+2023-05-04 21:42:44,809 DEBUG: Next wakeup is due at 2023-05-04 21:42:49.803769+08:00 (in 4.993912 seconds)
+2023-05-04 21:42:44,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:49 CST)" (scheduled at 2023-05-04 21:42:44.803769+08:00)
+2023-05-04 21:42:44,811 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:45,218 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:45,223 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:45,660 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:45,661 INFO: NODE COUNTS: 1
+2023-05-04 21:42:45,661 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:45,661 INFO: NODE STATUS :
+2023-05-04 21:42:45,661 INFO: ============NODE 0============
+2023-05-04 21:42:45,661 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:45,661 INFO:   session_count: 0/1
+2023-05-04 21:42:45,662 INFO:   status: UP
+2023-05-04 21:42:45,663 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:45,664 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:49 CST)" executed successfully
+2023-05-04 21:42:49,809 DEBUG: Looking for jobs to run
+2023-05-04 21:42:49,810 DEBUG: Next wakeup is due at 2023-05-04 21:42:54.803769+08:00 (in 4.993678 seconds)
+2023-05-04 21:42:49,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:54 CST)" (scheduled at 2023-05-04 21:42:49.803769+08:00)
+2023-05-04 21:42:49,814 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:50,260 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:50,263 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:50,661 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:50,663 INFO: NODE COUNTS: 1
+2023-05-04 21:42:50,663 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:50,663 INFO: NODE STATUS :
+2023-05-04 21:42:50,663 INFO: ============NODE 0============
+2023-05-04 21:42:50,663 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:50,663 INFO:   session_count: 0/1
+2023-05-04 21:42:50,664 INFO:   status: UP
+2023-05-04 21:42:50,666 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:50,666 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:54 CST)" executed successfully
+2023-05-04 21:42:54,809 DEBUG: Looking for jobs to run
+2023-05-04 21:42:54,810 DEBUG: Next wakeup is due at 2023-05-04 21:42:59.803769+08:00 (in 4.993677 seconds)
+2023-05-04 21:42:54,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:59 CST)" (scheduled at 2023-05-04 21:42:54.803769+08:00)
+2023-05-04 21:42:54,816 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:55,424 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:42:55,430 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:42:55,858 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:42:55,860 INFO: NODE COUNTS: 1
+2023-05-04 21:42:55,860 INFO: RUNNING MISSIONS:0
+2023-05-04 21:42:55,861 INFO: NODE STATUS :
+2023-05-04 21:42:55,861 INFO: ============NODE 0============
+2023-05-04 21:42:55,861 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:42:55,861 INFO:   session_count: 0/1
+2023-05-04 21:42:55,861 INFO:   status: UP
+2023-05-04 21:42:55,863 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:42:55,863 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:42:59 CST)" executed successfully
+2023-05-04 21:42:59,805 DEBUG: Looking for jobs to run
+2023-05-04 21:42:59,806 DEBUG: Next wakeup is due at 2023-05-04 21:43:04.803769+08:00 (in 4.997962 seconds)
+2023-05-04 21:42:59,806 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:04 CST)" (scheduled at 2023-05-04 21:42:59.803769+08:00)
+2023-05-04 21:42:59,810 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:00,340 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:00,345 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:00,738 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:00,739 INFO: NODE COUNTS: 1
+2023-05-04 21:43:00,739 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:00,739 INFO: NODE STATUS :
+2023-05-04 21:43:00,739 INFO: ============NODE 0============
+2023-05-04 21:43:00,739 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:00,739 INFO:   session_count: 0/1
+2023-05-04 21:43:00,739 INFO:   status: UP
+2023-05-04 21:43:00,741 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:43:00,741 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:04 CST)" executed successfully
+2023-05-04 21:43:04,809 DEBUG: Looking for jobs to run
+2023-05-04 21:43:04,810 DEBUG: Next wakeup is due at 2023-05-04 21:43:09.803769+08:00 (in 4.993271 seconds)
+2023-05-04 21:43:04,811 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:09 CST)" (scheduled at 2023-05-04 21:43:04.803769+08:00)
+2023-05-04 21:43:04,816 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:05,281 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:05,301 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:05,715 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:05,716 INFO: NODE COUNTS: 1
+2023-05-04 21:43:05,716 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:05,717 INFO: NODE STATUS :
+2023-05-04 21:43:05,717 INFO: ============NODE 0============
+2023-05-04 21:43:05,717 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:05,717 INFO:   session_count: 0/1
+2023-05-04 21:43:05,718 INFO:   status: UP
+2023-05-04 21:43:05,720 INFO: QUEUING TASK COUNTS: 1
+2023-05-04 21:43:05,724 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:09 CST)" executed successfully
+2023-05-04 21:43:06,080 INFO: [START!] task_id:ba7e5bb66d44aac21847161aa368bd49 mission:TEST pid:49274
+2023-05-04 21:43:06,080 INFO: [DRIVER] task_id:ba7e5bb66d44aac21847161aa368bd49 mission:TEST pid:49274
+2023-05-04 21:43:06,080 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:43:06,080 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:07,329 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:43:07,331 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "b95fec9dc3843c9f6f36bed248684ddb",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.5ty9Jf"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:36901"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002fb95fec9dc3843c9f6f36bed248684ddb\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:07,331 DEBUG: Finished Request
+2023-05-04 21:43:07,336 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/b95fec9dc3843c9f6f36bed248684ddb/url {"url": "https://google.com"}
+2023-05-04 21:43:09,530 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/b95fec9dc3843c9f6f36bed248684ddb/url HTTP/1.1" 200 14
+2023-05-04 21:43:09,530 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:09,530 DEBUG: Finished Request
+2023-05-04 21:43:09,531 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/b95fec9dc3843c9f6f36bed248684ddb/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:43:09,809 DEBUG: Looking for jobs to run
+2023-05-04 21:43:09,810 DEBUG: Next wakeup is due at 2023-05-04 21:43:14.803769+08:00 (in 4.993709 seconds)
+2023-05-04 21:43:09,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:14 CST)" (scheduled at 2023-05-04 21:43:09.803769+08:00)
+2023-05-04 21:43:09,815 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:10,219 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:10,222 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:10,739 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:10,740 INFO: NODE COUNTS: 1
+2023-05-04 21:43:10,740 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:10,740 INFO: NODE STATUS :
+2023-05-04 21:43:10,740 INFO: ============NODE 0============
+2023-05-04 21:43:10,740 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:10,740 INFO:   session_count: 1/1
+2023-05-04 21:43:10,740 INFO:   status: UP
+2023-05-04 21:43:10,741 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:43:10,741 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:14 CST)" executed successfully
+2023-05-04 21:43:14,506 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/b95fec9dc3843c9f6f36bed248684ddb/url HTTP/1.1" 200 14
+2023-05-04 21:43:14,520 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:14,520 DEBUG: Finished Request
+2023-05-04 21:43:14,523 INFO: [SUCCESS] task_id:ba7e5bb66d44aac21847161aa368bd49 mission:TEST pid:49274
+2023-05-04 21:43:14,524 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/b95fec9dc3843c9f6f36bed248684ddb {}
+2023-05-04 21:43:14,805 DEBUG: Looking for jobs to run
+2023-05-04 21:43:14,806 DEBUG: Next wakeup is due at 2023-05-04 21:43:19.803769+08:00 (in 4.998170 seconds)
+2023-05-04 21:43:14,806 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:19 CST)" (scheduled at 2023-05-04 21:43:14.803769+08:00)
+2023-05-04 21:43:14,810 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:14,820 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/b95fec9dc3843c9f6f36bed248684ddb HTTP/1.1" 200 14
+2023-05-04 21:43:14,821 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:14,821 DEBUG: Finished Request
+2023-05-04 21:43:15,270 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:15,273 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:15,829 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:15,832 INFO: NODE COUNTS: 1
+2023-05-04 21:43:15,832 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:15,832 INFO: NODE STATUS :
+2023-05-04 21:43:15,832 INFO: ============NODE 0============
+2023-05-04 21:43:15,832 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:15,832 INFO:   session_count: 0/1
+2023-05-04 21:43:15,832 INFO:   status: UP
+2023-05-04 21:43:15,837 INFO: QUEUING TASK COUNTS: 5
+2023-05-04 21:43:15,840 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:19 CST)" executed successfully
+2023-05-04 21:43:16,155 INFO: [START!] task_id:344573625682796ec17d8c0ad1f00d11 mission:TEST pid:49280
+2023-05-04 21:43:16,155 INFO: [DRIVER] task_id:344573625682796ec17d8c0ad1f00d11 mission:TEST pid:49280
+2023-05-04 21:43:16,156 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:43:16,156 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:17,656 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:43:17,658 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "ce3e08f395cfd81e4150ca66a4411860",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.IJz2Dk"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:35997"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002fce3e08f395cfd81e4150ca66a4411860\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:17,658 DEBUG: Finished Request
+2023-05-04 21:43:17,663 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/ce3e08f395cfd81e4150ca66a4411860/url {"url": "https://google.com"}
+2023-05-04 21:43:19,795 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/ce3e08f395cfd81e4150ca66a4411860/url HTTP/1.1" 200 14
+2023-05-04 21:43:19,796 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:19,796 DEBUG: Finished Request
+2023-05-04 21:43:19,797 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/ce3e08f395cfd81e4150ca66a4411860/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:43:19,809 DEBUG: Looking for jobs to run
+2023-05-04 21:43:19,811 DEBUG: Next wakeup is due at 2023-05-04 21:43:24.803769+08:00 (in 4.993771 seconds)
+2023-05-04 21:43:19,811 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:24 CST)" (scheduled at 2023-05-04 21:43:19.803769+08:00)
+2023-05-04 21:43:19,817 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:20,221 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:20,227 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:20,619 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:20,621 INFO: NODE COUNTS: 1
+2023-05-04 21:43:20,621 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:20,621 INFO: NODE STATUS :
+2023-05-04 21:43:20,622 INFO: ============NODE 0============
+2023-05-04 21:43:20,622 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:20,622 INFO:   session_count: 1/1
+2023-05-04 21:43:20,622 INFO:   status: UP
+2023-05-04 21:43:20,622 INFO: QUEUING TASK COUNTS: 4
+2023-05-04 21:43:20,623 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:24 CST)" executed successfully
+2023-05-04 21:43:24,712 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/ce3e08f395cfd81e4150ca66a4411860/url HTTP/1.1" 200 14
+2023-05-04 21:43:24,713 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:24,713 DEBUG: Finished Request
+2023-05-04 21:43:24,717 INFO: [SUCCESS] task_id:344573625682796ec17d8c0ad1f00d11 mission:TEST pid:49280
+2023-05-04 21:43:24,717 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/ce3e08f395cfd81e4150ca66a4411860 {}
+2023-05-04 21:43:24,809 DEBUG: Looking for jobs to run
+2023-05-04 21:43:24,810 DEBUG: Next wakeup is due at 2023-05-04 21:43:29.803769+08:00 (in 4.993835 seconds)
+2023-05-04 21:43:24,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:29 CST)" (scheduled at 2023-05-04 21:43:24.803769+08:00)
+2023-05-04 21:43:24,814 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:25,020 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/ce3e08f395cfd81e4150ca66a4411860 HTTP/1.1" 200 14
+2023-05-04 21:43:25,021 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:25,022 DEBUG: Finished Request
+2023-05-04 21:43:25,224 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:25,227 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:25,744 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:25,746 INFO: NODE COUNTS: 1
+2023-05-04 21:43:25,746 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:25,746 INFO: NODE STATUS :
+2023-05-04 21:43:25,746 INFO: ============NODE 0============
+2023-05-04 21:43:25,747 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:25,747 INFO:   session_count: 0/1
+2023-05-04 21:43:25,747 INFO:   status: UP
+2023-05-04 21:43:25,747 INFO: QUEUING TASK COUNTS: 4
+2023-05-04 21:43:25,753 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:29 CST)" executed successfully
+2023-05-04 21:43:25,984 INFO: [START!] task_id:ebb9f6f18dcb1b0d775184eda6958486 mission:TEST pid:49285
+2023-05-04 21:43:25,984 INFO: [DRIVER] task_id:ebb9f6f18dcb1b0d775184eda6958486 mission:TEST pid:49285
+2023-05-04 21:43:25,984 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:43:25,984 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:27,181 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:43:27,182 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "456f800075e113dc37c8d2c9be498208",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.oMmBXE"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:43603"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002f456f800075e113dc37c8d2c9be498208\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:27,183 DEBUG: Finished Request
+2023-05-04 21:43:27,189 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/456f800075e113dc37c8d2c9be498208/url {"url": "https://google.com"}
+2023-05-04 21:43:29,329 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/456f800075e113dc37c8d2c9be498208/url HTTP/1.1" 200 14
+2023-05-04 21:43:29,330 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:29,330 DEBUG: Finished Request
+2023-05-04 21:43:29,331 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/456f800075e113dc37c8d2c9be498208/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:43:29,810 DEBUG: Looking for jobs to run
+2023-05-04 21:43:29,811 DEBUG: Next wakeup is due at 2023-05-04 21:43:34.803769+08:00 (in 4.992748 seconds)
+2023-05-04 21:43:29,812 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:34 CST)" (scheduled at 2023-05-04 21:43:29.803769+08:00)
+2023-05-04 21:43:29,817 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:30,235 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:30,240 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:30,755 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:30,757 INFO: NODE COUNTS: 1
+2023-05-04 21:43:30,757 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:30,758 INFO: NODE STATUS :
+2023-05-04 21:43:30,758 INFO: ============NODE 0============
+2023-05-04 21:43:30,758 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:30,758 INFO:   session_count: 1/1
+2023-05-04 21:43:30,758 INFO:   status: UP
+2023-05-04 21:43:30,758 INFO: QUEUING TASK COUNTS: 3
+2023-05-04 21:43:30,759 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:34 CST)" executed successfully
+2023-05-04 21:43:34,028 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/456f800075e113dc37c8d2c9be498208/url HTTP/1.1" 200 14
+2023-05-04 21:43:34,029 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:34,030 DEBUG: Finished Request
+2023-05-04 21:43:34,033 INFO: [SUCCESS] task_id:ebb9f6f18dcb1b0d775184eda6958486 mission:TEST pid:49285
+2023-05-04 21:43:34,033 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/456f800075e113dc37c8d2c9be498208 {}
+2023-05-04 21:43:34,339 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/456f800075e113dc37c8d2c9be498208 HTTP/1.1" 200 14
+2023-05-04 21:43:34,340 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:34,341 DEBUG: Finished Request
+2023-05-04 21:43:34,809 DEBUG: Looking for jobs to run
+2023-05-04 21:43:34,810 DEBUG: Next wakeup is due at 2023-05-04 21:43:39.803769+08:00 (in 4.993463 seconds)
+2023-05-04 21:43:34,811 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:39 CST)" (scheduled at 2023-05-04 21:43:34.803769+08:00)
+2023-05-04 21:43:34,815 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:35,468 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:35,474 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:35,859 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:35,860 INFO: NODE COUNTS: 1
+2023-05-04 21:43:35,861 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:35,861 INFO: NODE STATUS :
+2023-05-04 21:43:35,861 INFO: ============NODE 0============
+2023-05-04 21:43:35,861 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:35,862 INFO:   session_count: 0/1
+2023-05-04 21:43:35,862 INFO:   status: UP
+2023-05-04 21:43:35,862 INFO: QUEUING TASK COUNTS: 3
+2023-05-04 21:43:35,867 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:39 CST)" executed successfully
+2023-05-04 21:43:36,106 INFO: [START!] task_id:dfeaac2a6a6869cbc5f9ad5b11a4ea80 mission:TEST pid:49291
+2023-05-04 21:43:36,106 INFO: [DRIVER] task_id:dfeaac2a6a6869cbc5f9ad5b11a4ea80 mission:TEST pid:49291
+2023-05-04 21:43:36,107 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:43:36,107 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:37,412 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:43:37,414 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "19169d3ff3d2c238b8579f4efb04d82a",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.mayYFz"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:33113"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002f19169d3ff3d2c238b8579f4efb04d82a\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:37,414 DEBUG: Finished Request
+2023-05-04 21:43:37,419 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/19169d3ff3d2c238b8579f4efb04d82a/url {"url": "https://google.com"}
+2023-05-04 21:43:39,456 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/19169d3ff3d2c238b8579f4efb04d82a/url HTTP/1.1" 200 14
+2023-05-04 21:43:39,457 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:39,458 DEBUG: Finished Request
+2023-05-04 21:43:39,458 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/19169d3ff3d2c238b8579f4efb04d82a/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:43:39,810 DEBUG: Looking for jobs to run
+2023-05-04 21:43:39,811 DEBUG: Next wakeup is due at 2023-05-04 21:43:44.803769+08:00 (in 4.992889 seconds)
+2023-05-04 21:43:39,812 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:44 CST)" (scheduled at 2023-05-04 21:43:39.803769+08:00)
+2023-05-04 21:43:39,817 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:40,219 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:40,223 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:40,694 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:40,696 INFO: NODE COUNTS: 1
+2023-05-04 21:43:40,696 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:40,696 INFO: NODE STATUS :
+2023-05-04 21:43:40,697 INFO: ============NODE 0============
+2023-05-04 21:43:40,697 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:40,697 INFO:   session_count: 1/1
+2023-05-04 21:43:40,697 INFO:   status: UP
+2023-05-04 21:43:40,697 INFO: QUEUING TASK COUNTS: 2
+2023-05-04 21:43:40,697 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:44 CST)" executed successfully
+2023-05-04 21:43:43,858 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/19169d3ff3d2c238b8579f4efb04d82a/url HTTP/1.1" 200 14
+2023-05-04 21:43:43,859 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:43,859 DEBUG: Finished Request
+2023-05-04 21:43:43,862 INFO: [SUCCESS] task_id:dfeaac2a6a6869cbc5f9ad5b11a4ea80 mission:TEST pid:49291
+2023-05-04 21:43:43,862 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/19169d3ff3d2c238b8579f4efb04d82a {}
+2023-05-04 21:43:44,178 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/19169d3ff3d2c238b8579f4efb04d82a HTTP/1.1" 200 14
+2023-05-04 21:43:44,179 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:44,179 DEBUG: Finished Request
+2023-05-04 21:43:44,810 DEBUG: Looking for jobs to run
+2023-05-04 21:43:44,810 DEBUG: Next wakeup is due at 2023-05-04 21:43:49.803769+08:00 (in 4.993464 seconds)
+2023-05-04 21:43:44,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:49 CST)" (scheduled at 2023-05-04 21:43:44.803769+08:00)
+2023-05-04 21:43:44,812 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:45,219 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:45,224 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:45,624 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:45,626 INFO: NODE COUNTS: 1
+2023-05-04 21:43:45,627 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:45,627 INFO: NODE STATUS :
+2023-05-04 21:43:45,627 INFO: ============NODE 0============
+2023-05-04 21:43:45,627 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:45,627 INFO:   session_count: 0/1
+2023-05-04 21:43:45,627 INFO:   status: UP
+2023-05-04 21:43:45,628 INFO: QUEUING TASK COUNTS: 2
+2023-05-04 21:43:45,633 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:49 CST)" executed successfully
+2023-05-04 21:43:45,872 INFO: [START!] task_id:376f36de545cdba04fc06452ffeadc6d mission:TEST pid:49294
+2023-05-04 21:43:45,872 INFO: [DRIVER] task_id:376f36de545cdba04fc06452ffeadc6d mission:TEST pid:49294
+2023-05-04 21:43:45,872 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:43:45,872 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:47,053 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:43:47,054 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "438d052bc993a8f2156b6d19c0a3ccc6",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.r8aabf"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:40095"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002f438d052bc993a8f2156b6d19c0a3ccc6\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:47,055 DEBUG: Finished Request
+2023-05-04 21:43:47,060 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/438d052bc993a8f2156b6d19c0a3ccc6/url {"url": "https://google.com"}
+2023-05-04 21:43:49,184 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/438d052bc993a8f2156b6d19c0a3ccc6/url HTTP/1.1" 200 14
+2023-05-04 21:43:49,185 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:49,185 DEBUG: Finished Request
+2023-05-04 21:43:49,186 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/438d052bc993a8f2156b6d19c0a3ccc6/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:43:49,809 DEBUG: Looking for jobs to run
+2023-05-04 21:43:49,811 DEBUG: Next wakeup is due at 2023-05-04 21:43:54.803769+08:00 (in 4.993487 seconds)
+2023-05-04 21:43:49,811 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:54 CST)" (scheduled at 2023-05-04 21:43:49.803769+08:00)
+2023-05-04 21:43:49,816 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:50,412 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:50,418 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:50,822 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:50,824 INFO: NODE COUNTS: 1
+2023-05-04 21:43:50,824 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:50,825 INFO: NODE STATUS :
+2023-05-04 21:43:50,825 INFO: ============NODE 0============
+2023-05-04 21:43:50,825 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:50,825 INFO:   session_count: 1/1
+2023-05-04 21:43:50,825 INFO:   status: UP
+2023-05-04 21:43:50,825 INFO: QUEUING TASK COUNTS: 1
+2023-05-04 21:43:50,826 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:54 CST)" executed successfully
+2023-05-04 21:43:54,226 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/438d052bc993a8f2156b6d19c0a3ccc6/url HTTP/1.1" 200 14
+2023-05-04 21:43:54,228 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:54,228 DEBUG: Finished Request
+2023-05-04 21:43:54,234 INFO: [SUCCESS] task_id:376f36de545cdba04fc06452ffeadc6d mission:TEST pid:49294
+2023-05-04 21:43:54,234 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/438d052bc993a8f2156b6d19c0a3ccc6 {}
+2023-05-04 21:43:54,500 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/438d052bc993a8f2156b6d19c0a3ccc6 HTTP/1.1" 200 14
+2023-05-04 21:43:54,501 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:54,501 DEBUG: Finished Request
+2023-05-04 21:43:54,808 DEBUG: Looking for jobs to run
+2023-05-04 21:43:54,809 DEBUG: Next wakeup is due at 2023-05-04 21:43:59.803769+08:00 (in 4.994609 seconds)
+2023-05-04 21:43:54,810 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:59 CST)" (scheduled at 2023-05-04 21:43:54.803769+08:00)
+2023-05-04 21:43:54,814 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:55,220 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:43:55,224 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:55,618 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:43:55,619 INFO: NODE COUNTS: 1
+2023-05-04 21:43:55,620 INFO: RUNNING MISSIONS:0
+2023-05-04 21:43:55,620 INFO: NODE STATUS :
+2023-05-04 21:43:55,620 INFO: ============NODE 0============
+2023-05-04 21:43:55,620 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:43:55,620 INFO:   session_count: 0/1
+2023-05-04 21:43:55,621 INFO:   status: UP
+2023-05-04 21:43:55,621 INFO: QUEUING TASK COUNTS: 1
+2023-05-04 21:43:55,628 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:43:59 CST)" executed successfully
+2023-05-04 21:43:55,891 INFO: [START!] task_id:799766083762d9234623d584b63eacc8 mission:TEST pid:49299
+2023-05-04 21:43:55,891 INFO: [DRIVER] task_id:799766083762d9234623d584b63eacc8 mission:TEST pid:49299
+2023-05-04 21:43:55,891 DEBUG: POST http://52.64.159.90:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--no-sandbox"]}}}}
+2023-05-04 21:43:55,891 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:43:57,116 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session HTTP/1.1" 200 1291
+2023-05-04 21:43:57,117 DEBUG: Remote response: status=200 | data={
+  "value": {
+    "sessionId": "48ce20c59196399595b4a86dc1eeb472",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "112.0.5615.165",
+      "chrome": {
+        "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs\u002fbranch-heads\u002f5615@{#936})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.hQ0zHh"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:35847"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "LINUX",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.31.26.96:4444\u002fsession\u002f48ce20c59196399595b4a86dc1eeb472\u002fse\u002fcdp",
+      "se:cdpVersion": "112.0.5615.165",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1291', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:57,117 DEBUG: Finished Request
+2023-05-04 21:43:57,123 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/48ce20c59196399595b4a86dc1eeb472/url {"url": "https://google.com"}
+2023-05-04 21:43:59,252 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/48ce20c59196399595b4a86dc1eeb472/url HTTP/1.1" 200 14
+2023-05-04 21:43:59,253 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:43:59,253 DEBUG: Finished Request
+2023-05-04 21:43:59,254 DEBUG: POST http://52.64.159.90:4444/wd/hub/session/48ce20c59196399595b4a86dc1eeb472/url {"url": "https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz"}
+2023-05-04 21:43:59,809 DEBUG: Looking for jobs to run
+2023-05-04 21:43:59,810 DEBUG: Next wakeup is due at 2023-05-04 21:44:04.803769+08:00 (in 4.993322 seconds)
+2023-05-04 21:43:59,811 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:44:04 CST)" (scheduled at 2023-05-04 21:43:59.803769+08:00)
+2023-05-04 21:43:59,815 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:44:00,362 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:44:00,368 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:44:00,778 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:44:00,780 INFO: NODE COUNTS: 1
+2023-05-04 21:44:00,781 INFO: RUNNING MISSIONS:0
+2023-05-04 21:44:00,781 INFO: NODE STATUS :
+2023-05-04 21:44:00,781 INFO: ============NODE 0============
+2023-05-04 21:44:00,782 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:44:00,782 INFO:   session_count: 1/1
+2023-05-04 21:44:00,782 INFO:   status: UP
+2023-05-04 21:44:00,786 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:44:00,787 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:44:04 CST)" executed successfully
+2023-05-04 21:44:03,726 DEBUG: http://52.64.159.90:4444 "POST /wd/hub/session/48ce20c59196399595b4a86dc1eeb472/url HTTP/1.1" 200 14
+2023-05-04 21:44:03,727 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:44:03,727 DEBUG: Finished Request
+2023-05-04 21:44:03,731 INFO: [SUCCESS] task_id:799766083762d9234623d584b63eacc8 mission:TEST pid:49299
+2023-05-04 21:44:03,731 DEBUG: DELETE http://52.64.159.90:4444/wd/hub/session/48ce20c59196399595b4a86dc1eeb472 {}
+2023-05-04 21:44:04,807 DEBUG: Looking for jobs to run
+2023-05-04 21:44:04,808 DEBUG: Next wakeup is due at 2023-05-04 21:44:09.803769+08:00 (in 4.996192 seconds)
+2023-05-04 21:44:04,808 INFO: Running job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:44:09 CST)" (scheduled at 2023-05-04 21:44:04.803769+08:00)
+2023-05-04 21:44:04,812 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:44:04,900 DEBUG: http://52.64.159.90:4444 "DELETE /wd/hub/session/48ce20c59196399595b4a86dc1eeb472 HTTP/1.1" 200 14
+2023-05-04 21:44:04,901 DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'cache-control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+2023-05-04 21:44:04,901 DEBUG: Finished Request
+2023-05-04 21:44:05,318 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 226
+2023-05-04 21:44:05,322 DEBUG: Starting new HTTP connection (1): 52.64.159.90:4444
+2023-05-04 21:44:05,955 DEBUG: http://52.64.159.90:4444 "POST /graphql HTTP/1.1" 200 60
+2023-05-04 21:44:05,957 INFO: NODE COUNTS: 1
+2023-05-04 21:44:05,957 INFO: RUNNING MISSIONS:0
+2023-05-04 21:44:05,958 INFO: NODE STATUS :
+2023-05-04 21:44:05,958 INFO: ============NODE 0============
+2023-05-04 21:44:05,958 INFO:   id: d91a944b-7aef-4e87-9895-8ffebe66ae8e
+2023-05-04 21:44:05,959 INFO:   session_count: 0/1
+2023-05-04 21:44:05,959 INFO:   status: UP
+2023-05-04 21:44:05,961 INFO: QUEUING TASK COUNTS: 0
+2023-05-04 21:44:05,962 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:44:09 CST)" executed successfully

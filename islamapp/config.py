@@ -7,7 +7,7 @@ class Config:
 
     # MongoDB
     MONGODB_SETTINGS: dict = {
-        'db': 'islam',
+        'db': os.getenv("MONGO_DB") or "islam",
         'host': os.getenv("MONGO_HOST") or "127.0.0.1",
         'port': int(os.getenv("MONGO_PORT")) or 27017,
     }

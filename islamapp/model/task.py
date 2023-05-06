@@ -54,6 +54,12 @@ class Task(Document):
                 pass
         return returnDict
     
+    def __lt__(self, other):
+        return self.priority < other.priority
+    
+    def __gt__(self, other):
+        return self.priority > other.priority
+    
     @staticmethod
     def create_task(user_id, type, task_detail={}):
         if type not in [type.value for type in TaskType]:
@@ -93,7 +99,7 @@ class Task(Document):
 
     @staticmethod
     def get_by_status(status, userId=None):
-        if status not in TaskStatus.value:
+        if status not in [status.value for status in TaskStatus]:
             raise InvalidInputError(f"Invalid task status {status}")
         if userId is not None:
             return Task.objects(status=status, create_user=userId)
