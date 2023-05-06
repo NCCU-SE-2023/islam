@@ -27,6 +27,7 @@ def scrape_followers_and_following(driver, task:Task):
         follower_list=scrape_follower(driver)
         
         # scrape following
+        go_profile(driver)
         following_list=scrape_following(driver)
         
         # return data
