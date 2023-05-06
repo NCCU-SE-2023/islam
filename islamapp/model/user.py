@@ -8,7 +8,7 @@ class User(db.Model):
     user_id = sa.Column(sa.String(32), primary_key=True)
     account = sa.Column(sa.String(320), unique=True, nullable=False)
     password = sa.Column(sa.CHAR(60), nullable=False)
-    cookie = sa.Column(JSONB, nullable=True)
+    cookie = sa.Column(sa.JSON, nullable=True)
 
     def to_json(self):
         return {
