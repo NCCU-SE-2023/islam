@@ -8,6 +8,7 @@ from selenium.webdriver.common.keys import Keys
 from scraper.util import log_while_exception
 from scraper.mission.checks import *
 import time
+
 class VerifyException(Exception):
     pass
 
@@ -62,25 +63,21 @@ def go_profile(driver, account, password):
     except:
         pass    
 
-    # try:
-    #     WebDriverWait(driver, 30).until(EC.presence_of_element_located(
-    #         (By.XPATH, '/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/div[1]/div[1]/div/div/div/div/div[2]/div[8]/div/div/a/div')))
-    #     go_profile = driver.find_elements(
-    #         By.XPATH, '/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/div[1]/div[1]/div/div/div/div/div[2]/div[8]/div/div/a/div')[0]
-    #     go_profile.click()
-        
-    # except:
-    #     pass
+   
 @log_while_exception()       
 def scrape_follower(driver):
     try:
         follower_id = "follower"
         driver.find_element(
             By.CSS_SELECTOR, ("a[href*=%s]" % follower_id)).click()
-
+        
+        time.sleep(2)
+        
         scroll_box = driver.find_element(
             By.XPATH, "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div[2]/div/div/div[2]")
-
+        
+        time.sleep(2)
+        
         last_ht, ht = 0, 1
         while last_ht != ht:
             last_ht = ht
@@ -103,10 +100,14 @@ def scrape_following(driver):
         following_id = "following"
         driver.find_element(
             By.CSS_SELECTOR, ("a[href*=%s]" % following_id)).click()
-
+        
+        time.sleep(2)
+        
         scroll_box = driver.find_element(
             By.XPATH, "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div[2]/div/div/div[3]")
-
+        
+        time.sleep(2)
+        
         last_ht, ht = 0, 1
         while last_ht != ht:
             last_ht = ht
@@ -122,7 +123,33 @@ def scrape_following(driver):
         return following_names
     except:
         pass
+    
+@log_while_exception()       
+def tagged_post(driver):
+    try:
+        id = "tagged"
+        driver.find_element(
+            By.CSS_SELECTOR, ("a[href*=%s]" % id)).click()
 
+        time.sleep(2)
+
+        driver.find_element(
+            By.XPATH, "//div[contains(@class,'_aagu')]").click()
+        time.sleep(2)
+
+        wait = WebDriverWait(driver, 10)
+        while True:
+            # grab the data
+
+            # click next link
+            try:
+                element = wait.until(EC.element_to_be_clickable(
+                    (By.CSS_SELECTOR, "[aria-label='下一步']"))).click()
+            except TimeoutException:
+                break
+    except:
+        pass
+    
 @log_while_exception() 
 def scroll_down_likes_window(driver):
     likes_accounts = []
