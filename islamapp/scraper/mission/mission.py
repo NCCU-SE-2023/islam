@@ -71,44 +71,48 @@ def scrape_following(driver, task:Task):
     except Exception as exception:
         raise Exception(exception)
 
-'''@log_while_exception()
+@log_while_exception()
 def scrape_likes(driver, task:Task):
     account = task.task_detail['account']
     password = task.task_detail['password']
-
     try:
-        if check_login_page:
-            action_login(driver, account, password)
-            store_click(driver)
-            notification_click(driver)
-            time.sleep(2)
-        go_profile()
+        # login
+        action_login(driver, account, password)
+        store_click(driver)
+        notification_click(driver)
+        
+        # go to profile page
+        go_profile(driver)
         time.sleep(2)
-        # total post number
+
+        # total scrape post number
         post_num = min(int(driver.find_element(By.CSS_SELECTOR, 'span[class="_ac2a"]').text), 35)
         # click first post
-        driver.find_element(By.CSS_SELECTOR, 'div[class="_aabd _aa8k  _al3l"]').click()
-
+        driver.find_elements(By.CSS_SELECTOR, 'div[class="_aabd _aa8k  _al3l"]')[0].click()
+        result = {}
         for i in range(post_num):
-            print('post {}'.format(i+1))
+            post_name = 'post{}'.format(i+1)
+            result[post_name] = {}
             try:
                 # click likes
-                time.sleep(1)
                 driver.find_elements(By.CSS_SELECTOR, 'span[class="x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye xvs91rp x1s688f x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj"]')[-1].click()
                 time.sleep(4)
                 like_account = scroll_down_likes_window(driver)
-                print(len(like_account))
+
+                result[post_name]["like_number"] = len(like_account)
+                result[post_name]["like_list"] = like_account
                 time.sleep(0.5)
                 esc_likes_window(driver)
-            except (NoSuchElementException, IndexError):
-                print('no one like this page')
+
+            except IndexError:
+                result[post_name]["like_number"] = 0
+                result[post_name]["like_list"] = []
             except TimeoutException:
-                print('timeout exception')
+                print('{}: timeout exception'.format(post_name))
 
             if not to_next_post(driver):
                 break
-            time.sleep(1)
-        close_post_page(driver)
+            time.sleep(2)
     except Exception as exception:
         raise Exception(exception)
 
@@ -117,4 +121,4 @@ def scrape_posts(driver, task:Task):
     try:
         pass
     except Exception as exception:
-        raise Exception(exception)'''
+        raise Exception(exception)

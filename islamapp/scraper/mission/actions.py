@@ -50,7 +50,7 @@ def notification_click(driver):
         print('notification click fail')
 
 @log_while_exception()       
-def go_profile(driver, account, password):
+def go_profile(driver):
     while not check_profile(driver):
         try:
             driver.find_element(By.CSS_SELECTOR, 'span[class="xnz67gz x14yjl9h xudhj91 x18nykt9 xww2gxu x9f619 x1lliihq x2lah0s x6ikm8r x10wlt62 x1n2onr6 x1ykvv32 xougopr x159fomc xnp5s1o x194ut8o x1vzenxt xd7ygy7 xt298gk x1xrz1ek x1s928wv x162n7g1 x2q1x1w x1j6awrg x1n449xj x1m1drc7"]').click()
@@ -155,8 +155,7 @@ def scroll_down_likes_window(driver):
     likes_accounts = []
     try:
         repeat = 0
-        likes_accounts = []
-        like_area = driver.find_element(By.CSS_SELECTOR, 'div[style="height: 356px; overflow: hidden auto;"]').find_element(By.TAG_NAME, 'div')
+        like_area = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div[style="height: 356px; overflow: hidden auto;"]'))).find_element(By.TAG_NAME, 'div')
         while True:
             accounts = driver.find_elements(By.CSS_SELECTOR, "div[class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1pi30zi x1swvt13 xwib8y2 x1y1aw1k x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1']")
             
