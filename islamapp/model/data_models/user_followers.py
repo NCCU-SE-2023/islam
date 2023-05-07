@@ -3,7 +3,6 @@ from hashlib import md5
 import random
 from mongoengine import fields, Document, connect
 
-connect('islam')
 class UserFollowers(Document):
     
     #Convert this field for consistency

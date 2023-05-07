@@ -68,7 +68,6 @@ class ScraperCotroller(Process):
             self.running_missions.append(mission_runner)
             idle_node_counts -= 1
             mission_runner.start()
-            print(self.tasks.qsize(), idle_node_counts)
 
     def run(self):
         self.status_logger.info("Initializing scraper controller ...")
