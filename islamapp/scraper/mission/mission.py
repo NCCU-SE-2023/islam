@@ -9,6 +9,7 @@ from scraper.mission.actions import *
 from scraper.mission.checks import *
 from model.data_models.user_followers import *
 from model.data_models.user_following import *
+from model.data_models.user_post_like import *
 from scraper.util import log_while_exception
 import time
 
@@ -73,8 +74,10 @@ def scrape_following(driver, task:Task):
 
 @log_while_exception()
 def scrape_likes(driver, task:Task):
+    # user_id = task.tasl_i
     account = task.task_detail['account']
     password = task.task_detail['password']
+
     try:
         # login
         action_login(driver, account, password)
@@ -84,7 +87,8 @@ def scrape_likes(driver, task:Task):
         # go to profile page
         go_profile(driver)
         time.sleep(2)
-
+        # user name
+        user_name = driver.find_element(By.CSS_SELECTOR, 'h2[class = "x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1ms8i2q xo1l8bm x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj"]').text
         # total scrape post number
         post_num = min(int(driver.find_element(By.CSS_SELECTOR, 'span[class="_ac2a"]').text), 35)
         # click first post
@@ -110,9 +114,18 @@ def scrape_likes(driver, task:Task):
             except TimeoutException:
                 print('{}: timeout exception'.format(post_name))
 
-            if not to_next_post(driver):
+            if not to_next_post(driver):  
                 break
             time.sleep(2)
+        raw_data = {
+                "scraped_ig_id": user_name,
+                "post_like_count": post_num,  
+                "post_like_dict": result,  
+                "scrape_user": "your_scrape_user",
+                "scraped_task_id": "your_scraped_task_id"
+            }
+        UserPostLike.create_user_post_like(raw_data)
+
     except Exception as exception:
         raise Exception(exception)
 
