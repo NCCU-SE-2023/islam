@@ -58,7 +58,28 @@ def post_user(request):
             error_code=INTERNAL_SERVER_ERROR,
             message=f"ShyGuy Exception: {str(exception)}",
         )
+def update_user(request):
+    try:
+        account = request.json.get('account')
+        password = request.json.get('password')
 
+        user = User.query.filter_by(account=account).first()
+        # if user is not None:
+        #     return _gen_error_response(
+        #         status_code=409,
+        #         error_code=DUPLICATE_REGISTRATION,
+        #         message="User already exist",
+        #     )
+
+        user = User(account=account, password=password,cookie=[{"1":"1"},{"2","2"}])
+        user = user.to_json()
+        return jsonify(user), 200
+    except Exception as exception:
+        return _gen_error_response(
+            status_code=500,
+            error_code=INTERNAL_SERVER_ERROR,
+            message=f"ShyGuy Exception: {str(exception)}",
+        )
 def get_user(request):
     try:
         account = request.json.get('account')
