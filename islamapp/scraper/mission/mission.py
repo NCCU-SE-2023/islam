@@ -44,25 +44,28 @@ def scrape_followers_and_following(driver, task:Task):
         user_followings_ids=scrape_following(driver)
         
         # return data
-        for user_followers_id in user_followers_ids:
-            raw_data = {
-                "scraped_ig_id": "your_ig_id",
-                "followers_count": 100,  # 先假設每人追蹤者數量為100 目前抓follower & following跑到一半都會斷掉
-                "followers_list": ["follower1", "follower2", "follower3"],  # 假設追蹤者列表
-                "scrape_user": "your_scrape_user", #發起ISLAM者
-                "scraped_task_id": "your_task_id" 
-            }
-            UserFollowers.create_user_followers(raw_data)
+        follower_number=len(user_followers_ids)
+        following_number=len(user_followings_ids)
         
-        for user_following_id in user_following_ids:
-            raw_data = {
-                "scraped_ig_id": user_id,
-                "following_count": 0,  
-                "following_list": [],  
-                "scrape_user": "your_scrape_user",
-                "scraped_task_id": "your_scraped_task_id"
-            }
-            UserFollowing.create_user_following(raw_data)
+        
+        raw_data = {
+                "scraped_ig_id": account,
+                "followers_count": follower_number ,  
+                "followers_list": user_followers_ids,  
+                "scrape_user": "init_scrape_user", 
+                "scraped_task_id": "your_task_id" 
+        }
+        UserFollowers.create_user_followers(raw_data)
+        
+       
+        raw_data = {
+                "scraped_ig_id": account,
+                "following_count": following_number,  
+                "following_list": user_followings_ids,  
+                "scrape_user": "init_scrape_user",
+                "scraped_task_id": "your_task_id"
+        }
+        UserFollowing.create_user_following(raw_data)
         
         
         pass
