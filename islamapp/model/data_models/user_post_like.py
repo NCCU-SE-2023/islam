@@ -19,8 +19,7 @@ class UserPostLike(Document):
 
         
     @staticmethod
-    def create_user_post_like(raw_data):
-        
+    def create(raw_data):
         
         create_at= datetime.now()
         user_post_like_id = md5(str(create_at).join(raw_data["scraped_ig_id"]).join(str(random.random())).encode()).hexdigest()

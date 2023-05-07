@@ -806,3 +806,7 @@ NODE STATUS :
   session_count: 0/1
   status: UP
 QUEUING TASK COUNTS: 0
+Initializing scraper controller ...
+Connect to MongoDB 127.0.0.1 27017
+Initializing scraper controller ...
+Connect to MongoDB 127.0.0.1 27017

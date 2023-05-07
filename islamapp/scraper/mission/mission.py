@@ -27,46 +27,8 @@ def map_task_type_to_mission(task_type):
         raise Exception("Invalid task type")
 
 @log_while_exception()
-def scrape_followers_and_following(driver, task:Task):
-    account = task.task_detail['account']
-    password = task.task_detail['password']
+def scrape_followers_and_following(driver, task:Task):    
     try:
-        # login
-        action_login(driver, account, password)
-        store_click(driver)
-        notification_click(driver)
-        
-        # go to profile page
-        # scrape followers
-        go_profile(driver)
-        user_followers_ids=scrape_follower(driver)
-        
-        # scrape following
-        go_profile(driver)
-        user_followings_ids=scrape_following(driver)
-        
-        # return data
-        for user_followers_id in user_followers_ids:
-            raw_data = {
-                "scraped_ig_id": "your_ig_id",
-                "followers_count": 100,  # 先假設每人追蹤者數量為100 目前抓follower & following跑到一半都會斷掉
-                "followers_list": ["follower1", "follower2", "follower3"],  # 假設追蹤者列表
-                "scrape_user": "your_scrape_user", #發起ISLAM者
-                "scraped_task_id": "your_task_id" 
-            }
-            UserFollowers.create_user_followers(raw_data)
-        
-        for user_following_id in user_following_ids:
-            raw_data = {
-                "scraped_ig_id": user_id,
-                "following_count": 0,  
-                "following_list": [],  
-                "scrape_user": "your_scrape_user",
-                "scraped_task_id": "your_scraped_task_id"
-            }
-            UserFollowing.create_user_following(raw_data)
-        
-        
         pass
     except Exception as exception:
         raise Exception(exception)
@@ -137,10 +99,10 @@ def scrape_likes(driver, task:Task):
                 "scrape_user": "your_scrape_user",
                 "scraped_task_id": "your_scraped_task_id"
             }
-        UserPostLike.create_user_post_like(raw_data)
+        return raw_data
 
     except Exception as exception:
-        raise Exception(exception)
+        return exception
 
 @log_while_exception()
 def scrape_posts(driver, task:Task):

@@ -1,4 +1,5 @@
 import queue
+from model.models import map_task_type_to_data_model
 from model.task import Task
 from scraper.driver import Driver
 from scraper.mission.mission import map_task_type_to_mission
@@ -95,6 +96,7 @@ class MissionRunner(Process):
             self.task.set_status(TaskStatus.RUNNING.value)
 
             self.mission = map_task_type_to_mission(self.task.type)
+            self.data_model = map_task_type_to_data_model(self.task.type)
             self.logger.info(f"[START] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
             self.logger.info(f"[DRVER] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
             driver = Driver(SELENIUM_GRID_HUB_ENDPOINT)
@@ -103,6 +105,7 @@ class MissionRunner(Process):
             result = self.mission(driver.driver, self.task)
 
             # save result to task
+            self.data_model.create(result)
             self.task.set_status(TaskStatus.FINISHED.value)
             self.logger.info(f"[FINSH] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
             

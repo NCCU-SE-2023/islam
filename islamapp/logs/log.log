@@ -2256,3 +2256,7 @@
 2023-05-04 21:44:05,959 INFO:   status: UP
 2023-05-04 21:44:05,961 INFO: QUEUING TASK COUNTS: 0
 2023-05-04 21:44:05,962 INFO: Job "ScraperCotroller.routine_job (trigger: interval[0:00:05], next run at: 2023-05-04 21:44:09 CST)" executed successfully
+2023-05-07 23:33:01,951 INFO: Initializing scraper controller ...
+2023-05-07 23:33:01,951 INFO: Connect to MongoDB 127.0.0.1 27017
+2023-05-07 23:34:29,280 INFO: Initializing scraper controller ...
+2023-05-07 23:34:29,280 INFO: Connect to MongoDB 127.0.0.1 27017
