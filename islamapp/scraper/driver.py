@@ -3,6 +3,7 @@ from webdriver_manager.chrome import ChromeDriverManager as CDM
 
 class Driver(object):
     """Congigure and return a selenium webdriver instance.
+    :param hub_endpoint: (optional) the endpoint of the selenium hub. If None, the driver will start locally.
     """
     def __init__(self, hub_endpoint=None):
         self.options = webdriver.ChromeOptions()

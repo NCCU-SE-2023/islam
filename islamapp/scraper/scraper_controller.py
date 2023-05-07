@@ -100,15 +100,17 @@ class MissionRunner(Process):
             driver = Driver(SELENIUM_GRID_HUB_ENDPOINT)
             
             # 2. run mission
-            result = self.mission(driver.driver, self.task)
+            result = self.mission(driver.driver, self.task.to_json())
 
             # save result to task
+            # TODO: save result to data-model
             self.task.set_status(TaskStatus.FINISHED.value)
             self.logger.info(f"[FINSH] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
             
         except Exception as exception:
+            # TODO: save error msg to task
             self.task.set_status(TaskStatus.ERROR.value)
             self.logger.error(f"[ERROR] task_id:{self.task.task_id} pid:{self.pid}")
-            self.logger.error(f"        Msg: {str(exception)}")
+            self.logger.error(f"        Error Msg: {str(exception)}")
         finally:
             del driver
