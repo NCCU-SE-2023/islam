@@ -47,7 +47,7 @@ def scrape_following(driver, task:Task):
     except Exception as exception:
         raise Exception(exception)
 
-@log_while_exception()
+
 def scrape_likes(driver, task:Task):
     # user_id = task.tasl_i
     account = task.task_detail['account']
@@ -55,17 +55,19 @@ def scrape_likes(driver, task:Task):
 
     try:
         # login
+        get_ig_url(driver)
+        time.sleep(2)
+
         action_login(driver, account, password)
-        store_click(driver)
-        notification_click(driver)
-        
-        # go to profile page
+        # # # go to profile page
+        time.sleep(2)
         go_profile(driver)
+        # print(user_name)
         time.sleep(2)
         # user name
-        user_name = driver.find_element(By.CSS_SELECTOR, 'h2[class = "x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1ms8i2q xo1l8bm x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj"]').text
-        # total scrape post number
-        post_num = min(int(driver.find_element(By.CSS_SELECTOR, 'span[class="_ac2a"]').text), 35)
+        user_name = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'h2[class = "x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1ms8i2q xo1l8bm x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj"]'))).text
+        # how many post you want to scrape(max=10)
+        post_num = min(int(driver.find_element(By.CSS_SELECTOR, 'span[class="_ac2a"]').text), 10)
         # click first post
         driver.find_elements(By.CSS_SELECTOR, 'div[class="_aabd _aa8k  _al3l"]')[0].click()
         result = {}
@@ -96,12 +98,15 @@ def scrape_likes(driver, task:Task):
                 "scraped_ig_id": user_name,
                 "post_like_count": post_num,  
                 "post_like_dict": result,  
-                "scrape_user": "your_scrape_user",
-                "scraped_task_id": "your_scraped_task_id"
+                "scrape_user": task.create_user,
+                "scraped_task_id": task.task_id
             }
+        print(raw_data)
         return raw_data
 
     except Exception as exception:
+        import traceback
+        traceback.print_exc()
         return exception
 
 @log_while_exception()
@@ -117,5 +122,6 @@ def scrape_test( driver, task:Task):
         driver.get("https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz")
         import time
         time.sleep(10)
+        print("error!")
     except Exception as exception:
         raise Exception(exception)

@@ -13,7 +13,10 @@ class VerifyException(Exception):
     pass
 
 
-@log_while_exception()
+def get_ig_url(driver):
+    login_url = 'https://www.instagram.com/'
+    driver.get(login_url)
+
 def action_login(driver, account, password):
     try:
         # prepare
@@ -21,22 +24,39 @@ def action_login(driver, account, password):
         password_xpath = '//*[@id="loginForm"]/div/div[2]/div/label/input'
         button_xpath = '//*[@id="loginForm"]/div/div[3]'
 
-        # act
-        elem_account = WebDriverWait(driver, 600).until(EC.presence_of_element_located((By.XPATH, account_xpath)))
-        elem_account.send_keys(account)
-        elem_password = WebDriverWait(driver, 600).until(EC.presence_of_element_located((By.XPATH, password_xpath)))
-        elem_password.send_keys(password)
-        elem_button = WebDriverWait(driver, 600).until(EC.presence_of_element_located((By.XPATH, button_xpath)))
-        elem_button.click()
+    # act
+        try:
+            elem_account = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, account_xpath)))
+            elem_account.send_keys(account)
+            time.sleep(1)
+            elem_password = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, password_xpath)))
+            elem_password.send_keys(password)
+            time.sleep(2)
+            elem_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, button_xpath)))
+            elem_button.click()
+            print("input account and password success")
+        except:
+            print("input account and password fail")
+        try:
+            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div[class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x1i0vuye xwhw2v2 xl56j7k x17ydfre x1f6kntn x2b8uid xlyipyv x87ps6o x14atkfc x1d5wrs8 x972fbf xcfux6l x1qhh985 xm0m39n xm3z3ea x1x8b98j x131883w x16mih1h xt0psk2 xt7dq6l xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 xjbqb8w x1n5bzlp x173jzuc x1yc6y37"]'))).click()
+        except TimeoutException:
+            print('no alert 1')        
+        time.sleep(2)
+        try:
+            driver.find_element(By.CSS_SELECTOR, 'button[class="_a9-- _a9_1"]').click()  
+        except NoSuchElementException:
+            print('no alert 2')
 
-        # verify
-
+        if check_main_page(driver):
+            print('login success')
+        else:
+            print('login fail1')
     except:
-        print('login fail')
+        print('login fail2')
 @log_while_exception()
 def store_click(driver):
     try:
-        WebDriverWait(driver, 30).until(EC.presence_of_element_located(
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located(
             (By.CSS_SELECTOR, 'div[class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x1i0vuye xwhw2v2 xl56j7k x17ydfre x1f6kntn x2b8uid xlyipyv x87ps6o x14atkfc x1d5wrs8 x972fbf xcfux6l x1qhh985 xm0m39n xm3z3ea x1x8b98j x131883w x16mih1h xt0psk2 xt7dq6l xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 xjbqb8w x1n5bzlp x173jzuc x1yc6y37"]'))).click()
     except:
         print('store click fail')
@@ -44,24 +64,25 @@ def store_click(driver):
 @log_while_exception()        
 def notification_click(driver):
     try:
-        WebDriverWait(driver, 30).until(EC.presence_of_element_located(
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located(
             (By.CSS_SELECTOR, 'button[class="_a9-- _a9_1"]'))).click()  
     except:
         print('notification click fail')
 
-@log_while_exception()       
 def go_profile(driver):
-    while not check_profile(driver):
+    if not check_profile(driver):
         try:
             driver.find_element(By.CSS_SELECTOR, 'span[class="xnz67gz x14yjl9h xudhj91 x18nykt9 xww2gxu x9f619 x1lliihq x2lah0s x6ikm8r x10wlt62 x1n2onr6 x1ykvv32 xougopr x159fomc xnp5s1o x194ut8o x1vzenxt xd7ygy7 xt298gk x1xrz1ek x1s928wv x162n7g1 x2q1x1w x1j6awrg x1n449xj x1m1drc7"]').click()
-            break
-        except:
+        except NoSuchElementException:
             if check_post_page(driver):
                 close_post_page(driver)
-    try:
-        close_post_page(driver)
-    except:
-        pass    
+        time.sleep(5)
+        if check_profile(driver):
+            print("go to profile success1")
+        else:
+            print("go to profile fail")
+    else:
+        print("go to profile success2")  
 
    
 @log_while_exception()       
@@ -178,9 +199,15 @@ def scroll_down_likes_window(driver):
     return likes_accounts
 
 @log_while_exception() 
-def to_next_post(driver):
+def to_next_post(browser):
     try:
-        driver.find_element(By.CSS_SELECTOR, 'svg[aria-label="下一步"]').click()
+        next_list = ['svg[aria-label="Next"]','svg[aria-label="下一步"]' ]
+        for next in next_list:
+            try:
+                browser.find_element(By.CSS_SELECTOR, next).click()
+                break
+            except NoSuchElementException:
+                pass
     except NoSuchElementException:
         print('No other post')
         return False

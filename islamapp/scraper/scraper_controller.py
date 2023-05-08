@@ -70,9 +70,10 @@ class ScraperCotroller(Process):
             mission_runner.start()
 
     def run(self):
+        print(SELENIUM_GRID_GRAPHQL_END_POINT,SELENIUM_GRID_HUB_ENDPOINT, MONGO_HOST, MONGO_PORT)
         self.status_logger.info("Initializing scraper controller ...")
         self.status_logger.info(f"Connect to MongoDB {MONGO_HOST} {MONGO_PORT}")
-        connect(db="islam", host=MONGO_HOST, port=int(MONGO_PORT))
+        connect(db="islam", host=MONGO_HOST, port=27017)
         self.status_logger.info("Initialization scraper controller success !")
 
         scheduler = BlockingScheduler()
@@ -98,7 +99,7 @@ class MissionRunner(Process):
             self.data_model = map_task_type_to_data_model(self.task.type)
             self.logger.info(f"[START] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
             self.logger.info(f"[DRVER] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
-            driver = Driver(SELENIUM_GRID_HUB_ENDPOINT)
+            driver = Driver()
             
             # 2. run mission
             result = self.mission(driver.driver, self.task)
