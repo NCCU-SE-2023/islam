@@ -39,7 +39,6 @@ class ScraperCotroller(Process):
     def routine_job(self):
         if not self.run_local:
             # GRID MODE
-            self.status_logger.info(f"GRID MODE")
             # 0. check avaliable scrapers
             nodes_status = grid_get_ndoe_status(SELENIUM_GRID_GRAPHQL_END_POINT)
             idle_node_counts = len([x for x in nodes_status if x["sessionCount"] < x["maxSession"]])
@@ -54,6 +53,7 @@ class ScraperCotroller(Process):
                     self.running_missions.remove(running_mission)
 
             # 2. Log process status
+            self.status_logger.info(f"GRID MODE")
             self.status_logger.info(f"NODE COUNTS: {node_counts}")
             self.status_logger.info(f"QUEUING TASK COUNTS: {self.tasks.qsize()}")
             self.status_logger.info(f"RUNNING MISSIONS:{len(self.running_missions)}")
