@@ -16,5 +16,5 @@ logging.basicConfig(filename='logs/log.log',level=logging.DEBUG,format='%(asctim
 
 
 if __name__ == "__main__":
-    scraper_controller = ScraperCotroller(status_logger, mission_logger)
+    scraper_controller = ScraperCotroller(status_logger, mission_logger, run_period=1, run_local=True, local_driver_limit=4)
     scraper_controller.run()
