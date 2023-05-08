@@ -1,5 +1,8 @@
 import requests
 import os
+import dotenv
+
+dotenv.load_dotenv()
 
 SELENIUM_GRID_HUB_ENDPOINT = os.environ.get('SELENIUM_GRID_HUB_ENDPOINT')
 SELENIUM_GRID_GRAPHQL_END_POINT = os.getenv('SELENIUM_GRID_GRAPHQL_END_POINT')
