@@ -1,11 +1,13 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
 
 def _check_elements(driver, verify_element_list):
     for i in range(len(verify_element_list)):
         try:
-            driver.find_element(verify_element_list[i]['type'], verify_element_list[i]['value'])
-        except:
+            WebDriverWait(driver, 8).until(EC.presence_of_element_located((verify_element_list[i]['type'], verify_element_list[i]['value'])))
+        except TimeoutException:
             return False 
     return True
 
@@ -53,7 +55,7 @@ def check_profile(driver):
 
 def check_main_page(driver):
     verify_element_list = [
-        {'type':By.CSS_SELECTOR, 'value':'canvas[class="_aarh"]'}, 
+        {'type':By.CSS_SELECTOR, 'value':'svg[aria-label="Instagram"]'}, 
         {'type':By.CSS_SELECTOR, 'value': 'span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd x1s688f x173jzuc x1s3etm8 x676frb x10wh9bi x1wdrske x8viiok x18hxmgj"]'}
     ]
     return _check_elements(driver, verify_element_list)
@@ -74,6 +76,7 @@ def check_reels_page(driver):
 
 def check_login_page(driver):
     verify_element_list = [
-        :TODO:
+        {'type':By.CSS_SELECTOR, 'value':'i[style="background-image: url("https://static.cdninstagram.com/rsrc.php/v3/yK/r/ATdtiLb2BQ9.png"); background-position: 0px 0px; background-size: 176px 181px; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"]'}, 
+        {'type':By.CSS_SELECTOR, 'value': 'div[class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1xmf6yo x1e56ztr x540dpk x1m39q7l x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]'}
     ]
     return _check_elements(driver, verify_element_list)
