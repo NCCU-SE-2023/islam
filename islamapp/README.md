@@ -9,7 +9,7 @@ pip3 install -r requirements.txt
 
 ## ISLAM database
 
-connect to a MySQL DB (eg. localhost:3306) and create a new schema called islam
+connect to a MySQL DB (eg. localhost:3306) and create a new schema called islam  
 connect to a Mongo DB (eg. localhost:27017) and create a new database called islam
 
 ### Alembic
@@ -36,6 +36,8 @@ DATABASE_URL=mysql+pymysql://{username}:{password}@{db_fqdn}:3306/islam
 MONGO_HOST=127.0.0.1
 MONGO_PORT=27017
 MONGODB=islam
+MONGO_USER=islam
+MONGO_PASSWORD=islam
 SELENIUM_GRID_HUB_ENDPOINT=http://localhost:4444/wd/hub
 SELENIUM_GRID_GRAPHQL_END_POINT=http://localhost:4444/graphql
 ```
@@ -52,6 +54,11 @@ FLASK_DEBUG=True
 ```
 python3 -m flask run
 ```
+## Start gunicorn
+```
+gunicorn -w 4 -b 127.0.0.1:5000 main:app --reload
+```
+
 
 ## Start Scraper Controller
 ```
