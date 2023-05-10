@@ -9,6 +9,7 @@ from scraper.util import (
     SELENIUM_GRID_GRAPHQL_END_POINT,
     SELENIUM_GRID_HUB_ENDPOINT, 
     MONGO_HOST, MONGO_PORT, 
+    MONGO_USER, MONGO_PASSWORD,
     grid_get_node_count,
     grid_get_ndoe_status
 )
@@ -105,7 +106,7 @@ class ScraperCotroller(Process):
     def run(self):
         self.status_logger.info("Initializing scraper controller ...")
         self.status_logger.info(f"Connect to MongoDB {MONGO_HOST} {MONGO_PORT}")
-        connect(db="islam", host=MONGO_HOST, port=int(MONGO_PORT))
+        connect(db="islam", host=MONGO_HOST, port=int(MONGO_PORT), username=MONGO_USER, password=MONGO_PASSWORD)
         self.status_logger.info("Initialization scraper controller success !")
 
         scheduler = BlockingScheduler()
@@ -124,7 +125,7 @@ class MissionRunner(Process):
     def run(self):
         try:
             # 0. preparing
-            connect(db="islam", host=MONGO_HOST, port=int(MONGO_PORT))
+            connect(db="islam", host=MONGO_HOST, port=int(MONGO_PORT), username=MONGO_USER, password=MONGO_PASSWORD)
             # 1. update task to running
             self.task.set_status(TaskStatus.RUNNING.value)
 
