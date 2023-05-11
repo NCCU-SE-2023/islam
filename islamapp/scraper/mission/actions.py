@@ -50,18 +50,14 @@ def notification_click(driver):
         print('notification click fail')
 
 @log_while_exception()       
-def go_profile(driver):
+def go_profile(driver , ig_id):
     while not check_profile(driver):
         try:
-            driver.find_element(By.CSS_SELECTOR, 'span[class="xnz67gz x14yjl9h xudhj91 x18nykt9 xww2gxu x9f619 x1lliihq x2lah0s x6ikm8r x10wlt62 x1n2onr6 x1ykvv32 xougopr x159fomc xnp5s1o x194ut8o x1vzenxt xd7ygy7 xt298gk x1xrz1ek x1s928wv x162n7g1 x2q1x1w x1j6awrg x1n449xj x1m1drc7"]').click()
+            profile_url = 'https://www.instagram.com/'+ig_id+"/"
+            driver.get(profile_url)
             break
         except:
-            if check_post_page(driver):
-                close_post_page(driver)
-    try:
-        close_post_page(driver)
-    except:
-        pass    
+            print('go profile fail')  
 
    
 @log_while_exception()       
