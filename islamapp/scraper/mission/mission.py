@@ -4,7 +4,6 @@
 # ========================================================
 # A mission should able to start no matter what page the webdriver is on.
 
-
 from scraper.mission.actions import *
 from scraper.mission.checks import *
 from model.data_models.user_followers import *
@@ -27,9 +26,47 @@ def map_task_type_to_mission(task_type):
         raise Exception("Invalid task type")
 
 @log_while_exception()
-def scrape_followers_and_following(driver, task:Task):    
+def scrape_followers_and_following(driver, task:Task):
+    account = task.task_detail['account']
+    password = task.task_detail['password']
     try:
-        pass
+        # login
+        action_login(driver, account, password)
+        store_click(driver)
+        notification_click(driver)
+        
+        # go to profile page
+        # scrape followers
+        go_profile(driver)
+        user_followers_ids=scrape_follower(driver)
+        
+        # scrape following
+        go_profile(driver)
+        user_followings_ids=scrape_following(driver)
+        
+        # return data
+        follower_number=len(user_followers_ids)
+        following_number=len(user_followings_ids)
+        
+        
+        raw_data = {
+                "scraped_ig_id": account,
+                "followers_count": follower_number ,  
+                "followers_list": user_followers_ids,  
+                "scrape_user": "init_scrape_user", 
+                "scraped_task_id": "your_task_id" 
+        }
+        UserFollowers.create_user_followers(raw_data)
+        
+       
+        raw_data = {
+                "scraped_ig_id": account,
+                "following_count": following_number,  
+                "following_list": user_followings_ids,  
+                "scrape_user": "init_scrape_user",
+                "scraped_task_id": "your_task_id"
+        }
+        UserFollowing.create_user_following(raw_data)
     except Exception as exception:
         raise Exception(exception)
 
@@ -91,6 +128,9 @@ def scrape_likes(driver, task:Task):
             except TimeoutException:
                 print('{}: timeout exception'.format(post_name))
 
+            if not to_next_post(driver):
+                break
+            time.sleep(2)
             if not to_next_post(driver):  
                 break
             time.sleep(2)
@@ -101,9 +141,7 @@ def scrape_likes(driver, task:Task):
                 "scrape_user": task.create_user,
                 "scraped_task_id": task.task_id
             }
-        print(raw_data)
         return raw_data
-
     except Exception as exception:
         import traceback
         traceback.print_exc()
