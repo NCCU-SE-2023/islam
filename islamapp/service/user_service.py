@@ -85,3 +85,29 @@ def get_user(request):
             error_code=INTERNAL_SERVER_ERROR,
             message=f"ShyGuy Exception: {str(exception)}",
         )
+
+def get_user_by_id(request):
+    try:
+        user_id = request.headers.get('user_id')
+        user = User.query.filter_by(user_id=user_id).first()
+        if user is None:
+            return _gen_error_response(
+                status_code=404,
+                error_code=USER_NOT_FOUND,
+                message="User not found",
+            )
+        
+        user = user.to_json()
+        user_id = user.get('user_id')
+        user.pop('user_id')
+        user = jsonify(user)
+        user.headers.add("user_id", user_id)
+
+        return user, 200
+
+    except Exception as exception:
+        return _gen_error_response(
+            status_code=500,
+            error_code=INTERNAL_SERVER_ERROR,
+            message=f"ShyGuy Exception: {str(exception)}",
+        )
