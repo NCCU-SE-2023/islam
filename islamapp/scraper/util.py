@@ -1,10 +1,15 @@
 import requests
 import os
+import dotenv
+
+dotenv.load_dotenv()
 
 SELENIUM_GRID_HUB_ENDPOINT = os.environ.get('SELENIUM_GRID_HUB_ENDPOINT')
 SELENIUM_GRID_GRAPHQL_END_POINT = os.getenv('SELENIUM_GRID_GRAPHQL_END_POINT')
 MONGO_HOST = os.getenv("MONGO_HOST")
 MONGO_PORT = os.getenv("MONGO_PORT")
+MONGO_USER = os.getenv("MONGO_USER")
+MONGO_PASSWORD = os.getenv("MONGO_PASSWORD")
 
 def log_while_exception():
     # This decorator will print the function name when it throws an exception.

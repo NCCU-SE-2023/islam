@@ -8,6 +8,7 @@ from scraper.mission.actions import *
 from scraper.mission.checks import *
 from model.data_models.user_followers import *
 from model.data_models.user_following import *
+from model.data_models.user_post_like import *
 from model.task import Task, TaskType
 from scraper.util import log_while_exception
 import time
@@ -66,9 +67,6 @@ def scrape_followers_and_following(driver, task:Task):
                 "scraped_task_id": "your_task_id"
         }
         UserFollowing.create_user_following(raw_data)
-        
-        
-        pass
     except Exception as exception:
         raise Exception(exception)
 
@@ -86,22 +84,27 @@ def scrape_following(driver, task:Task):
     except Exception as exception:
         raise Exception(exception)
 
-@log_while_exception()
+
 def scrape_likes(driver, task:Task):
+    # user_id = task.tasl_i
     account = task.task_detail['account']
     password = task.task_detail['password']
+
     try:
         # login
-        action_login(driver, account, password)
-        store_click(driver)
-        notification_click(driver)
-        
-        # go to profile page
-        go_profile(driver)
+        get_ig_url(driver)
         time.sleep(2)
 
-        # total scrape post number
-        post_num = min(int(driver.find_element(By.CSS_SELECTOR, 'span[class="_ac2a"]').text), 35)
+        action_login(driver, account, password)
+        # # # go to profile page
+        time.sleep(2)
+        go_profile(driver)
+        # print(user_name)
+        time.sleep(2)
+        # user name
+        user_name = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'h2[class = "x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1ms8i2q xo1l8bm x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj"]'))).text
+        # how many post you want to scrape(max=10)
+        post_num = min(int(driver.find_element(By.CSS_SELECTOR, 'span[class="_ac2a"]').text), 10)
         # click first post
         driver.find_elements(By.CSS_SELECTOR, 'div[class="_aabd _aa8k  _al3l"]')[0].click()
         result = {}
@@ -128,8 +131,21 @@ def scrape_likes(driver, task:Task):
             if not to_next_post(driver):
                 break
             time.sleep(2)
+            if not to_next_post(driver):  
+                break
+            time.sleep(2)
+        raw_data = {
+                "scraped_ig_id": user_name,
+                "post_like_count": post_num,  
+                "post_like_dict": result,  
+                "scrape_user": task.create_user,
+                "scraped_task_id": task.task_id
+            }
+        return raw_data
     except Exception as exception:
-        raise Exception(exception)
+        import traceback
+        traceback.print_exc()
+        return exception
 
 @log_while_exception()
 def scrape_posts(driver, task:Task):

@@ -1,11 +1,13 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
 
 def _check_elements(driver, verify_element_list):
     for i in range(len(verify_element_list)):
         try:
-            driver.find_element(verify_element_list[i]['type'], verify_element_list[i]['value'])
-        except:
+            WebDriverWait(driver, 8).until(EC.presence_of_element_located((verify_element_list[i]['type'], verify_element_list[i]['value'])))
+        except TimeoutException:
             return False 
     return True
 
@@ -53,7 +55,7 @@ def check_profile(driver):
 
 def check_main_page(driver):
     verify_element_list = [
-        {'type':By.CSS_SELECTOR, 'value':'canvas[class="_aarh"]'}, 
+        {'type':By.CSS_SELECTOR, 'value':'svg[aria-label="Instagram"]'}, 
         {'type':By.CSS_SELECTOR, 'value': 'span[class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd x1s688f x173jzuc x1s3etm8 x676frb x10wh9bi x1wdrske x8viiok x18hxmgj"]'}
     ]
     return _check_elements(driver, verify_element_list)
