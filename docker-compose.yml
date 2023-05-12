@@ -9,7 +9,7 @@ services:
     volumes:
       - ./db:/var/lib/mysql
     ports:
-      - 33061:3306
+      - 3306:3306
   mongo-databse:
     build: ./mongo-database
     restart: always
