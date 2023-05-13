@@ -6,6 +6,7 @@ from service.util import (
     DUPLICATE_REGISTRATION,
     INTERNAL_SERVER_ERROR,
     USER_NOT_FOUND,
+    INVALID_INPUT_ERROR
 )
 
 from flask import jsonify
@@ -105,6 +106,35 @@ def get_user_by_id(request):
 
         return user, 200
 
+    except Exception as exception:
+        return _gen_error_response(
+            status_code=500,
+            error_code=INTERNAL_SERVER_ERROR,
+            message=f"ShyGuy Exception: {str(exception)}",
+        )
+    
+def insert_cookie(request):
+    try:
+        userid = request.json.get('user_id')
+        cookie = request.json.get('cookie')
+        user = User.query.filter_by(user_id=userid).first()
+        if user is None:
+            return _gen_error_response(
+                status_code=404,
+                error_code=USER_NOT_FOUND,
+                message="User not found",
+            )
+        success = User.query.filter_by(user_id=userid).update({'cookie' : cookie})
+        if success == 0:
+            return _gen_error_response(
+                status_code=400,
+                error_code=INVALID_INPUT_ERROR,
+                message="Bad cookie input",
+            )
+        db.session.commit()
+        user = User.query.filter_by(user_id=userid).first()
+        user = jsonify(user.to_json())
+        return user, 200
     except Exception as exception:
         return _gen_error_response(
             status_code=500,
