@@ -136,6 +136,12 @@ def insert_cookie(request):
         user = jsonify(user.to_json())
         return user, 200
     except Exception as exception:
+        if(exception.__class__.__name__=="BadRequest"):
+            return _gen_error_response(
+            status_code=400,
+                error_code=INVALID_INPUT_ERROR,
+                message="Bad cookie input",
+        )
         return _gen_error_response(
             status_code=500,
             error_code=INTERNAL_SERVER_ERROR,
