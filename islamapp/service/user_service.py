@@ -124,15 +124,8 @@ def insert_cookie(request):
                 error_code=USER_NOT_FOUND,
                 message="User not found",
             )
-        success = User.query.filter_by(user_id=userid).update({'cookie' : cookie})
-        if success == 0:
-            return _gen_error_response(
-                status_code=400,
-                error_code=INVALID_INPUT_ERROR,
-                message="Bad cookie input",
-            )
+        user.cookie = cookie
         db.session.commit()
-        user = User.query.filter_by(user_id=userid).first()
         user = jsonify(user.to_json())
         return user, 200
     except Exception as exception:

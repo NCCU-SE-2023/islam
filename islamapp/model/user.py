@@ -13,6 +13,7 @@ class User(db.Model):
             "user_id": self.user_id,
             "account": self.account,
         }
+    
     def set_cookie(self, cookie_dict):
         self.cookie = json.dumps(cookie_dict)  # 將字典轉為 JSON 字串
 
