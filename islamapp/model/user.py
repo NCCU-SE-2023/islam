@@ -7,11 +7,12 @@ class User(db.Model):
     user_id = sa.Column(sa.String(32), primary_key=True)
     account = sa.Column(sa.String(320), unique=True, nullable=False)
     password = sa.Column(sa.CHAR(60), nullable=False)
-    cookie = sa.Column(sa.JSON, nullable=True)
+    cookie = sa.Column(sa.JSON, nullable=True,default = [])
     def to_json(self):
         return {
             "user_id": self.user_id,
             "account": self.account,
+            "cookie" : self.cookie
         }
     
     def set_cookie(self, cookie_dict):
