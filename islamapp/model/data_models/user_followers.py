@@ -1,9 +1,9 @@
 from datetime import datetime
 from hashlib import md5
 import random
-from mongoengine import fields, Document, connect
+from mongoengine import fields, Document
 
-connect('islam')
+
 class UserFollowers(Document):
     
     #Convert this field for consistency
