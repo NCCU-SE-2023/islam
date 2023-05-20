@@ -34,16 +34,23 @@ def scrape_followers_and_following(driver, task:Task):
         action_login(driver, account, password)
         store_click(driver)
         notification_click(driver)
+        time.sleep(2.5)
         
-        # go to profile page
-        # scrape followers
-        go_profile(driver)
-        user_followers_ids=scrape_follower(driver)
         
-        # scrape following
         go_profile(driver)
+        time.sleep(2.5)
+        user_followers_ids=scrape_followers(driver)
+        time.sleep(2.5)
+        driver.back()
+        driver.refresh()
+       
+        time.sleep(10)
+        
+        go_profile(driver)
+        time.sleep(2.5)
         user_followings_ids=scrape_following(driver)
-        
+        time.sleep(2.5)
+      
         # return data
         follower_number=len(user_followers_ids)
         following_number=len(user_followings_ids)
