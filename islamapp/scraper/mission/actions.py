@@ -33,6 +33,7 @@ def action_login(driver, account, password):
             time.sleep(2)
             elem_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, button_xpath)))
             elem_button.click()
+            elem_button.click()
             print("input account and password success")
         except:
             print("input account and password fail")
@@ -88,9 +89,9 @@ def go_profile(driver):
 
    
 @log_while_exception()       
-def scrape_follower(driver):
+def scrape_followers(driver):
     try:
-        follower_id = "follower"
+        followers_id = "followers"
         driver.find_element(
             By.CSS_SELECTOR, ("a[href*=%s]" % follower_id)).click()
         
@@ -112,8 +113,8 @@ def scrape_follower(driver):
         links = scroll_box.find_elements(
             By.TAG_NAME, 'a')
         
-        follower_names = [name.text for name in links if name.text != '']
-        return follower_names
+        followers_names = [name.text for name in links if name.text != '']
+        return followers_names
         
     except:
         pass
@@ -161,16 +162,47 @@ def tagged_post(driver):
         time.sleep(2)
 
         wait = WebDriverWait(driver, 10)
+        count=1
         while True:
-            # grab the data
-
-            # click next link
             try:
                 element = wait.until(EC.element_to_be_clickable(
                     (By.CSS_SELECTOR, "[aria-label='下一步']"))).click()
+                count=count+1
             except TimeoutException:
                 break
+        driver.back()
+        print(count)
+        driver.refresh()
+        time.sleep(5)
+        driver.find_element(
+            By.XPATH, "//div[contains(@class,'_aagu')]").click()
+        time.sleep(2)
+        
+        tagged_names = []
+        for i in range(count-1):
+            elements = driver.find_elements(By.CSS_SELECTOR,'a.x1i10hfl')  
+
+
+            for index, element in enumerate(elements):
+                name = element.text  
+                if index == len(elements) - 2:
+                    tagged_names.append(name)  
+            
+            
+            driver.find_element(
+            By.CSS_SELECTOR, "[aria-label='下一步']").click()
+            time.sleep(2)
+        time.sleep(2)
+        elements = driver.find_elements(By.CSS_SELECTOR,'a.x1i10hfl')  
+
+
+        for index, element in enumerate(elements):
+            name = element.text  
+            if index == len(elements) - 2:
+                tagged_names.append(name)  
+        return tagged_names 
     except:
+        print("tagged post fail")
         pass
     
 @log_while_exception() 
