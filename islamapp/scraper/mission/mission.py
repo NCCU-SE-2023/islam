@@ -34,16 +34,23 @@ def scrape_followers_and_following(driver, task:Task):
         action_login(driver, account, password)
         store_click(driver)
         notification_click(driver)
+        time.sleep(2.5)
         
-        # go to profile page
-        # scrape followers
-        go_profile(driver)
-        user_followers_ids=scrape_follower(driver)
         
-        # scrape following
         go_profile(driver)
+        time.sleep(2.5)
+        user_followers_ids=scrape_followers(driver)
+        time.sleep(2.5)
+        driver.back()
+        driver.refresh()
+       
+        time.sleep(10)
+        
+        go_profile(driver)
+        time.sleep(2.5)
         user_followings_ids=scrape_following(driver)
-        
+        time.sleep(2.5)
+      
         # return data
         follower_number=len(user_followers_ids)
         following_number=len(user_followings_ids)
@@ -99,39 +106,57 @@ def scrape_likes(driver, task:Task):
         # # # go to profile page
         time.sleep(2)
         go_profile(driver)
-        # print(user_name)
         time.sleep(2)
         # user name
-        user_name = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'h2[class = "x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1ms8i2q xo1l8bm x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj"]'))).text
-        # how many post you want to scrape(max=10)
-        post_num = min(int(driver.find_element(By.CSS_SELECTOR, 'span[class="_ac2a"]').text), 10)
-        # click first post
-        driver.find_elements(By.CSS_SELECTOR, 'div[class="_aabd _aa8k  _al3l"]')[0].click()
+        user_name = driver.find_element(By.CSS_SELECTOR, 'h2[class = "x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1ms8i2q xo1l8bm x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj"]').text
+        # total scrape post number
+        post_num = min(int(driver.find_element(By.CSS_SELECTOR, 'span[class="_ac2a"]').text), 35)
+        # click post
+        post = 0
+        try:
+            driver.find_elements(By.CSS_SELECTOR, 'div[class="_aabd _aa8k  _al3l"]')[post].click()
+        except NoSuchElementException:
+            print('click post fail')
         result = {}
-        for i in range(post_num):
-            post_name = 'post{}'.format(i+1)
+        # for i in range(start, post_num):
+        index = -1
+        while post < post_num:  
+            post_name = 'post{}'.format(post+1)
+            # print(post_name)
             result[post_name] = {}
             try:
                 # click likes
-                driver.find_elements(By.CSS_SELECTOR, 'span[class="x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye xvs91rp x1s688f x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj"]')[-1].click()
-                time.sleep(4)
-                like_account = scroll_down_likes_window(driver)
-
+                try:
+                    driver.find_elements(By.CSS_SELECTOR, 'span[class="x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye xvs91rp x1s688f x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj"]')[-1].click()
+                except NoSuchElementException:
+                    print('click like fail')
+                time.sleep(3.5)
+                like_account, is_user= scroll_down_likes_window(driver, index)
+                # print(is_user)
+                # print(like_account)
                 result[post_name]["like_number"] = len(like_account)
                 result[post_name]["like_list"] = like_account
                 time.sleep(0.5)
                 esc_likes_window(driver)
 
+            # except NoSuchElementException:
             except IndexError:
                 result[post_name]["like_number"] = 0
                 result[post_name]["like_list"] = []
             except TimeoutException:
-                print('{}: timeout exception'.format(post_name))
+                print('timeout exception')
 
+            if is_user:
+                post += 1
+                index = -1
+            else:
+                index = max(index-1, -10)
+                driver.back()
+                # print('driver back')
+                time.sleep(2)
+                driver.find_elements(By.CSS_SELECTOR, 'div[class="_aabd _aa8k  _al3l"]')[post].click()
+                continue
             if not to_next_post(driver):
-                break
-            time.sleep(2)
-            if not to_next_post(driver):  
                 break
             time.sleep(2)
         raw_data = {
@@ -141,6 +166,7 @@ def scrape_likes(driver, task:Task):
                 "scrape_user": task.create_user,
                 "scraped_task_id": task.task_id
             }
+        print(raw_data)
         return raw_data
     except Exception as exception:
         import traceback
