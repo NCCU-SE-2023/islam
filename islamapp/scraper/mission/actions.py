@@ -89,62 +89,71 @@ def go_profile(driver):
 
    
 @log_while_exception()       
-def scrape_followers(driver):
+def action_scrape_followers(driver):
+    followers_accounts = []
     try:
         followers_id = "followers"
         driver.find_element(
-            By.CSS_SELECTOR, ("a[href*=%s]" % follower_id)).click()
+            By.CSS_SELECTOR, ("a[href*=%s]" % followers_id)).click()
         
         time.sleep(2)
-        
-        scroll_box = driver.find_element(
-            By.XPATH, "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div[2]/div/div/div[2]")
-        
-        time.sleep(2)
-        
-        last_ht, ht = 0, 1
-        while last_ht != ht:
-            last_ht = ht
 
-            ht = driver.execute_script(""" 
-            arguments[0].scrollTo(0, arguments[0].scrollHeight);
-            return arguments[0].scrollHeight; """, scroll_box)
+        repeat = 0
+        followers_area = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div[style="height: auto; overflow: hidden auto;"]'))).find_element(By.TAG_NAME, 'div')
+        while True:
+            accounts = driver.find_elements(By.CSS_SELECTOR, "div[class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1uhb9sk x1plvlek xryxfnj x1iyjqo2 x2lwn1j xeuugli xdt5ytf xqjyukv x1cy8zhl x1oa3qoh x1nhvcw1']")
+            
+            for account in accounts:
+                source_text = account.text
+                followers_account = source_text.split('\n')[0]
+                if followers_account not in followers_accounts:
+                    followers_accounts.append(followers_account)
+            #print(followers_accounts)
+            click_to_scroll = followers_area.find_elements(By.CSS_SELECTOR, 'div[class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1uhb9sk x1plvlek xryxfnj x1iyjqo2 x2lwn1j xeuugli xdt5ytf xqjyukv x1cy8zhl x1oa3qoh x1nhvcw1"]')[-1]
+            click_to_scroll.click()
+            time.sleep(1)
 
-        links = scroll_box.find_elements(
-            By.TAG_NAME, 'a')
-        
-        followers_names = [name.text for name in links if name.text != '']
-        return followers_names
+            new_click_to_scroll = driver.find_elements(By.CSS_SELECTOR, "div[class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1uhb9sk x1plvlek xryxfnj x1iyjqo2 x2lwn1j xeuugli xdt5ytf xqjyukv x1cy8zhl x1oa3qoh x1nhvcw1']")[-1]
+            if new_click_to_scroll == click_to_scroll:
+                repeat += 1
+                if repeat == 2:
+                    break
+        return followers_accounts
         
     except:
         pass
 @log_while_exception()       
-def scrape_following(driver):
+def action_scrape_following(driver):
+    following_accounts = []
     try:
         following_id = "following"
         driver.find_element(
             By.CSS_SELECTOR, ("a[href*=%s]" % following_id)).click()
         
         time.sleep(2)
-        
-        scroll_box = driver.find_element(
-            By.XPATH, "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div[2]/div/div/div[3]")
-        
-        time.sleep(2)
-        
-        last_ht, ht = 0, 1
-        while last_ht != ht:
-            last_ht = ht
 
-            ht = driver.execute_script(""" 
-            arguments[0].scrollTo(0, arguments[0].scrollHeight);
-            return arguments[0].scrollHeight; """, scroll_box)
+        repeat = 0
+        following_area = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div[style="height: auto; overflow: hidden auto;"]'))).find_element(By.TAG_NAME, 'div')
+        while True:
+            accounts = driver.find_elements(By.CSS_SELECTOR, "div[class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1uhb9sk x1plvlek xryxfnj x1iyjqo2 x2lwn1j xeuugli xdt5ytf xqjyukv x1cy8zhl x1oa3qoh x1nhvcw1']")
+            
+            for account in accounts:
+                source_text = account.text
+                following_account = source_text.split('\n')[0]
+                if following_account not in following_accounts:
+                    following_accounts.append(following_account)
+            
+            click_to_scroll = following_area.find_elements(By.CSS_SELECTOR, 'div[class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1uhb9sk x1plvlek xryxfnj x1iyjqo2 x2lwn1j xeuugli xdt5ytf xqjyukv x1cy8zhl x1oa3qoh x1nhvcw1"]')[-1]
+            click_to_scroll.click()
+            time.sleep(1)
 
-        links = scroll_box.find_elements(
-            By.TAG_NAME, 'a')
-        
-        following_names = [name.text for name in links if name.text != '']
-        return following_names
+            new_click_to_scroll = driver.find_elements(By.CSS_SELECTOR, "div[class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1uhb9sk x1plvlek xryxfnj x1iyjqo2 x2lwn1j xeuugli xdt5ytf xqjyukv x1cy8zhl x1oa3qoh x1nhvcw1']")[-1]
+            if new_click_to_scroll == click_to_scroll:
+                repeat += 1
+                if repeat == 2:
+                    break
+          
+        return following_accounts
     except:
         pass
     
