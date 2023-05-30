@@ -37,9 +37,9 @@ def scrape_followers_and_following(driver, task:Task):
         time.sleep(2.5)
         
         
-        go_profile(driver)
+        go_profile(driver,account)
         time.sleep(2.5)
-        user_followers_ids=scrape_followers(driver)
+        user_followers_ids=action_scrape_followers(driver)
         time.sleep(2.5)
         driver.back()
         driver.refresh()
@@ -48,7 +48,7 @@ def scrape_followers_and_following(driver, task:Task):
         
         go_profile(driver)
         time.sleep(2.5)
-        user_followings_ids=scrape_following(driver)
+        user_followings_ids=action_scrape_following(driver)
         time.sleep(2.5)
       
         # return data
