@@ -132,14 +132,14 @@ class MissionRunner(Process):
             self.mission = map_task_type_to_mission(self.task.type)
             self.data_model = map_task_type_to_data_model(self.task.type)
             self.logger.info(f"[START] task_id: {self.task.task_id} mission: {self.task.type} pid: {self.pid}")
-            self.logger.info(f"[DRVER] task_id: {self.task.task_id} mission: {self.task.type} pid: {self.pid}")
-            if self.run_local:
-                driver = Driver()
-            else:                
-                driver = Driver(SELENIUM_GRID_HUB_ENDPOINT)
+            # self.logger.info(f"[DRVER] task_id: {self.task.task_id} mission: {self.task.type} pid: {self.pid}")
+            # if self.run_local:
+            #     driver = Driver()
+            # else:                
+            #     driver = Driver(SELENIUM_GRID_HUB_ENDPOINT)
             
             # 2. run mission
-            result = self.mission(driver.driver, self.task)
+            result = self.mission({}, self.task)
 
             # save result to task
             self.data_model.create(result)
@@ -147,8 +147,9 @@ class MissionRunner(Process):
             self.logger.info(f"[FINSH] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
             
         except Exception as exception:
+            import traceback
             self.task.set_status(TaskStatus.ERROR.value)
             self.logger.error(f"[ERROR] task_id:{self.task.task_id} pid:{self.pid}")
-            self.logger.error(f"        Msg: {str(exception)}")
-        finally:
-            del driver
+            self.logger.error(f"        Msg: {traceback.format_exc()}")
+        # finally:
+        #     del driver

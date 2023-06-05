@@ -11,13 +11,14 @@ from model.data_models.user_following import *
 from model.data_models.user_post_like import *
 from model.task import Task, TaskType
 from scraper.util import log_while_exception
+from scraper.instagrapi import Instagrapi
 import time
 
 def map_task_type_to_mission(task_type):
     if task_type == TaskType.FOLLOWERS.value:
-        return scrape_followers_and_following
+        return scrape_followers
     elif task_type == TaskType.FOLLOWING.value:
-        return scrape_followers_and_following
+        return scrape_following
     elif task_type == TaskType.LIKES.value:
         return scrape_likes
     elif task_type == TaskType.TEST.value:
@@ -80,14 +81,28 @@ def scrape_followers_and_following(driver, task:Task):
 @log_while_exception()
 def scrape_followers(driver, task:Task):
     try:
-        pass
+        account = task.task_detail["account"]
+        password = task.task_detail["password"]
+        task_id = task.task_id
+
+        instagrapi = Instagrapi(account, password, task_id)
+        user_followers = instagrapi.get_user_followers(account)
+        print(user_followers)
+        return user_followers
     except Exception as exception:
         raise Exception(exception)
 
 @log_while_exception()
 def scrape_following(driver, task:Task):
     try:
-        pass
+        account = task.task_detail["account"]
+        password = task.task_detail["password"]
+        task_id = task.task_id
+
+        instagrapi = Instagrapi(account, password, task_id)
+        user_following = instagrapi.get_user_following(account)
+        print(user_following)
+        return user_following
     except Exception as exception:
         raise Exception(exception)
 

@@ -30,9 +30,7 @@ class Instagrapi:
             "scrape_user": self.username,
             "scraped_task_id": self.task_id,
         }
-        UserFollowers.create_user_followers(raw_data)    
-        
-        return followers_list
+        return raw_data
     
     def get_user_following(self, scraped_ig_id):
         user_id = self.cl.user_id_from_username(scraped_ig_id)
@@ -50,6 +48,4 @@ class Instagrapi:
             "scrape_user": self.username,
             "scraped_task_id": self.task_id,
         }
-        UserFollowing.create_user_following(raw_data)    
-        
-        return following_list
+        return raw_data
