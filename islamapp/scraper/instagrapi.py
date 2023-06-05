@@ -4,7 +4,7 @@ from model.data_models.user_followers import UserFollowers
 from model.data_models.user_following import UserFollowing
 
 
-class instagrapi:
+class Instagrapi:
     
     def __init__(self, username, password, task_id):
         self.username = username
