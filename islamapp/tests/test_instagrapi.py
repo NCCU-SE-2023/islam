@@ -1,4 +1,5 @@
 import os
+import time
 import timeit
 import unittest
 from instagrapi import Client
@@ -15,12 +16,12 @@ from mongoengine import  connect
 
 class testInstagrapi(unittest.TestCase):
 
-    def setUp(self):
-        
+    def setUp(self):  
+              
         connect('islam')
         load_dotenv(find_dotenv())
-        self.username = os.getenv("ig_username")
-        self.password = os.getenv("ig_password")
+        self.username = os.getenv("ig_username2")
+        self.password = os.getenv("ig_password2")
         self.task_id = "F046918C9A07CA552308CDF5B2B3E1E1"
         
 
@@ -35,25 +36,19 @@ class testInstagrapi(unittest.TestCase):
         following_list = testinstagrapi.get_user_following("testislam")
         print(following_list)
     
-    def test_get_user_followers_and_following(self):
-        testinstagrapi = instagrapi(self.username, self.password, self.task_id)
-        followers_list = testinstagrapi.get_user_followers(self.username)
-        following_list = testinstagrapi.get_user_following(self.username)
-        print(followers_list)
-        print(following_list)
-    
-    # test function time
-    def test_time(self):
-        followers = {'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[]),'58640502604': UserShort(pk='58640502604', username='amanpriyankameena', full_name='Aman Priyanka Meena',  profile_pic_url_hd=None, is_private=False, stories=[])}
-        followers_list=[]
-        def test_for():
-            for user in followers:
-                followers_list.append(followers[user].username)
-        def test_value():            
-            followers_list = [user.username for user in followers.values()]
-        # followers_list = list(map(lambda d: d.get('key'), followers))
-        print('value:', timeit.timeit(test_value))
-        print('for:', timeit.timeit(test_for))
+    def test_get_users_relative_followers_following(self):
+        while True:          
+            testinstagrapi = instagrapi(self.username, self.password, self.task_id)
+            return_val = testinstagrapi.get_users_relative_followers_following(self.username)
+            print(return_val)
+            print("res_list_count_following="+return_val[1])
+            print("following_list_count="+return_val[3])
+            # wait for ig query block
+            time.sleep(700)
+            if return_val[1]==return_val[3]:
+                return "finished"
+            
+            
         
         
 
