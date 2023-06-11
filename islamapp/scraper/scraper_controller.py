@@ -142,7 +142,8 @@ class MissionRunner(Process):
             result = self.mission({}, self.task)
 
             # save result to task
-            self.data_model.create(result)
+            if self.task.type != "SECOND":
+                self.data_model.create(result)
             self.task.set_status(TaskStatus.FINISHED.value)
             self.logger.info(f"[FINSH] task_id:{self.task.task_id} mission:{self.task.type} pid:{self.pid}")
             

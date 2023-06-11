@@ -14,6 +14,7 @@ class TaskType(Enum):
     BASIC = "BASIC"
     FOLLOWERS = "FOLLOWERS"
     FOLLOWING = "FOLLOWING"
+    SECOND = "SECOND"
     LIKES = "LIKES"
     COMMENTS = "COMMENTS"
     TAG_ME = "TAG_ME"
