@@ -4,7 +4,7 @@ name: CI - Integration Test
 # events but only for the master branch
 on:
   push:
-    branches: [ unittest_ci ]
+    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -50,9 +50,9 @@ jobs:
         cd islamapp && 
         python -m unittest discover ./tests/data_model_tests "test_*.py"    
 
-    - name: Run the API and Postman's tests
-      run: |
-        cd islamapp && flask run &
+    # - name: Run the API and Postman's tests
+    #   run: |
+    #     cd islamapp && flask run &
     #     sleep 2
     #     cd tests/postman/ && ./node_modules/newman/bin/newman.js run ahm_api_calls.postman_collection.json -e ahm-local.postman_environment.json
     #     kill -9 `lsof -i:5000 -t`
