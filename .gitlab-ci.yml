@@ -1,0 +1,101 @@
+variables:
+  APP_ENV: $CI_COMMIT_REF_NAME
+  CUSTOMER_IP: $UAT_HOSTIP
+  CUSTOMER_ID: ""
+  ENV_FILE: config/${CI_COMMIT_REF_NAME}.env
+  IMAGE_SAVE_PATH: ${CI_PROJECT_DIR}/images
+
+before_script:
+  - docker version
+  - echo "current path is $PWD"
+  #- docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  #- echo "docker login success"
+  #- echo "git commit id is $CI_COMMIT_SHA"
+  # - echo "APP_ENV=$CI_COMMIT_REF_NAME" >> $ENV_FILE
+
+stages:
+  - build
+  - deploy-middleware
+  - test
+  - deploy
+
+build-islam:
+  rules:
+    - if: ($CI_COMMIT_REF_NAME == "DEV" || $CI_COMMIT_REF_NAME == "QAT" ) && $CI_PIPELINE_SOURCE == 'web'
+  tags:
+    - $CI_COMMIT_REF_NAME
+  
+  stage: build
+  before_script:
+    - export APP_ENV=$APP_ENV
+  script:
+    - cat $ENV_FILE
+    - echo "APP_ENV=$APP_ENV"
+    - echo "Building the application..."
+    - echo $CI_COMMIT_REF_SLUG
+    - docker compose -f docker-compose.yml  --env-file $ENV_FILE build
+
+islam-middleware-deploy:
+  rules:
+    - if: ($CI_COMMIT_REF_NAME == "DEV" || $CI_COMMIT_REF_NAME == "QAT") && $CI_PIPELINE_SOURCE == "web"
+  tags:
+    - $CI_COMMIT_REF_NAME
+  stage: deploy-middleware
+  script:
+    - docker compose -f docker-compose.yml --env-file $ENV_FILE up -d mysql-databse mongo-databse
+
+islam-deploy:
+  rules:
+    - if: ($CI_COMMIT_REF_NAME == "DEV" || $CI_COMMIT_REF_NAME == "QAT") && $CI_PIPELINE_SOURCE == 'web'
+  tags:
+    - $CI_COMMIT_REF_NAME
+  stage: deploy
+  script:
+    - docker compose -f docker-compose.yml --compatibility --env-file $ENV_FILE up -d islamapp
+
+islam-test:
+  rules:
+    - if: ($CI_COMMIT_REF_NAME == "DEV" || $CI_COMMIT_REF_NAME == "QAT") && $CI_PIPELINE_SOURCE == 'web'
+  tags:
+    - $CI_COMMIT_REF_NAME
+  stage: test
+  script:
+    - echo "Running islam-arbitrum-unit-test..."
+    - docker exec -i islamapp sh run_test.sh
+
+deploy-aws:
+  rules:
+    - if: ($CI_COMMIT_REF_NAME == "PRD" || $CI_COMMIT_REF_NAME == "UAT" ) && $CI_PIPELINE_SOURCE == 'web'
+  tags:
+    - $CI_COMMIT_REF_NAME
+
+  stage: deploy
+  variables:
+    RSYNC_DIST_DIR: ~/$CI_PROJECT_NAME
+    RSYNC_SRCE_DIR: $CI_PROJECT_DIR/ # 結尾要加上'/'這樣遞迴才會正常
+    RSYNC_EXCLUDE: --exclude=.git* --exclude=.vscode
+    NEW_DOTENV_PATH: ${CI_PROJECT_DIR}/.env
+  before_script:
+    - cp $ENV_FILE $NEW_DOTENV_PATH && sed -i '/#/d' $NEW_DOTENV_PATH && export $(cat $NEW_DOTENV_PATH)
+    # 建立.env檔案
+    - echo "APP_ENV=$APP_ENV" >> $NEW_DOTENV_PATH
+    - echo "CUSTOMER_ID=$CUSTOMER_ID" >> $NEW_DOTENV_PATH
+    - echo "CI_COMMIT_SHORT_SHA=$CI_COMMIT_SHORT_SHA" >> $NEW_DOTENV_PATH
+    - echo "CI_COMMIT_REF_SLUG=$CI_COMMIT_REF_SLUG" >> $NEW_DOTENV_PATH
+    - echo "CI_REGISTRY=$CI_REGISTRY" >> $NEW_DOTENV_PATH
+    - echo "" >> .env && dos2unix .env
+    - echo "==== generate ssh_private_key file ===="
+    - echo "$SSH_PRIVATE_KEY" > ssh_private_key && chmod 400  ssh_private_key
+    - rsync -avzrP -e 'ssh -i ssh_private_key' $RSYNC_EXCLUDE $RSYNC_SRCE_DIR ubuntu@$CUSTOMER_IP:$RSYNC_DIST_DIR
+  script:
+    # 執行遠端指令
+    - >
+      ssh -i ssh_private_key ubuntu@$CUSTOMER_IP "
+        cd $RSYNC_DIST_DIR 
+        export $(cat .env)
+        echo 'APP_ENV=$APP_ENV'
+        echo 'CUSTOMER_ID=$CUSTOMER_ID, CUSTOMER_IP=$CUSTOMER_IP,'
+        echo 'CI_COMMIT_REF_SLUG=$CI_COMMIT_REF_SLUG'
+        docker-compose --env-file .env down
+        docker-compose --compatibility --env-file .env up -d
+      "

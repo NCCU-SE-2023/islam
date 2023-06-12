@@ -1,0 +1,16 @@
+// for apikey pool
+{
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./islamapp",
+        "-p",
+        "*test*.py",
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
+}
