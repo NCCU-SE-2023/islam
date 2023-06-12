@@ -17,9 +17,9 @@ class TestUserFollowing(unittest.TestCase):
             "scraped_task_id": "202CB962AC59075B964B07152D234B40",
         }
         
-        create_user_following = UserFollowing.create_user_following(raw_data)
-        create_user_following = UserFollowing.create_user_following(raw_data)
-        create_user_following = UserFollowing.create_user_following(raw_data)
+        create_user_following = UserFollowing.create(raw_data)
+        create_user_following = UserFollowing.create(raw_data)
+        create_user_following = UserFollowing.create(raw_data)
         self.assertIsInstance(create_user_following, UserFollowing)
         
     def test_get_latest_user_following_by_ig_id(self):
