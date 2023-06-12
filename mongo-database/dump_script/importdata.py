@@ -12,7 +12,7 @@ following_json = json.load(open("user_following.json", "r"))
 
 # save followers
 import datetime
-from islamapp.model.data_models.user_followers import UserFollowers
+from user_followers import UserFollowers
 
 for doc in followers_json:
     doc["user_followers_id"] = doc.pop("_id")
@@ -23,7 +23,7 @@ for doc in followers_json:
 
 # save following
 import datetime
-from islamapp.model.data_models.user_following import UserFollowing
+from user_following import UserFollowing
 
 for doc in following_json:
     print(doc)
