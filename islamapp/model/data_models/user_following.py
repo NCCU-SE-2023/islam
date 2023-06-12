@@ -19,7 +19,7 @@ class UserFollowing(Document):
     scraped_task_list = fields.ListField(required=True)
 
     @staticmethod
-    def create_user_following(raw_data):
+    def create(raw_data):
         
         
         create_at= datetime.now()

@@ -23,10 +23,11 @@ class TestUserFollowing(unittest.TestCase):
         self.assertIsInstance(create_user_following, UserFollowing)
         
     def test_get_latest_user_following_by_ig_id(self):
-        get_latest_user_following_by_ig_id = UserFollowing.get_latest_user_following_by_ig_id("test")
+        get_latest_user_following_by_ig_id = UserFollowing.get_latest_user_following_by_ig_id("rice_to_islam")
         self.assertIsInstance(get_latest_user_following_by_ig_id, UserFollowing)
         
     def test_get_all_user_following_by_ig_id(self):
+
         get_all_user_following_by_ig_id = UserFollowing.get_all_user_following_by_ig_id("test")
         # maybe need to change the type
         self.assertIsInstance(get_all_user_following_by_ig_id, QuerySet)

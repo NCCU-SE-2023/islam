@@ -11,17 +11,21 @@ from model.data_models.user_following import *
 from model.data_models.user_post_like import *
 from model.task import Task, TaskType
 from scraper.util import log_while_exception
+from scraper.instagrapi import Instagrapi
 import time
+from model.data_models.user_following import UserFollowing
 
 def map_task_type_to_mission(task_type):
     if task_type == TaskType.FOLLOWERS.value:
-        return scrape_followers_and_following
+        return scrape_followers
     elif task_type == TaskType.FOLLOWING.value:
-        return scrape_followers_and_following
+        return scrape_following
     elif task_type == TaskType.LIKES.value:
         return scrape_likes
     elif task_type == TaskType.TEST.value:
         return scrape_test
+    elif task_type == TaskType.SECOND.value:
+        return scrape_second_step
     else:
         raise Exception("Invalid task type")
 
@@ -37,9 +41,9 @@ def scrape_followers_and_following(driver, task:Task):
         time.sleep(2.5)
         
         
-        go_profile(driver)
+        go_profile(driver,account)
         time.sleep(2.5)
-        user_followers_ids=scrape_followers(driver)
+        user_followers_ids=action_scrape_followers(driver)
         time.sleep(2.5)
         driver.back()
         driver.refresh()
@@ -48,7 +52,7 @@ def scrape_followers_and_following(driver, task:Task):
         
         go_profile(driver)
         time.sleep(2.5)
-        user_followings_ids=scrape_following(driver)
+        user_followings_ids=action_scrape_following(driver)
         time.sleep(2.5)
       
         # return data
@@ -80,14 +84,28 @@ def scrape_followers_and_following(driver, task:Task):
 @log_while_exception()
 def scrape_followers(driver, task:Task):
     try:
-        pass
+        account = task.task_detail["account"]
+        password = task.task_detail["password"]
+        task_id = task.task_id
+
+        instagrapi = Instagrapi(account, password, task_id)
+        user_followers = instagrapi.get_user_followers(account)
+        print(user_followers)
+        return user_followers
     except Exception as exception:
         raise Exception(exception)
 
 @log_while_exception()
 def scrape_following(driver, task:Task):
     try:
-        pass
+        account = task.task_detail["account"]
+        password = task.task_detail["password"]
+        task_id = task.task_id
+
+        instagrapi = Instagrapi(account, password, task_id)
+        user_following = instagrapi.get_user_following(account)
+        print(user_following)
+        return user_following
     except Exception as exception:
         raise Exception(exception)
 
@@ -186,5 +204,21 @@ def scrape_test( driver, task:Task):
         driver.get("https://www.google.com/search?q=asdf&sxsrf=APwXEdep-JbYpd4s50R9vyOzylkYT5Zl8A%3A1683099135644&source=hp&ei=_w1SZKOPJJXXhwPHkYX4Dg&iflsig=AOEireoAAAAAZFIcD0dPHc1BNndp1OqNrM-wKBkEbYTx&ved=0ahUKEwjjiuXw0Nj-AhWV62EKHcdIAe8Q4dUDCAs&uact=5&oq=asdf&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMg4ILhCABBCxAxDHARDRAzIICC4QgAQQsQMyDgguEIAEELEDEMcBENEDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATIICAAQgAQQsQMyBQgAEIAEOhQILhCABBCxAxCDARDHARDRAxDUAlAAWHhgyAJoAHAAeACAAUyIAc4BkgEBM5gBAKABAQ&sclient=gws-wiz")
         import time
         time.sleep(10)
+    except Exception as exception:
+        raise Exception(exception)
+
+def scrape_second_step( driver, task):
+    try:
+        account = task.task_detail["account"]
+        password = task.task_detail["password"]
+        task_id = task.task_id
+        ig_id = task.task_detail["ig_id"]
+
+        user_following = UserFollowing.get_all_user_following_by_ig_id(ig_id).first()
+
+        instagrapi = Instagrapi(account, password, task_id)
+        user_following = instagrapi.get_seond_step_followers_and_following(user_following)
+        print(user_following)
+        return {}
     except Exception as exception:
         raise Exception(exception)
