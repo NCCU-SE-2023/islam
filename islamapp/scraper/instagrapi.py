@@ -1,10 +1,11 @@
 from instagrapi import Client
-
+from time import sleep
+import random
 from model.data_models.user_followers import UserFollowers
 from model.data_models.user_following import UserFollowing
 
 
-class instagrapi:
+class Instagrapi:
     
     def __init__(self, username, password, task_id):
         self.username = username
@@ -100,6 +101,62 @@ class instagrapi:
                 res_list_count_following = res_list_count_following - 1
                 pass
 
-            
-        
         return  res_list_count_followers,res_list_count_following,len(res_list),len(following_list),res_list,error_list
+    
+    def get_seond_step_followers_and_following(self, user_following: UserFollowing):
+        following_list = user_following.following_list
+
+        for i, user_id in enumerate(following_list):
+
+            if i >=50:
+                break
+            ig_id = self.cl.user_id_from_username(user_id)
+
+            if len(UserFollowing.objects(scraped_ig_id=user_id)) == 0:
+                try:
+                    following = self.cl.user_following(ig_id, amount=150)
+                    raw_following_list=[]
+                    for user in following:
+                        raw_following_list.append(following[user].username)
+                        
+                    raw_data = {
+                        "scraped_ig_id": user_id,
+                        "following_count": len(raw_following_list),
+                        "following_list": raw_following_list,
+                        "scrape_user": self.username,
+                        "scraped_task_id": self.task_id,
+                    }
+                    UserFollowing.create(raw_data)
+                    print(f"Following of {user_id} OK")
+                except:
+                    import traceback
+                    traceback.print_exc()
+                    print(f"Following of {user_id} ERROR")
+                    return
+
+                sleep(random.random()*3)
+
+            # limit to 100 followers
+            if len(UserFollowers.objects(scraped_ig_id=user_id)) == 0:
+                try:
+                    followers = self.cl.user_followers(ig_id, amount=150)
+                    followers_list=[]
+                    for user in followers:
+                        followers_list.append(followers[user].username)
+                    
+                    raw_data = {
+                        "scraped_ig_id": user_id,
+                        "followers_count": len(followers_list),
+                        "followers_list": followers_list,
+                        "scrape_user": self.username,
+                        "scraped_task_id": self.task_id,
+                    }
+                    UserFollowers.create(raw_data)
+                    print(f"Followers of {user_id} OK")
+                except:
+                    import traceback
+                    traceback.print_exc()
+                    print(f"Followers of {user_id} ERROR")
+                    return
+
+                sleep(random.random()*3)
