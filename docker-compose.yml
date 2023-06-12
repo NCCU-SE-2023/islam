@@ -1,6 +1,15 @@
 version: "3"
 services:
-  databse:
+  islamapp:
+    hostname: islamapp
+    container_name: islamapp
+    build: 
+      context: ./
+      dockerfile: ./islamapp/Dockerfile
+    env_file:
+      - ./config/${APP_ENV:-default}.env
+    restart: always
+  mysql-databse:
     build: ./database
     restart: always
     environment:
