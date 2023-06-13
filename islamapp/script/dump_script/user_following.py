@@ -4,7 +4,7 @@ import random
 from mongoengine import fields, Document
 import mongoengine
 
-cl = mongoengine.connect(db="islam", host="127.0.0.1", port=27017,username="islam",password="islam")
+cl = mongoengine.connect(db="islam", host="mongo-databse", port=27017,username="islam",password="islam")
 class UserFollowing(Document):
     meta = {
         "collection": "user_following",
