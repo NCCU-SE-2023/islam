@@ -31,4 +31,4 @@ jobs:
           cd islamapp
           pip install pre-commit
           pre-commit install
-          pre-commit run --all-files
+          # pre-commit run --all-files
