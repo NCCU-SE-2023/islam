@@ -4,6 +4,7 @@ from model.data_models.user_post_like import UserPostLike
 from model.data_models.user_followers import UserFollowers
 from model.data_models.user_following import UserFollowing
 
+
 def map_task_type_to_data_model(task_type):
     if task_type == TaskType.LIKES.value:
         return UserPostLike

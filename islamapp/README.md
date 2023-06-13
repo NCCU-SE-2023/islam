@@ -9,7 +9,7 @@ pip3 install -r requirements.txt
 
 ## ISLAM database
 
-connect to a MySQL DB (eg. localhost:3306) and create a new schema called islam  
+connect to a MySQL DB (eg. localhost:3306) and create a new schema called islam
 connect to a Mongo DB (eg. localhost:27017) and create a new database called islam
 
 ### Alembic
