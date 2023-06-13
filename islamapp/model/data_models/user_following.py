@@ -5,7 +5,6 @@ from mongoengine import fields, Document
 
 
 class UserFollowing(Document):
-
     # Convert this field for consistency
     user_following_id = fields.StringField(primary_key=True, required=True)
     scraped_ig_id = fields.StringField(required=True)
@@ -21,7 +20,6 @@ class UserFollowing(Document):
 
     @staticmethod
     def create(raw_data):
-
         create_at = datetime.now()
         user_following_id = md5(
             str(create_at)

@@ -17,7 +17,6 @@ from mongoengine import connect
 
 class testInstagrapi(unittest.TestCase):
     def setUp(self):
-
         connect("islam")
         load_dotenv(find_dotenv())
         self.username = os.getenv("ig_username2")

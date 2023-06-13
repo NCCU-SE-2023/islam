@@ -2,6 +2,7 @@ import unittest
 from mongoengine import connect, QuerySet
 from model.data_models.user_followers import UserFollowers
 
+
 # generate the unittest for the user_followers method
 class TestUserFollowers(unittest.TestCase):
     def setUp(self):

@@ -2,6 +2,7 @@ import unittest
 from mongoengine import connect, QuerySet, disconnect
 from model.data_models.user_following import UserFollowing
 
+
 # generate the unittest for the user_following method
 class TestUserFollowing(unittest.TestCase):
     def setUp(self):
@@ -28,7 +29,6 @@ class TestUserFollowing(unittest.TestCase):
         self.assertIsInstance(get_latest_user_following_by_ig_id, UserFollowing)
 
     def test_get_all_user_following_by_ig_id(self):
-
         get_all_user_following_by_ig_id = UserFollowing.get_all_user_following_by_ig_id(
             "test"
         )

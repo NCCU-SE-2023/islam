@@ -14,7 +14,6 @@ from model.task import Task, TaskType
 
 class testWebScraper(unittest.TestCase):
     def setUp(self):
-
         load_dotenv(find_dotenv())
         self.username = os.getenv("ig_username")
         self.password = os.getenv("ig_password")

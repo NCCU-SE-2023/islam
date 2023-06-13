@@ -87,7 +87,6 @@ class Instagrapi:
         error_list = []
 
         for user in res_list:
-
             try:
                 self.get_user_followers(user)
 
@@ -116,7 +115,6 @@ class Instagrapi:
         following_list = user_following.following_list
 
         for i, user_id in enumerate(following_list):
-
             if i >= 50:
                 break
             ig_id = self.cl.user_id_from_username(user_id)

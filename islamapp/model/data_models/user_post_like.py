@@ -5,7 +5,6 @@ from mongoengine import fields, Document
 
 
 class UserPostLike(Document):
-
     # Convert this field for consistency
     user_post_like_id = fields.StringField(primary_key=True, required=True)
     scraped_ig_id = fields.StringField(required=True)
@@ -19,7 +18,6 @@ class UserPostLike(Document):
 
     @staticmethod
     def create(raw_data):
-
         create_at = datetime.now()
         user_post_like_id = md5(
             str(create_at)
@@ -38,7 +36,6 @@ class UserPostLike(Document):
 
         # The below code is used to calculate the change in the count of post_like and the list of post_like added and removed
         if latest_user_post_like is not None:
-
             if raw_data["scrape_user"] not in latest_user_post_like.scrape_user_list:
                 scrape_user_count = latest_user_post_like.scrape_user_count + 1
                 scrape_user_list.extend(latest_user_post_like.scrape_user_list)
