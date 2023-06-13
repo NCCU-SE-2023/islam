@@ -3,6 +3,7 @@ import dotenv
 
 dotenv.load_dotenv()
 
+
 class Config:
     # MySQL
     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL","mysql+pymysql://root:islam@127.0.0.1:3306/islam")
