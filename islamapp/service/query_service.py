@@ -90,14 +90,16 @@ def query(request):
                 )
                 candidate_scores[node] = count
 
-      top_candidates = sorted(candidate_scores, key=candidate_scores.get, reverse=True)
-      #if(len(top_candidates)>result_num):
-           # top_candidates = top_candidates[1:result_num+1]
-      output = [{name: candidate_scores[name]} for name in top_candidates]
-      if(len(output)>result_num):
-           output = output[1:result_num+1]
-      
-      return jsonify(output),201
+        top_candidates = sorted(
+            candidate_scores, key=candidate_scores.get, reverse=True
+        )
+        # if(len(top_candidates)>result_num):
+        # top_candidates = top_candidates[1:result_num+1]
+        output = [{name: candidate_scores[name]} for name in top_candidates]
+        if len(output) > result_num:
+            output = output[1 : result_num + 1]
+
+        return jsonify(output), 201
 
     #   # print結果
     #   print("Top 3 candidates:")
@@ -128,35 +130,36 @@ def query(request):
             message=f"ISLAM Exception: {str(exception)}",
         )
 
+
 # query()
 def get_account(request):
-        """
-        body:
-        { 
-            "user_account" : "rice_to_islam" 
-        }
-        return:
-        {
-            "accounts" : ["result1","result2"...] 
-        }
-        """
-        try:
-            user_account = request.json.get("user_account")
-            userFollowing = UserFollowing.objects(scraped_ig_id=str(user_account))
-            if userFollowing is None or len(userFollowing)==0:
-              raise InvalidInputError(f"account {user_account} not found")
-            scrape_user_list = [obj.following_list for obj in userFollowing]
-            output=scrape_user_list[-1]
-            return jsonify(output),201
-        except InvalidInputError as exception:
-            return _gen_error_response(
-                status_code=404,
-                error_code=INVALID_INPUT_ERROR,
-                message=f"ISLAM Exception: {str(exception)}",
-            )
-        except Exception as exception:
-            return _gen_error_response(
-                status_code=500,
-                error_code=INTERNAL_SERVER_ERROR,
-                message=f"ISLAM Exception: {str(exception)}",
-            )
+    """
+    body:
+    {
+        "user_account" : "rice_to_islam"
+    }
+    return:
+    {
+        "accounts" : ["result1","result2"...]
+    }
+    """
+    try:
+        user_account = request.json.get("user_account")
+        userFollowing = UserFollowing.objects(scraped_ig_id=str(user_account))
+        if userFollowing is None or len(userFollowing) == 0:
+            raise InvalidInputError(f"account {user_account} not found")
+        scrape_user_list = [obj.following_list for obj in userFollowing]
+        output = scrape_user_list[-1]
+        return jsonify(output), 201
+    except InvalidInputError as exception:
+        return _gen_error_response(
+            status_code=404,
+            error_code=INVALID_INPUT_ERROR,
+            message=f"ISLAM Exception: {str(exception)}",
+        )
+    except Exception as exception:
+        return _gen_error_response(
+            status_code=500,
+            error_code=INTERNAL_SERVER_ERROR,
+            message=f"ISLAM Exception: {str(exception)}",
+        )
