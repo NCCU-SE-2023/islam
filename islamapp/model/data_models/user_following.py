@@ -20,8 +20,7 @@ class UserFollowing(Document):
 
     @staticmethod
     def create(raw_data):
-        
-        
+           
         create_at= datetime.now()
         user_following_id = md5(str(create_at).join(raw_data["scraped_ig_id"]).join(str(random.random())).encode()).hexdigest()
         latest_user_following = UserFollowing.get_latest_user_following_by_ig_id(raw_data["scraped_ig_id"])      
@@ -114,12 +113,3 @@ class UserFollowing(Document):
         except Exception as e:
             print(e)
             
-    def to_json(self):
-        returnDict = {}
-        for key in self.__iter__():
-            try:
-                val = self.__getattribute__(key)
-                returnDict[key] = val
-            except:
-                pass
-        return returnDict
