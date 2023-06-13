@@ -45,11 +45,11 @@ jobs:
     # - name: Install Newman dependency
     #   run: npm install --prefix tests/postman/
     
-    - name: Run the mongodb tests
+    - name: Run the mongodb tests with coverage report
       run: |
         cd islamapp && 
-        python -m unittest discover ./tests/data_model_tests "test_*.py"    
-
+        coverage run -m unittest discover ./tests/data_model_tests "test_*.py"    
+        coverage report   
     # - name: Run the API and Postman's tests
     #   run: |
     #     cd islamapp && flask run &
