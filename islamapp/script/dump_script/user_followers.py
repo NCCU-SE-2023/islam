@@ -2,12 +2,17 @@ from datetime import datetime
 from hashlib import md5
 import random
 from mongoengine import fields, Document
+import mongoengine
 
-uri = "mongodb://islam:islam@127.0.0.1:27017/islam"
-mongoengine.connect(host=uri)
-
+cl = mongoengine.connect(db="islam", host="mongo-databse", port=27017,username="islam",password="islam")
 
 class UserFollowers(Document):
+    meta = {
+        "collection": "user_followers",
+        "strict": False,
+        "connection": cl,
+    }
+
     # Convert this field for consistency
     user_followers_id = fields.StringField(primary_key=True, required=True)
     scraped_ig_id = fields.StringField(required=True)
@@ -97,7 +102,7 @@ class UserFollowers(Document):
             scraped_task_list=scraped_task_list,
         )
 
-        userFollowers.save()
+        userFollowers.save(connection=cl)
 
         return userFollowers
 

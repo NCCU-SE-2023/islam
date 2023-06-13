@@ -1,6 +1,22 @@
 version: "3"
 services:
-  databse:
+  islamapp:
+    hostname: islamapp
+    container_name: islamapp
+    build:
+      context: ./
+      dockerfile: ./islamapp/Dockerfile
+    env_file:
+      - ./config/${APP_ENV:-default}.env
+    depends_on:
+      - mongo-databse
+      - mysql-databse
+    restart: always
+    ports:
+      - 5555:5555
+  mysql-databse:
+    hostname: mysql-databse
+    container_name: mysql-databse
     build: ./database
     restart: always
     environment:
@@ -11,6 +27,8 @@ services:
     ports:
       - 3306:3306
   mongo-databse:
+    hostname: mongo-databse
+    container_name: mongo-databse
     build: ./mongo-database
     restart: always
     environment:
@@ -18,5 +36,6 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: islam
     volumes:
       - ./mdb:/etc/mongo
+      # - ./mdb:/data/db
     ports:
       - 27017:27017

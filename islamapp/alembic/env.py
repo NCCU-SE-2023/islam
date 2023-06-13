@@ -12,6 +12,7 @@ config = context.config
 
 import config as ems_config
 
+print(ems_config.Config.SQLALCHEMY_DATABASE_URI)
 config.set_main_option("sqlalchemy.url", ems_config.Config.SQLALCHEMY_DATABASE_URI)
 
 # Interpret the config file for Python logging.

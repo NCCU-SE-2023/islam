@@ -1,0 +1,4 @@
+version: "3"
+services:
+  islamapp:
+    command: sh start_debug.sh

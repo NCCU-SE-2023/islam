@@ -1,0 +1,45 @@
+// path in the workspace to the .vscode/tasks.json file
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PROD docker-compose up",
+      "type": "docker-compose",
+      "dockerCompose": {
+        "up": {
+          "detached": true,
+          "build": true
+        },
+        "envFile": "${workspaceFolder}/config/default.env",
+        "files": [
+          "${workspaceFolder}/docker-compose.yml"
+        ]
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "DEBUG docker-compose up",
+      "type": "docker-compose",
+      "dockerCompose": {
+        "up": {
+          "detached": true,
+          "build": true
+        },
+        "envFile": "${workspaceFolder}/config/default.env",
+        "files": [
+          "${workspaceFolder}/docker-compose-debug.yml",
+          "${workspaceFolder}/docker-compose.yml"
+        ]
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
