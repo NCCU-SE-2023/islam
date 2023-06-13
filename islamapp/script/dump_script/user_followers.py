@@ -2,9 +2,16 @@ from datetime import datetime
 from hashlib import md5
 import random
 from mongoengine import fields, Document
+import mongoengine
 
+cl =  mongoengine.connect(db='islam', host='mongo-databse', port=27017)
 
 class UserFollowers(Document):
+    meta = {
+        'collection': 'user_following',
+        'strict': False,
+        'connection': cl,
+    }
     
     #Convert this field for consistency
     user_followers_id= fields.StringField(primary_key=True,required=True)
@@ -69,7 +76,7 @@ class UserFollowers(Document):
                                       followers_change_list=followers_change_list, scrape_user_count=scrape_user_count,
                                       scrape_user_list=scrape_user_list, scraped_times=scraped_times, scraped_task_list=scraped_task_list)
 
-        userFollowers.save()
+        userFollowers.save(connection=cl)
         
         return userFollowers
     

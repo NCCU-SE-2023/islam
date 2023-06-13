@@ -32,8 +32,8 @@ services:
     build: ./mongo-database
     restart: always
     # environment:
-      MONGO_INITDB_ROOT_USERNAME: islam
-      MONGO_INITDB_ROOT_PASSWORD: islam
+    #   MONGO_INITDB_ROOT_USERNAME: islam
+    #   MONGO_INITDB_ROOT_PASSWORD: islam
     volumes:
       - ./mdb:/etc/mongo
       - ./mdb:/data/db
