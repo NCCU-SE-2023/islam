@@ -25,58 +25,24 @@ def map_task_type_to_mission(task_type):
         return scrape_likes
     elif task_type == TaskType.TEST.value:
         return scrape_test
-    elif task_type == TaskType.SECOND.value:
-        return scrape_second_step
+    elif task_type == TaskType.FOLLOWER_AND_FOLLOWING.value:
+        return scrape_followers_and_following
     else:
         raise Exception("Invalid task type")
 
 
-@log_while_exception()
 def scrape_followers_and_following(driver, task: Task):
-    account = task.task_detail["account"]
-    password = task.task_detail["password"]
     try:
-        # login
-        action_login(driver, account, password)
-        store_click(driver)
-        notification_click(driver)
-        time.sleep(2.5)
+        account = task.task_detail["account"]
+        password = task.task_detail["password"]
+        target_ig_id = task.task_detail["target_ig_id"]
+        task_id = task.task_id
 
-        go_profile(driver, account)
-        time.sleep(2.5)
-        user_followers_ids = action_scrape_followers(driver)
-        time.sleep(2.5)
-        driver.back()
-        driver.refresh()
-
-        time.sleep(10)
-
-        go_profile(driver)
-        time.sleep(2.5)
-        user_followings_ids = action_scrape_following(driver)
-        time.sleep(2.5)
-
-        # return data
-        follower_number = len(user_followers_ids)
-        following_number = len(user_followings_ids)
-
-        raw_data = {
-            "scraped_ig_id": account,
-            "followers_count": follower_number,
-            "followers_list": user_followers_ids,
-            "scrape_user": "init_scrape_user",
-            "scraped_task_id": "your_task_id",
-        }
-        UserFollowers.create_user_followers(raw_data)
-
-        raw_data = {
-            "scraped_ig_id": account,
-            "following_count": following_number,
-            "following_list": user_followings_ids,
-            "scrape_user": "init_scrape_user",
-            "scraped_task_id": "your_task_id",
-        }
-        UserFollowing.create_user_following(raw_data)
+        instagrapi = Instagrapi(account, password, task_id)
+        raw_data = instagrapi.get_users_relative_followers_following(target_ig_id)
+        print(raw_data)
+        return raw_data
+            
     except Exception as exception:
         raise Exception(exception)
 
