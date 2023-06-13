@@ -9,6 +9,6 @@ def query():
     return query_service.query(request)
 
 
-@query_route.route("/api/v1/islam/query", methods=["GET"])
+@query_route.route("/api/v1/islam/query-followers", methods=["POST"])
 def get_account():
     return query_service.get_account(request)
