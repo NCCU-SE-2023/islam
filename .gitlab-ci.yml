@@ -8,16 +8,13 @@ variables:
 before_script:
   - docker version
   - echo "current path is $PWD"
-  #- docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
-  #- echo "docker login success"
-  #- echo "git commit id is $CI_COMMIT_SHA"
-  # - echo "APP_ENV=$CI_COMMIT_REF_NAME" >> $ENV_FILE
 
 stages:
   - build
   - deploy-middleware
-  - test
   - deploy
+  - test
+  - deploy-aws
 
 build-islam:
   rules:
@@ -69,13 +66,14 @@ deploy-aws:
   tags:
     - $CI_COMMIT_REF_NAME
 
-  stage: deploy
+  stage: deploy-aws
   variables:
     RSYNC_DIST_DIR: ~/$CI_PROJECT_NAME
     RSYNC_SRCE_DIR: $CI_PROJECT_DIR/ # 結尾要加上'/'這樣遞迴才會正常
     RSYNC_EXCLUDE: --exclude=.git* --exclude=.vscode
     NEW_DOTENV_PATH: ${CI_PROJECT_DIR}/.env
-  before_script:
+  # TODO
+  before_script
     - cp $ENV_FILE $NEW_DOTENV_PATH && sed -i '/#/d' $NEW_DOTENV_PATH && export $(cat $NEW_DOTENV_PATH)
     # 建立.env檔案
     - echo "APP_ENV=$APP_ENV" >> $NEW_DOTENV_PATH
