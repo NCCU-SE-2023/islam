@@ -3,8 +3,9 @@ from hashlib import md5
 import random
 from mongoengine import fields, Document
 
-uri = 'mongodb://islam:islam@127.0.0.1:27017/islam'
+uri = "mongodb://islam:islam@127.0.0.1:27017/islam"
 mongoengine.connect(host=uri)
+
 
 class UserFollowers(Document):
     # Convert this field for consistency

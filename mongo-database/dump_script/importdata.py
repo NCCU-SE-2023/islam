@@ -1,7 +1,7 @@
 # connect to mongodb
 import mongoengine
 
-uri = 'mongodb://islam:islam@127.0.0.1:27017/islam'
+uri = "mongodb://islam:islam@127.0.0.1:27017/islam"
 mongoengine.connect(host=uri)
 
 # load json files

@@ -3,7 +3,7 @@ services:
   islamapp:
     hostname: islamapp
     container_name: islamapp
-    build: 
+    build:
       context: ./
       dockerfile: ./islamapp/Dockerfile
     env_file:

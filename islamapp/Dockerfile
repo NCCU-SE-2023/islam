@@ -8,7 +8,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 ADD ./islamapp .
 
-RUN apt-get update -y 
+RUN apt-get update -y
 
 RUN pip3 install -r requirements.txt
 

@@ -21,7 +21,7 @@ build-islam:
     - if: ($CI_COMMIT_REF_NAME == "DEV" || $CI_COMMIT_REF_NAME == "QAT" ) && $CI_PIPELINE_SOURCE == 'web'
   tags:
     - $CI_COMMIT_REF_NAME
-  
+
   stage: build
   before_script:
     - export APP_ENV=$APP_ENV
@@ -86,7 +86,7 @@ deploy-aws:
   script:
     - >
       ssh -i ssh_private_key ubuntu@$CUSTOMER_IP "
-        cd $RSYNC_DIST_DIR 
+        cd $RSYNC_DIST_DIR
         export $(cat .env)
         echo 'APP_ENV=$APP_ENV'
         echo 'CUSTOMER_ID=$CUSTOMER_ID, CUSTOMER_IP=$CUSTOMER_IP,'
