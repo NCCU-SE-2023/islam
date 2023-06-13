@@ -107,16 +107,5 @@ class UserFollowers(Document):
         except Exception as e:
             print(e)
 
-
-
-    def to_json(self):
-        returnDict = {}
-        for key in self.__iter__():
-            try:
-                val = self.__getattribute__(key)
-                returnDict[key] = val
-            except:
-                pass
-        return returnDict
     
 
