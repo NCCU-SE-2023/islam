@@ -133,3 +133,4 @@ networkx
 colour_runner
 mongoengine
 coverage
+pre-commit
