@@ -1,29 +1,29 @@
 {
   "version": "0.2.0",
   "configurations": [
-    {
-      "name": "key_pool - unit",
-      "type": "python",
-      "request": "launch",
-      "justMyCode": true,
-      "module": "mongo-database.dump_script.${fileBasenameNoExtension}",
-      "env": {
-        "PYTHONPATH": "${workspaceFolder}",
-        "LOGGER_FOLDER": "${workspaceFolder}/log",
-        "LOGGER_LEVEL": "DEBUG",
-        "DATABASE_URL": "mysql+pymysql://root:islam@127.0.0.1:3306",
-        "MYSQL_ROOT_PASSWORD": "islam",
-        "MONGO_HOST": "127.0.0.1",
-        "MONGO_PORT": "27017",
-        "MONGODB": "islam",
-        "MONGO_USER": "islam",
-        "MONGO_PASSWORD": "islam",
-        "SELENIUM_GRID_HUB_ENDPOINT": "http://localhost:4444/wd/hub",
-        "SELENIUM_GRID_GRAPHQL_END_POINT": "http://localhost:4444/graphql",
-        "FLASK_ENV": "development",
-        "FLASK_APP": "main.py",
-        "FLASK_DEBUG": "True"
-      }
-    }
+    // {
+    //   "name": "key_pool - unit",
+    //   "type": "python",
+    //   "request": "launch",
+    //   "justMyCode": true,
+    //   "module": "mongo-database.dump_script.${fileBasenameNoExtension}",
+    //   "env": {
+    //     "PYTHONPATH": "${workspaceFolder}",
+    //     "LOGGER_FOLDER": "${workspaceFolder}/log",
+    //     "LOGGER_LEVEL": "DEBUG",
+    //     "DATABASE_URL": "mysql+pymysql://root:islam@127.0.0.1:3306",
+    //     "MYSQL_ROOT_PASSWORD": "islam",
+    //     "MONGO_HOST": "127.0.0.1",
+    //     "MONGO_PORT": "27017",
+    //     "MONGODB": "islam",
+    //     "MONGO_USER": "islam",
+    //     "MONGO_PASSWORD": "islam",
+    //     "SELENIUM_GRID_HUB_ENDPOINT": "http://localhost:4444/wd/hub",
+    //     "SELENIUM_GRID_GRAPHQL_END_POINT": "http://localhost:4444/graphql",
+    //     "FLASK_ENV": "development",
+    //     "FLASK_APP": "main.py",
+    //     "FLASK_DEBUG": "True"
+    //   }
+    // }
   ]
 }

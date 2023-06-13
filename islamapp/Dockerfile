@@ -13,5 +13,6 @@ RUN apt-get update -y
 RUN pip3 install -r requirements.txt
 
 RUN chmod +x start.sh
+RUN chmod +x init_db.sh
 
 ENTRYPOINT [ "sh", "start.sh" ]
