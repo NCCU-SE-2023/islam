@@ -5,6 +5,7 @@ from api.task import task_route
 from api.query import query_route
 from database import db, mongo
 
+
 def create_app(config):
     app = Flask(__name__)
     app.config.from_object(config)

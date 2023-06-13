@@ -9,8 +9,13 @@ from service.util import (
 )
 import time
 from flask import jsonify
-from model.task import Task, TaskException ,InvalidInputError,UserNotFoundError,TaskNotFoundError
-
+from model.task import (
+    Task,
+    TaskException,
+    InvalidInputError,
+    UserNotFoundError,
+    TaskNotFoundError,
+)
 
 
 def new_task(request):
@@ -65,6 +70,7 @@ def new_task(request):
             message=f"ISLAM Exception: {str(exception)}",
         )
 
+
 def get_task(request):
     """
     Request:
@@ -89,9 +95,7 @@ def get_task(request):
         user_id = request.headers.get("user_id")
 
         tasks = Task.get_by_create_user(user_id)
-        response = {
-            "tasks": [task.to_json() for task in tasks]
-        }
+        response = {"tasks": [task.to_json() for task in tasks]}
 
         return jsonify(response), 200
     except UserNotFoundError as exception:
@@ -100,13 +104,14 @@ def get_task(request):
             error_code=USER_NOT_FOUND,
             message=f"ISLAM Exception: {str(exception)}",
         )
-    
+
     except Exception as exception:
         return _gen_error_response(
             status_code=500,
             error_code=INTERNAL_SERVER_ERROR,
             message=f"ISLAM Exception: {str(exception)}",
         )
+
 
 def update_task(request):
     """
@@ -126,8 +131,8 @@ def update_task(request):
         {
             "task_id": "",
             "status": "",
-            ...    
-            
+            ...
+
         }
     """
     try:
@@ -144,7 +149,7 @@ def update_task(request):
             task.retry_task()
 
         return jsonify(task.to_json()), 201
-    
+
     except TaskNotFoundError as exception:
         return _gen_error_response(
             status_code=404,
