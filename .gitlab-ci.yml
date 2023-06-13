@@ -72,10 +72,8 @@ deploy-aws:
     RSYNC_SRCE_DIR: $CI_PROJECT_DIR/ # 結尾要加上'/'這樣遞迴才會正常
     RSYNC_EXCLUDE: --exclude=.git* --exclude=.vscode
     NEW_DOTENV_PATH: ${CI_PROJECT_DIR}/.env
-  # TODO
-  before_script
+  before_script:
     - cp $ENV_FILE $NEW_DOTENV_PATH && sed -i '/#/d' $NEW_DOTENV_PATH && export $(cat $NEW_DOTENV_PATH)
-    # 建立.env檔案
     - echo "APP_ENV=$APP_ENV" >> $NEW_DOTENV_PATH
     - echo "CUSTOMER_ID=$CUSTOMER_ID" >> $NEW_DOTENV_PATH
     - echo "CI_COMMIT_SHORT_SHA=$CI_COMMIT_SHORT_SHA" >> $NEW_DOTENV_PATH
@@ -86,7 +84,6 @@ deploy-aws:
     - echo "$SSH_PRIVATE_KEY" > ssh_private_key && chmod 400  ssh_private_key
     - rsync -avzrP -e 'ssh -i ssh_private_key' $RSYNC_EXCLUDE $RSYNC_SRCE_DIR ubuntu@$CUSTOMER_IP:$RSYNC_DIST_DIR
   script:
-    # 執行遠端指令
     - >
       ssh -i ssh_private_key ubuntu@$CUSTOMER_IP "
         cd $RSYNC_DIST_DIR 
