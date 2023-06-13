@@ -431,6 +431,7 @@ def close_post_page(driver):
     try:
         driver.find_element(By.CSS_SELECTOR, 'svg[aria-label="關閉"]').click()
     except:
+
         pass
 
 
