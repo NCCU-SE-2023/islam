@@ -5,6 +5,8 @@ name: CI - Integration Test
 on:
   push:
     branches: [ master,main ]
+    tags:        
+      - 'ci-*.*'
   pull_request:
     branches: [ master,main ]
 
