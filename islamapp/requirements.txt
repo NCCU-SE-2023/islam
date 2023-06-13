@@ -132,3 +132,4 @@ Flask==2.2.3
 networkx
 colour_runner
 mongoengine
+coverage
