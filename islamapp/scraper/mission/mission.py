@@ -41,6 +41,10 @@ def scrape_followers_and_following(driver, task: Task):
         instagrapi = Instagrapi(account, password, task_id)
         raw_data = instagrapi.get_users_relative_followers_following(target_ig_id)
         print(raw_data)
+        # update self
+
+        raw_data = instagrapi.get_user_following(account)
+        print("self",raw_data)
         return raw_data
             
     except Exception as exception:

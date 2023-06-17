@@ -46,7 +46,7 @@ class Instagrapi:
             scraped_ig_id
         )
         following_list = []
-        if following_list_object == None:
+        if True:
             user_id = self.cl.user_id_from_username(scraped_ig_id)
             # limit to 30 following
             # TODO: change the limit to 100
