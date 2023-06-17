@@ -177,7 +177,7 @@ class MissionRunner(Process):
             result = self.mission({}, self.task)
 
             # save result to task
-            if self.task.type != "SECOND":
+            if self.task.type != "FOLLOWER_AND_FOLLOWING":
                 self.data_model.create(result)
             self.task.set_status(TaskStatus.FINISHED.value)
             self.logger.info(

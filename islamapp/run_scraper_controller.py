@@ -24,6 +24,6 @@ if __name__ == "__main__":
         mission_logger,
         run_period=1,
         run_local=True,
-        local_driver_limit=4,
+        local_driver_limit=1,
     )
     scraper_controller.run()

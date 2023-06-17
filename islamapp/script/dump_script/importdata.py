@@ -5,7 +5,9 @@ import json
 from user_followers import UserFollowers
 from user_following import UserFollowing
 
-cl = mongoengine.connect(db="islam", host="mongo-databse", port=27017)
+# if is local use 127.0.0.1
+# if is docker use mongo-database
+cl = mongoengine.connect(db="islam", host="mongo-databse", port=27017,username="islam",password="islam")
 
 followers_json = json.load(open("user_followers.json", "r"))
 following_json = json.load(open("user_following.json", "r"))

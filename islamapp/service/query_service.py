@@ -39,13 +39,17 @@ def query(request):
         accounts = {}
         i = 1
         for account in all_account:
-            followers = UserFollowers.get_all_user_followers_by_ig_id(str(account))
-            follower_lists = [obj.followers_list for obj in followers]
-            following = UserFollowing.get_all_user_following_by_ig_id(str(account))
-            following_lists = [obj.following_list for obj in following]
+            try:
+                followers = UserFollowers.objects(scraped_ig_id=account).first().followers_list
+            except:
+                followers = []
+            try:
+                following = UserFollowing.objects(scraped_ig_id=account).first().following_list
+            except:
+                following = []
             accounts["account" + str(i)] = {
-                "followers": follower_lists[0],
-                "following": following_lists[0],
+                "followers": followers,
+                "following": following,
             }
             i += 1
 
@@ -124,6 +128,8 @@ def query(request):
             message=f"ISLAM Exception: {str(exception)}",
         )
     except Exception as exception:
+        import traceback
+        traceback.print_exc()
         return _gen_error_response(
             status_code=500,
             error_code=INTERNAL_SERVER_ERROR,

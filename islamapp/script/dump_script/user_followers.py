@@ -4,12 +4,11 @@ import random
 from mongoengine import fields, Document
 import mongoengine
 
-cl = mongoengine.connect(db="islam", host="mongo-databse", port=27017)
-
+cl = mongoengine.connect(db="islam", host="mongo-databse", port=27017,username="islam",password="islam")
 
 class UserFollowers(Document):
     meta = {
-        "collection": "user_following",
+        "collection": "user_followers",
         "strict": False,
         "connection": cl,
     }

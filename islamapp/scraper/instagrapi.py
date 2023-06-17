@@ -23,7 +23,7 @@ class Instagrapi:
         if followers_list_object == None:
             user_id = self.cl.user_id_from_username(scraped_ig_id)
             # TODO: change the limit to 100
-            followers = self.cl.user_followers(user_id, amout=10)
+            followers = self.cl.user_followers(user_id, amount=100)
             for user in followers:
                 followers_list.append(followers[user].username)
 
@@ -34,7 +34,7 @@ class Instagrapi:
                 "scrape_user": self.username,
                 "scraped_task_id": self.task_id,
             }
-            UserFollowers.create_user_followers(raw_data)
+            UserFollowers.create(raw_data)
         else:
             followers_list = followers_list_object.followers_list
 
@@ -46,11 +46,11 @@ class Instagrapi:
             scraped_ig_id
         )
         following_list = []
-        if following_list_object == None:
+        if True:
             user_id = self.cl.user_id_from_username(scraped_ig_id)
             # limit to 30 following
             # TODO: change the limit to 100
-            following = self.cl.user_following(user_id, amout=10)
+            following = self.cl.user_following(user_id, amount=100)
             for user in following:
                 following_list.append(following[user].username)
             raw_data = {
@@ -60,7 +60,7 @@ class Instagrapi:
                 "scrape_user": self.username,
                 "scraped_task_id": self.task_id,
             }
-            UserFollowing.create_user_following(raw_data)
+            UserFollowing.create(raw_data)
         else:
             following_list = following_list_object.following_list
 
@@ -76,40 +76,42 @@ class Instagrapi:
             _type_: sucess scraped followers number, total scraped followers number
                 , sucess scraped following number, total scraped following number
         """
+        try:
+            sleep(2)
+            user_id = self.cl.user_id_from_username(scraped_ig_id)
+            sleep(3)
+            followers_list = []
+            followers = self.cl.user_followers(user_id, amount=100)
+            for user in followers:
+                followers_list.append(followers[user].username)
 
-        followers_list = self.get_user_followers(scraped_ig_id)
-        following_list = self.get_user_following(scraped_ig_id)
-        # check the list which need to be scraped
-        res_list = following_list + list(set(followers_list) - set(following_list))
-        res_list_count_followers = len(res_list)
-        res_list_count_following = len(res_list)
-        # error list
-        error_list = []
+            raw_data = {
+                "scraped_ig_id": scraped_ig_id,
+                "followers_count": len(followers_list),
+                "followers_list": followers_list,
+                "scrape_user": self.username,
+                "scraped_task_id": self.task_id,
+            }
+            UserFollowers.create(raw_data)
+            print(followers_list)
+            sleep(2)
+            following_list = []
+            following = self.cl.user_following(user_id, amount=100)
+            for user in following:
+                following_list.append(following[user].username)
+            raw_data = {
+                "scraped_ig_id": scraped_ig_id,
+                "following_count": len(following_list),
+                "following_list": following_list,
+                "scrape_user": self.username,
+                "scraped_task_id": self.task_id,
+            }
+            UserFollowing.create(raw_data)
+            print(following_list)
 
-        for user in res_list:
-            try:
-                self.get_user_followers(user)
-
-            except Exception as e:
-                error_list.append(e)
-                res_list_count_followers = res_list_count_followers - 1
-                pass
-
-            try:
-                self.get_user_following(user)
-            except Exception as e:
-                error_list.append(e)
-                res_list_count_following = res_list_count_following - 1
-                pass
-
-        return (
-            res_list_count_followers,
-            res_list_count_following,
-            len(res_list),
-            len(following_list),
-            res_list,
-            error_list,
-        )
+        except:
+            import traceback
+            traceback.print_exc()
 
     def get_seond_step_followers_and_following(self, user_following: UserFollowing):
         following_list = user_following.following_list
